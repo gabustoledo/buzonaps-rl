@@ -136,6 +136,15 @@ while flag:
             new_state = True
     else:
         new_state = True
+
+    if len(json_state) == 3:
+        try:
+            if json_state[0]['clock'] == "final":
+                new_state = False
+                flag = False
+        except:
+            new_state = True
+
     # print(json_state[-1])
     clock_sim = int(json_state[-1]['clock'].split(".")[0])
     current_clock = clock_sim

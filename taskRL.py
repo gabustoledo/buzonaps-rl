@@ -34,17 +34,20 @@ def get_managerPatient_sim(url):
             time.sleep(0.5)
     return json_state
 
-def get_data_sim(url):
+def get_data_sim(url, flag=0):
     while True:
         responseState = requests.get(url)
-        json_text = responseState.text
-        json_text = json_text.replace("{\"[{","[{")
-        json_text = json_text.replace("}]\":\"\"}","}]")
-        json_text = json_text.replace('\\"', '"')
         responseState_json = responseState.json()
-        if responseState_json != {}:
+        response_string = json.dumps(responseState_json)
+        response_string = response_string[2:-6]
+        json_text = response_string
+        json_text = json_text.replace('\\"', '"')
+        if flag == 1 and responseState_json != {}:
+            json_string = next(iter(responseState_json.keys()))
+            json_state = json.loads(json_string)
+            break
+        elif flag == 0 and responseState_json != {}:
             json_state = json.loads(json_text)
-            # print(json_state)
             break
         else:
             time.sleep(0.5)
@@ -134,16 +137,15 @@ while flag:
                 new_state = False
         except:
             new_state = True
-    else:
-        new_state = True
-
-    if len(json_state) == 3:
+    elif len(json_state) == 3:
         try:
             if json_state[0]['clock'] == "final":
                 new_state = False
                 flag = False
         except:
             new_state = True
+    else:
+        new_state = True
 
     # print(json_state[-1])
     clock_sim = int(json_state[-1]['clock'].split(".")[0])
@@ -178,3 +180,5 @@ while flag:
 
     if current_clock >= CLOCK_MAX:
         flag = False
+
+json_state, responseState_json = get_data_sim(stateGet,1)

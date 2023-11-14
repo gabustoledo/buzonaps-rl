@@ -3,9 +3,9 @@ import time
 import json
 import numpy as np
 
-NUM_PACIENTES = 100
-NUM_MANAGER = 12
-CLOCK_MAX = 8760
+NUM_PACIENTES = 0
+NUM_MANAGER = 0
+CLOCK_MAX = 0
 
 # script consulta si hay estado disponible, de estarlo se ejecuta el RL y entrega las tareas
 
@@ -13,6 +13,13 @@ CLOCK_MAX = 8760
 taskPost = "http://localhost:3000/api/rl/task"
 stateGet = "http://localhost:3000/api/sim/state"
 managerPatientGet = "http://localhost:3000/api/sim/managerPatients"
+configGet = "http://localhost:3000/api/sim/config"
+
+def get_config(url):
+    responseConfig = requests.get(url)
+    json_text = responseConfig.text
+    json_config = json.loads(json_text)
+    return json_config
 
 def get_managerPatient_sim(url):
     while True:
@@ -82,6 +89,12 @@ def update_sate(matriz_estado, new_state, tipo_hora):
             matriz_estado[manager_id-1, 1] = sim_clock
 
     return matriz_estado
+
+config_sim = get_config(configGet)
+
+NUM_PACIENTES = config_sim['patients_amount']
+NUM_MANAGER = config_sim['managers_amount'] * config_sim['cesfam_amount']
+CLOCK_MAX = config_sim['end_sim']
 
 # Debo conocer una matriz que inique id paciente con el id del manager
 matriz_estado = np.zeros((NUM_MANAGER, 2 + 3*NUM_PACIENTES))

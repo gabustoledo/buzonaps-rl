@@ -8,8 +8,6 @@ NUM_PACIENTES = 0
 NUM_MANAGER = 0
 CLOCK_MAX = 0
 
-# script consulta si hay estado disponible, de estarlo se ejecuta el RL y entrega las tareas
-
 # The API endpoint
 taskPost = "http://localhost:3000/api/rl/task"
 stateGet = "http://localhost:3000/api/sim/state"
@@ -32,7 +30,7 @@ def get_managerPatient_sim(url):
             # print(json_state)
             break
         else:
-            time.sleep(0.5)
+            time.sleep(0.1)
     return json_state
 
 def get_data_sim(url, flag=0):
@@ -51,14 +49,14 @@ def get_data_sim(url, flag=0):
             json_state = json.loads(json_text)
             break
         else:
-            time.sleep(0.5)
+            time.sleep(0.1)
     return json_state, responseState_json
 
 def init_state(matriz_estado, managers):
 
     matriz_estado[:, 0] = np.arange(1, managers + 1)
 
-    matriz_estado[:, 1] = 8
+    matriz_estado[:, 1] = 32
 
     managerPatient = get_managerPatient_sim(managerPatientGet)
 
@@ -68,7 +66,7 @@ def init_state(matriz_estado, managers):
 
         matriz_estado[manager-1, patient+1] = 1
 
-    return matriz_estado
+    return matriz_estado, managerPatient
 
 def update_sate(matriz_estado, new_state, tipo_hora):
 
@@ -102,7 +100,7 @@ CLOCK_MAX = config_sim['end_sim']
 
 # Debo conocer una matriz que inique id paciente con el id del manager
 matriz_estado = np.zeros((NUM_MANAGER, 2 + 3*NUM_PACIENTES))
-matriz_estado = init_state(matriz_estado, NUM_MANAGER)
+matriz_estado, managerPatient = init_state(matriz_estado, NUM_MANAGER)
 
 tipo_hora = {
     "ASK_CONSENT" : 1,
@@ -116,6 +114,30 @@ tipo_hora = {
     "RE_EVALUATE_LOW_RISK" : 9,
     "RE_EVALUATE_MANAGED" : 10
 }
+
+tipo_hora_duracion = {
+    "ASK_CONSENT" : 0,
+    "PRE_CLASSIFY_CLINICAL_RISK" : 0,
+    "PRE_CLASSIFY_SOCIAL_RISK" : 0,
+    "MANAGE_PATIENT" : 0,
+    "MANAGE_MEDICAL_HOUR" : 0,
+    "MANAGE_TEST_HOUR" : 0,
+    "MANAGE_SOCIAL_HOUR" : 0,
+    "MANAGE_PSYCHO_HOUR" : 0,
+    "RE_EVALUATE_LOW_RISK" : 0,
+    "RE_EVALUATE_MANAGED" : 0
+}
+
+tipo_hora_duracion["ASK_CONSENT"] = config_sim["answer_consent_time"]
+tipo_hora_duracion["PRE_CLASSIFY_CLINICAL_RISK"] = config_sim["pre_classify_clinical_risk_time"]
+tipo_hora_duracion["PRE_CLASSIFY_SOCIAL_RISK"] = config_sim["pre_classify_social_risk_time"]
+tipo_hora_duracion["MANAGE_PATIENT"] = config_sim["manage_patient_time"]
+tipo_hora_duracion["MANAGE_MEDICAL_HOUR"] = config_sim["manage_medical_hour_time"]
+tipo_hora_duracion["MANAGE_TEST_HOUR"] = config_sim["manage_test_hour_time"]
+tipo_hora_duracion["MANAGE_SOCIAL_HOUR"] = config_sim["manage_social_hour_time"]
+tipo_hora_duracion["MANAGE_PSYCHO_HOUR"] = config_sim["manage_psycho_hour_time"]
+tipo_hora_duracion["RE_EVALUATE_LOW_RISK"] = config_sim["re_evaluate_low_risk_time"]
+tipo_hora_duracion["RE_EVALUATE_MANAGED"] = config_sim["re_evaluate_managed_time"]
 
 # tiempos obtenerlos desde el config lo mismo con pacientes y managers y clock
 
@@ -170,23 +192,33 @@ while flag:
             # Escribir una línea en blanco para separar las iteraciones
             f.write("\n")
 
-    # Falta tener un historial de las tareas asignadas, hay que identificar y quedarse con aquellas que no han sido realizadas
-    # consultar por aquellas e ir dejandolas al inicio de la cola a realizar.
-
     # Aqui debe ejecutarse el rl
     tasks = []
-    for i in range(0,15):
-        task = {
-            "id_manager": random.randint(1, NUM_MANAGER),
-            "id_patient": random.randint(1, NUM_PACIENTES),
-            "process": random.choice(['ASK_CONSENT','PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']),
-            "clock_init": random.randint(current_clock + 8 , current_clock + 20),
-            "execute_time": random.randint(1, 5)
-        }
-        history_tasks.append(task)
-        tasks.append(task)
 
-    # Decodificar tareas entregadas y entregar algo entendible por el simulador
+    # Por cada manager se obtendra su prox horario libre, este horario libre debe ser si o si en el horario current_clock + 8 , current_clock + 20, de lo contrario se pasa al siguiente
+    # Crearle tareas random para sus pacientes (aqui necesitare esa lista que borre), un processo aleatorio y obtener el time de cada proceso.
+    for i in range(0, NUM_MANAGER):
+        horario_libre = matriz_estado[i, 1]
+        mis_pacientes = [elemento for elemento in managerPatient if elemento["manager"] == i+1]
+        
+        if horario_libre < current_clock + 8:
+            horario_libre = current_clock + 8
+
+        while horario_libre < current_clock + 20:
+            paciente_actual = random.choice(mis_pacientes)
+            process_actual = random.choice(['ASK_CONSENT','PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED'])
+            process_time = tipo_hora_duracion[process_actual]
+            task = {
+                "id_manager": i+1,
+                "id_patient": paciente_actual["patient"],
+                "process": process_actual,
+                "clock_init": horario_libre,
+                "execute_time": 0
+            }
+            task["execute_time"] = process_time
+            horario_libre += process_time
+            history_tasks.append(task)
+            tasks.append(task)
 
     # Post de las tareas
     responseTask = requests.post(taskPost, json=tasks)

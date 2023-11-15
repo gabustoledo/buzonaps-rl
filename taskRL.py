@@ -2,6 +2,7 @@ import requests
 import time
 import json
 import numpy as np
+import random
 
 NUM_PACIENTES = 0
 NUM_MANAGER = 0
@@ -122,6 +123,7 @@ current_clock = 0
 flag = True
 new_state = True
 clock_sim = 0
+history_tasks = []
 while flag:
 
     # Se obtiene el estado del simulador
@@ -172,11 +174,22 @@ while flag:
     # consultar por aquellas e ir dejandolas al inicio de la cola a realizar.
 
     # Aqui debe ejecutarse el rl
+    tasks = []
+    for i in range(0,15):
+        task = {
+            "id_manager": random.randint(1, NUM_MANAGER),
+            "id_patient": random.randint(1, NUM_PACIENTES),
+            "process": random.choice(['ASK_CONSENT','PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']),
+            "clock_init": random.randint(current_clock + 8 , current_clock + 20),
+            "execute_time": random.randint(1, 5)
+        }
+        history_tasks.append(task)
+        tasks.append(task)
 
     # Decodificar tareas entregadas y entregar algo entendible por el simulador
 
     # Post de las tareas
-    responseTask = requests.post(taskPost, json=responseState_json)
+    responseTask = requests.post(taskPost, json=tasks)
 
     if current_clock >= CLOCK_MAX:
         flag = False

@@ -3,6 +3,9 @@ import time
 import json
 import numpy as np
 import random
+from DQNAgent import DQNAgent
+
+MODO = 1 # 0 aleatorio, 1 DQN
 
 NUM_PACIENTES = 0
 NUM_MANAGER = 0
@@ -13,6 +16,9 @@ taskPost = "http://localhost:3000/api/rl/task"
 stateGet = "http://localhost:3000/api/sim/state"
 managerPatientGet = "http://localhost:3000/api/sim/managerPatients"
 configGet = "http://localhost:3000/api/sim/config"
+
+def flatten_state(matrix):
+    return matrix.flatten()
 
 def get_config(url):
     responseConfig = requests.get(url)
@@ -92,6 +98,10 @@ def update_sate(matriz_estado, new_state, tipo_hora):
 
     return matriz_estado
 
+def get_recompensa(matriz):
+    recompensa = matriz[:,NUM_PACIENTES+2:-NUM_PACIENTES].sum()
+    return recompensa * -1
+
 config_sim = get_config(configGet)
 
 NUM_PACIENTES = config_sim['patients_amount']
@@ -139,13 +149,19 @@ tipo_hora_duracion["MANAGE_PSYCHO_HOUR"] = config_sim["manage_psycho_hour_time"]
 tipo_hora_duracion["RE_EVALUATE_LOW_RISK"] = config_sim["re_evaluate_low_risk_time"]
 tipo_hora_duracion["RE_EVALUATE_MANAGED"] = config_sim["re_evaluate_managed_time"]
 
-# tiempos obtenerlos desde el config lo mismo con pacientes y managers y clock
+# Inicializacion del modelo DQN
+state_size = len(flatten_state(matriz_estado))  # Tamaño del estado aplanado
+action_size = NUM_PACIENTES * 10
+dqn_agent = DQNAgent(state_size, action_size)
 
 current_clock = 0
 flag = True
 new_state = True
 clock_sim = 0
 history_tasks = []
+acciones_acumuladas = []
+process_list = ['ASK_CONSENT','PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']
+second_day = False
 while flag:
 
     # Se obtiene el estado del simulador
@@ -177,7 +193,13 @@ while flag:
 
     # codificar estado para que sea entendible por el rl
     if new_state:
-        matriz_estado = update_sate(matriz_estado, json_state[:-1], tipo_hora)
+        nueva_matriz_estado = update_sate(matriz_estado, json_state[:-1], tipo_hora)
+
+        # Si hay nuevo estado se realiza el remember aqui, pero solo desde la segunda vuelta
+        if MODO == 1 and second_day:
+            dqn_agent.remember(flatten_state(matriz_estado), acciones_acumuladas, get_recompensa(nueva_matriz_estado), flatten_state(nueva_matriz_estado), False)
+
+        matriz_estado = nueva_matriz_estado
 
         # seccion temporal para guardar matriz
         filename = "historial_matriz.txt"
@@ -192,6 +214,8 @@ while flag:
             # Escribir una línea en blanco para separar las iteraciones
             f.write("\n")
 
+    # Seccion para generar tareas, aqui deberia ejecutarse el dqn, ya que el deberia entregar las tareas
+    # ------------------------------------------------------------
     # Aqui debe ejecutarse el rl
     tasks = []
 
@@ -205,25 +229,46 @@ while flag:
             horario_libre = current_clock + 8
 
         while horario_libre < current_clock + 20:
-            paciente_actual = random.choice(mis_pacientes)
-            process_actual = random.choice(['ASK_CONSENT','PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED'])
+
+            # paciente y proceso son aquellos elementos que deben ser seleccionados por el rl
+            if MODO == 0:
+                paciente_actual = random.choice(mis_pacientes)
+                process_actual = random.choice(process_list)
+            if MODO == 1:
+                state = flatten_state(matriz_estado)
+                composite_action = dqn_agent.act(state)
+                paciente_actual, process_number = dqn_agent.decompose_action(composite_action)
+                process_actual = process_list[process_number - 1]
+                acciones_acumuladas.append(composite_action)
+
             process_time = tipo_hora_duracion[process_actual]
             task = {
                 "id_manager": i+1,
-                "id_patient": paciente_actual["patient"],
+                "id_patient": 0,
                 "process": process_actual,
                 "clock_init": horario_libre,
                 "execute_time": 0
             }
+            if MODO == 0:
+                task["id_patient"] = paciente_actual["patient"]
+            if MODO == 1:
+                task["id_patient"] = paciente_actual
+
             task["execute_time"] = process_time
             horario_libre += process_time
             history_tasks.append(task)
             tasks.append(task)
+    # ------------------------------------------------------------
 
     # Post de las tareas
     responseTask = requests.post(taskPost, json=tasks)
 
     if current_clock >= CLOCK_MAX:
         flag = False
+
+    if MODO == 1 and second_day:
+        dqn_agent.replay()
+
+    second_day = True
 
 json_state, responseState_json = get_data_sim(stateGet,1)

@@ -1,6 +1,5 @@
 import numpy as np
-import random
-import json
+import argparse
 from DQNAgent import DQNAgent
 from API_CONNECTION import API_CONNECTION
 from STATE import STATE
@@ -85,7 +84,6 @@ def main(modo_recompensa):
     
     # Ciclo que en cada iteracion representa un dia indicado por el simulador.
     while flag:
-
         # Se obtiene el estado del simulador
         json_state, responseState_json = api_connection.get_data_sim()
 
@@ -208,13 +206,37 @@ def main(modo_recompensa):
 
     print(json_state)
 
-    filename = 'rewards.json'
+    # filename = 'rewards.json'
 
-    # Escribir el JSON en el archivo
-    with open(filename, 'w') as file:
-        json.dump(rewards, file, indent=4)
+    # # Escribir el JSON en el archivo
+    # with open(filename, 'w') as file:
+    #     json.dump(rewards, file, indent=4)
+
+    if modo_recompensa == 1:
+        name = "Riesgo del 100%"
+    elif modo_recompensa == 2:
+        name = "Riesgo del 40% mayor"
+
+    rewards_post = {
+        "name": name,
+        "rewards": rewards
+    }
+
+    rewards_response = api_connection.post_rewards(rewards_post)
 
 
 if __name__ == '__main__':
-    modo_recompensa = 2
-    main(modo_recompensa)
+
+    # Se crea analizador de argumentos
+    parser = argparse.ArgumentParser(description='Script para procesar estados del simulador y entregarle tareas diarias.')
+
+    # Argumento para modo de ejecucion
+    parser.add_argument('modo', type=int, choices=[1, 2], help='Modo de ejecución del script. Puede ser 1 o 2.')
+
+    # Se obtienen los parametros
+    args = parser.parse_args()
+
+    # Es seleccionado el parametro para el modo
+    modo = args.modo
+
+    main(modo)

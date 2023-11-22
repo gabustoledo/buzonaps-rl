@@ -50,6 +50,20 @@ class STATE:
 
         return matriz_estado
 
-    def get_recompensa(self, matriz):
-        recompensa = matriz[:,self.num_patients+2:-self.num_patients].sum()
-        return recompensa * -1
+    def get_recompensa(self, matriz, modo=1, porcentaje=0.4):
+        if modo == 1: # Riesgo de todos
+            riesgo_total = matriz[:,self.num_patients+2:-self.num_patients].sum()
+            recompensa = riesgo_total * -1
+            return recompensa, riesgo_total
+        elif modo == 2: # Riesgo de cierto porcentaje mayor
+            recompensa = matriz[:,self.num_patients+2:-self.num_patients].flatten().tolist()
+            recompensa.sort(reverse=True)
+            recompensa = recompensa[:self.num_patients]
+            riesgo_total = sum(recompensa)
+
+            cantidad = int(self.num_patients * porcentaje)
+            recompensa = recompensa[:cantidad]
+
+            recompensa_total = sum(recompensa)
+            recompensa_total = recompensa_total * -1
+            return recompensa_total, riesgo_total

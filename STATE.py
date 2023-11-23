@@ -56,14 +56,31 @@ class STATE:
             recompensa = riesgo_total * -1
             return recompensa, riesgo_total
         elif modo == 2: # Riesgo de cierto porcentaje mayor
-            recompensa = matriz[:,self.num_patients+2:-self.num_patients].flatten().tolist()
-            recompensa.sort(reverse=True)
-            recompensa = recompensa[:self.num_patients]
-            riesgo_total = sum(recompensa)
+            riesgo = matriz[:,self.num_patients+2:-self.num_patients].flatten().tolist()
+            riesgo.sort(reverse=True)
+            riesgo = riesgo[:self.num_patients]
+            riesgo_total = sum(riesgo)
 
             cantidad = int(self.num_patients * porcentaje)
-            recompensa = recompensa[:cantidad]
+            riesgo = riesgo[:cantidad]
 
-            recompensa_total = sum(recompensa)
+            recompensa_total = sum(riesgo)
             recompensa_total = recompensa_total * -1
             return recompensa_total, riesgo_total
+        elif modo == 3: # Cantidad de pacientes con riesgo medio o bajo
+            riesgo = matriz[:,self.num_patients+2:-self.num_patients].flatten().tolist()
+            riesgo.sort(reverse=True)
+            riesgo = riesgo[:self.num_patients]
+            riesgo_total = sum(riesgo)
+
+            recompensa_umbral = self.num_patients
+            for rm in riesgo:
+                if rm == 30:
+                    recompensa_umbral -= 1
+            
+            return recompensa_umbral, riesgo_total
+        elif modo == 4: # Riesgo del total con logaritmo
+            riesgo_total = matriz[:,self.num_patients+2:-self.num_patients].sum()
+            recompensa = -np.log(1 + riesgo_total)
+            return recompensa, riesgo_total
+

@@ -4,7 +4,7 @@ from collections import deque
 from DQN import DQNModel
 
 class DQNAgent:
-    def __init__(self, state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=10000):
+    def __init__(self, state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5):
         self.state_size = state_size
         self.action_size = action_size
         self.memory = deque(maxlen=memory_size)
@@ -21,6 +21,7 @@ class DQNAgent:
     def act(self, state):
         if np.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
+        state = np.array(state).reshape(1, -1)
         act_values = self.model.predict(state)
         return np.argmax(act_values[0])
 
@@ -29,6 +30,9 @@ class DQNAgent:
             return
         minibatch = random.sample(self.memory, self.batch_size)
         for state, action, reward, next_state, done in minibatch:
+            state = np.array(state).reshape(1, -1)
+            next_state = np.array(next_state).reshape(1, -1)
+
             target = reward
             if not done:
                 target = reward + self.gamma * np.amax(self.model.predict(next_state)[0])
@@ -39,6 +43,6 @@ class DQNAgent:
             self.epsilon *= self.epsilon_decay
 
     def decompose_action(self, action):
-        patient_id = (action // 10) + 1  # Asume que los IDs de pacientes comienzan en 1
+        patient_id = (action // 10) + 1
         number = (action % 10) + 1
         return patient_id, number

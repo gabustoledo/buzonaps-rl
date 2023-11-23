@@ -1,5 +1,6 @@
 import numpy as np
 import argparse
+import json
 from DQNAgent import DQNAgent
 from API_CONNECTION import API_CONNECTION
 from STATE import STATE
@@ -127,6 +128,8 @@ def main(modo_recompensa):
                 "reward": reward * -1,
                 "total_risk": total_risk
             }
+            if modo_recompensa == 3 or modo_recompensa == 4:
+                json_reward["reward"] = reward
             rewards.append(json_reward)
 
             # Se almacena el estado en el modelo
@@ -183,8 +186,8 @@ def main(modo_recompensa):
                     "clock_init": horario_libre,
                     "execute_time": 0
                 }
-                task["id_patient"] = paciente_actual
-                task["execute_time"] = process_time
+                task["id_patient"] = int(paciente_actual)
+                task["execute_time"] = int(process_time)
 
                 # Actualizacion de horario libre
                 horario_libre += process_time
@@ -206,16 +209,21 @@ def main(modo_recompensa):
 
     print(json_state)
 
-    # filename = 'rewards.json'
-
-    # # Escribir el JSON en el archivo
-    # with open(filename, 'w') as file:
-    #     json.dump(rewards, file, indent=4)
-
     if modo_recompensa == 1:
         name = "Riesgo del 100%"
+        filename = 'rewards_total.json'
     elif modo_recompensa == 2:
         name = "Riesgo del 40% mayor"
+        filename = 'rewards_porcentaje.json'
+    elif modo_recompensa == 3:
+        name = "Riesgo pacientes en medio o bajo"
+        filename = 'rewards_medio_bajo.json'
+    elif modo_recompensa == 4:
+        name = "Riesgo logaritmo"
+        filename = 'rewards_logaritmo.json'
+
+    with open(filename, 'w') as file:
+        json.dump(rewards, file, indent=4)
 
     rewards_post = {
         "name": name,
@@ -231,7 +239,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Script para procesar estados del simulador y entregarle tareas diarias.')
 
     # Argumento para modo de ejecucion
-    parser.add_argument('modo', type=int, choices=[1, 2], help='Modo de ejecución del script. Puede ser 1 o 2.')
+    parser.add_argument('modo', type=int, choices=[1, 2, 3, 4], help='Modo de ejecución del script. Puede ser 1, 2, 3 o 4.')
 
     # Se obtienen los parametros
     args = parser.parse_args()

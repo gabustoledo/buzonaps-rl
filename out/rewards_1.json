@@ -1,0 +1,5944 @@
+[
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 1,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 8,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 9,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 10,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 31,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 34,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 62,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 70,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 98,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 186,
+                "reward": 70.0,
+                "total_risk": 70.0
+            },
+            {
+                "day": 193,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 217,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 245,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 250,
+                "reward": 150.0,
+                "total_risk": 150.0
+            },
+            {
+                "day": 254,
+                "reward": 180.0,
+                "total_risk": 180.0
+            },
+            {
+                "day": 255,
+                "reward": 180.0,
+                "total_risk": 180.0
+            },
+            {
+                "day": 280,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 285,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 286,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 290,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 317,
+                "reward": 260.0,
+                "total_risk": 260.0
+            },
+            {
+                "day": 340,
+                "reward": 320.0,
+                "total_risk": 320.0
+            },
+            {
+                "day": 342,
+                "reward": 340.0,
+                "total_risk": 340.0
+            },
+            {
+                "day": 347,
+                "reward": 360.0,
+                "total_risk": 360.0
+            },
+            {
+                "day": 349,
+                "reward": 360.0,
+                "total_risk": 360.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 2,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 8,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 9,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 10,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 32,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 37,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 40,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 43,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 63,
+                "reward": 70.0,
+                "total_risk": 70.0
+            },
+            {
+                "day": 67,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 72,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 95,
+                "reward": 150.0,
+                "total_risk": 150.0
+            },
+            {
+                "day": 101,
+                "reward": 170.0,
+                "total_risk": 170.0
+            },
+            {
+                "day": 129,
+                "reward": 190.0,
+                "total_risk": 190.0
+            },
+            {
+                "day": 132,
+                "reward": 230.0,
+                "total_risk": 230.0
+            },
+            {
+                "day": 134,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 136,
+                "reward": 260.0,
+                "total_risk": 260.0
+            },
+            {
+                "day": 164,
+                "reward": 260.0,
+                "total_risk": 260.0
+            },
+            {
+                "day": 167,
+                "reward": 310.0,
+                "total_risk": 310.0
+            },
+            {
+                "day": 187,
+                "reward": 340.0,
+                "total_risk": 340.0
+            },
+            {
+                "day": 189,
+                "reward": 380.0,
+                "total_risk": 380.0
+            },
+            {
+                "day": 191,
+                "reward": 380.0,
+                "total_risk": 380.0
+            },
+            {
+                "day": 193,
+                "reward": 400.0,
+                "total_risk": 400.0
+            },
+            {
+                "day": 198,
+                "reward": 400.0,
+                "total_risk": 400.0
+            },
+            {
+                "day": 217,
+                "reward": 430.0,
+                "total_risk": 430.0
+            },
+            {
+                "day": 218,
+                "reward": 510.0,
+                "total_risk": 510.0
+            },
+            {
+                "day": 219,
+                "reward": 550.0,
+                "total_risk": 550.0
+            },
+            {
+                "day": 221,
+                "reward": 580.0,
+                "total_risk": 580.0
+            },
+            {
+                "day": 224,
+                "reward": 640.0,
+                "total_risk": 640.0
+            },
+            {
+                "day": 226,
+                "reward": 700.0,
+                "total_risk": 700.0
+            },
+            {
+                "day": 227,
+                "reward": 710.0,
+                "total_risk": 710.0
+            },
+            {
+                "day": 246,
+                "reward": 760.0,
+                "total_risk": 760.0
+            },
+            {
+                "day": 248,
+                "reward": 810.0,
+                "total_risk": 810.0
+            },
+            {
+                "day": 249,
+                "reward": 860.0,
+                "total_risk": 860.0
+            },
+            {
+                "day": 252,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 254,
+                "reward": 960.0,
+                "total_risk": 960.0
+            },
+            {
+                "day": 255,
+                "reward": 970.0,
+                "total_risk": 970.0
+            },
+            {
+                "day": 257,
+                "reward": 1030.0,
+                "total_risk": 1030.0
+            },
+            {
+                "day": 258,
+                "reward": 1050.0,
+                "total_risk": 1050.0
+            },
+            {
+                "day": 260,
+                "reward": 1070.0,
+                "total_risk": 1070.0
+            },
+            {
+                "day": 262,
+                "reward": 1100.0,
+                "total_risk": 1100.0
+            },
+            {
+                "day": 264,
+                "reward": 1130.0,
+                "total_risk": 1130.0
+            },
+            {
+                "day": 280,
+                "reward": 1140.0,
+                "total_risk": 1140.0
+            },
+            {
+                "day": 283,
+                "reward": 1230.0,
+                "total_risk": 1230.0
+            },
+            {
+                "day": 285,
+                "reward": 1280.0,
+                "total_risk": 1280.0
+            },
+            {
+                "day": 287,
+                "reward": 1310.0,
+                "total_risk": 1310.0
+            },
+            {
+                "day": 293,
+                "reward": 1340.0,
+                "total_risk": 1340.0
+            },
+            {
+                "day": 312,
+                "reward": 1340.0,
+                "total_risk": 1340.0
+            },
+            {
+                "day": 315,
+                "reward": 1380.0,
+                "total_risk": 1380.0
+            },
+            {
+                "day": 318,
+                "reward": 1400.0,
+                "total_risk": 1400.0
+            },
+            {
+                "day": 320,
+                "reward": 1400.0,
+                "total_risk": 1400.0
+            },
+            {
+                "day": 341,
+                "reward": 1450.0,
+                "total_risk": 1450.0
+            },
+            {
+                "day": 345,
+                "reward": 1480.0,
+                "total_risk": 1480.0
+            },
+            {
+                "day": 347,
+                "reward": 1520.0,
+                "total_risk": 1520.0
+            },
+            {
+                "day": 352,
+                "reward": 1530.0,
+                "total_risk": 1530.0
+            },
+            {
+                "day": 355,
+                "reward": 1560.0,
+                "total_risk": 1560.0
+            },
+            {
+                "day": 357,
+                "reward": 1560.0,
+                "total_risk": 1560.0
+            },
+            {
+                "day": 358,
+                "reward": 1590.0,
+                "total_risk": 1590.0
+            },
+            {
+                "day": 360,
+                "reward": 1600.0,
+                "total_risk": 1600.0
+            },
+            {
+                "day": 361,
+                "reward": 1600.0,
+                "total_risk": 1600.0
+            },
+            {
+                "day": 362,
+                "reward": 1610.0,
+                "total_risk": 1610.0
+            },
+            {
+                "day": 364,
+                "reward": 1620.0,
+                "total_risk": 1620.0
+            },
+            {
+                "day": 365,
+                "reward": 1640.0,
+                "total_risk": 1640.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 3,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 6,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 7,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 8,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 9,
+                "reward": 70.0,
+                "total_risk": 70.0
+            },
+            {
+                "day": 10,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 11,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 13,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 34,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 35,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 37,
+                "reward": 110.0,
+                "total_risk": 110.0
+            },
+            {
+                "day": 38,
+                "reward": 160.0,
+                "total_risk": 160.0
+            },
+            {
+                "day": 40,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 42,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 43,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 63,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 65,
+                "reward": 310.0,
+                "total_risk": 310.0
+            },
+            {
+                "day": 67,
+                "reward": 310.0,
+                "total_risk": 310.0
+            },
+            {
+                "day": 70,
+                "reward": 330.0,
+                "total_risk": 330.0
+            },
+            {
+                "day": 73,
+                "reward": 350.0,
+                "total_risk": 350.0
+            },
+            {
+                "day": 74,
+                "reward": 440.0,
+                "total_risk": 440.0
+            },
+            {
+                "day": 76,
+                "reward": 460.0,
+                "total_risk": 460.0
+            },
+            {
+                "day": 94,
+                "reward": 530.0,
+                "total_risk": 530.0
+            },
+            {
+                "day": 97,
+                "reward": 610.0,
+                "total_risk": 610.0
+            },
+            {
+                "day": 98,
+                "reward": 630.0,
+                "total_risk": 630.0
+            },
+            {
+                "day": 101,
+                "reward": 680.0,
+                "total_risk": 680.0
+            },
+            {
+                "day": 106,
+                "reward": 750.0,
+                "total_risk": 750.0
+            },
+            {
+                "day": 126,
+                "reward": 780.0,
+                "total_risk": 780.0
+            },
+            {
+                "day": 128,
+                "reward": 780.0,
+                "total_risk": 780.0
+            },
+            {
+                "day": 131,
+                "reward": 820.0,
+                "total_risk": 820.0
+            },
+            {
+                "day": 139,
+                "reward": 860.0,
+                "total_risk": 860.0
+            },
+            {
+                "day": 156,
+                "reward": 940.0,
+                "total_risk": 940.0
+            },
+            {
+                "day": 159,
+                "reward": 970.0,
+                "total_risk": 970.0
+            },
+            {
+                "day": 160,
+                "reward": 970.0,
+                "total_risk": 970.0
+            },
+            {
+                "day": 162,
+                "reward": 1060.0,
+                "total_risk": 1060.0
+            },
+            {
+                "day": 168,
+                "reward": 1080.0,
+                "total_risk": 1080.0
+            },
+            {
+                "day": 171,
+                "reward": 1110.0,
+                "total_risk": 1110.0
+            },
+            {
+                "day": 186,
+                "reward": 1160.0,
+                "total_risk": 1160.0
+            },
+            {
+                "day": 188,
+                "reward": 1190.0,
+                "total_risk": 1190.0
+            },
+            {
+                "day": 191,
+                "reward": 1330.0,
+                "total_risk": 1330.0
+            },
+            {
+                "day": 194,
+                "reward": 1360.0,
+                "total_risk": 1360.0
+            },
+            {
+                "day": 195,
+                "reward": 1390.0,
+                "total_risk": 1390.0
+            },
+            {
+                "day": 197,
+                "reward": 1430.0,
+                "total_risk": 1430.0
+            },
+            {
+                "day": 199,
+                "reward": 1460.0,
+                "total_risk": 1460.0
+            },
+            {
+                "day": 201,
+                "reward": 1470.0,
+                "total_risk": 1470.0
+            },
+            {
+                "day": 215,
+                "reward": 1510.0,
+                "total_risk": 1510.0
+            },
+            {
+                "day": 218,
+                "reward": 1550.0,
+                "total_risk": 1550.0
+            },
+            {
+                "day": 219,
+                "reward": 1580.0,
+                "total_risk": 1580.0
+            },
+            {
+                "day": 220,
+                "reward": 1640.0,
+                "total_risk": 1640.0
+            },
+            {
+                "day": 222,
+                "reward": 1670.0,
+                "total_risk": 1670.0
+            },
+            {
+                "day": 223,
+                "reward": 1680.0,
+                "total_risk": 1680.0
+            },
+            {
+                "day": 225,
+                "reward": 1700.0,
+                "total_risk": 1700.0
+            },
+            {
+                "day": 227,
+                "reward": 1710.0,
+                "total_risk": 1710.0
+            },
+            {
+                "day": 230,
+                "reward": 1730.0,
+                "total_risk": 1730.0
+            },
+            {
+                "day": 231,
+                "reward": 1760.0,
+                "total_risk": 1760.0
+            },
+            {
+                "day": 232,
+                "reward": 1810.0,
+                "total_risk": 1810.0
+            },
+            {
+                "day": 233,
+                "reward": 1820.0,
+                "total_risk": 1820.0
+            },
+            {
+                "day": 246,
+                "reward": 1880.0,
+                "total_risk": 1880.0
+            },
+            {
+                "day": 248,
+                "reward": 1920.0,
+                "total_risk": 1920.0
+            },
+            {
+                "day": 249,
+                "reward": 1990.0,
+                "total_risk": 1990.0
+            },
+            {
+                "day": 252,
+                "reward": 2010.0,
+                "total_risk": 2010.0
+            },
+            {
+                "day": 253,
+                "reward": 2040.0,
+                "total_risk": 2040.0
+            },
+            {
+                "day": 254,
+                "reward": 2050.0,
+                "total_risk": 2050.0
+            },
+            {
+                "day": 258,
+                "reward": 2050.0,
+                "total_risk": 2050.0
+            },
+            {
+                "day": 259,
+                "reward": 2040.0,
+                "total_risk": 2040.0
+            },
+            {
+                "day": 260,
+                "reward": 2060.0,
+                "total_risk": 2060.0
+            },
+            {
+                "day": 263,
+                "reward": 2100.0,
+                "total_risk": 2100.0
+            },
+            {
+                "day": 265,
+                "reward": 2100.0,
+                "total_risk": 2100.0
+            },
+            {
+                "day": 266,
+                "reward": 2110.0,
+                "total_risk": 2110.0
+            },
+            {
+                "day": 278,
+                "reward": 2130.0,
+                "total_risk": 2130.0
+            },
+            {
+                "day": 279,
+                "reward": 2200.0,
+                "total_risk": 2200.0
+            },
+            {
+                "day": 281,
+                "reward": 2220.0,
+                "total_risk": 2220.0
+            },
+            {
+                "day": 283,
+                "reward": 2220.0,
+                "total_risk": 2220.0
+            },
+            {
+                "day": 285,
+                "reward": 2270.0,
+                "total_risk": 2270.0
+            },
+            {
+                "day": 289,
+                "reward": 2280.0,
+                "total_risk": 2280.0
+            },
+            {
+                "day": 290,
+                "reward": 2310.0,
+                "total_risk": 2310.0
+            },
+            {
+                "day": 291,
+                "reward": 2340.0,
+                "total_risk": 2340.0
+            },
+            {
+                "day": 293,
+                "reward": 2380.0,
+                "total_risk": 2380.0
+            },
+            {
+                "day": 296,
+                "reward": 2410.0,
+                "total_risk": 2410.0
+            },
+            {
+                "day": 298,
+                "reward": 2530.0,
+                "total_risk": 2530.0
+            },
+            {
+                "day": 308,
+                "reward": 2530.0,
+                "total_risk": 2530.0
+            },
+            {
+                "day": 309,
+                "reward": 2530.0,
+                "total_risk": 2530.0
+            },
+            {
+                "day": 310,
+                "reward": 2530.0,
+                "total_risk": 2530.0
+            },
+            {
+                "day": 311,
+                "reward": 2610.0,
+                "total_risk": 2610.0
+            },
+            {
+                "day": 313,
+                "reward": 2650.0,
+                "total_risk": 2650.0
+            },
+            {
+                "day": 315,
+                "reward": 2670.0,
+                "total_risk": 2670.0
+            },
+            {
+                "day": 316,
+                "reward": 2650.0,
+                "total_risk": 2650.0
+            },
+            {
+                "day": 318,
+                "reward": 2670.0,
+                "total_risk": 2670.0
+            },
+            {
+                "day": 320,
+                "reward": 2740.0,
+                "total_risk": 2740.0
+            },
+            {
+                "day": 322,
+                "reward": 2740.0,
+                "total_risk": 2740.0
+            },
+            {
+                "day": 323,
+                "reward": 2830.0,
+                "total_risk": 2830.0
+            },
+            {
+                "day": 326,
+                "reward": 2840.0,
+                "total_risk": 2840.0
+            },
+            {
+                "day": 327,
+                "reward": 2840.0,
+                "total_risk": 2840.0
+            },
+            {
+                "day": 329,
+                "reward": 2860.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 330,
+                "reward": 2860.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 331,
+                "reward": 2860.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 333,
+                "reward": 2860.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 334,
+                "reward": 2860.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 335,
+                "reward": 2890.0,
+                "total_risk": 2890.0
+            },
+            {
+                "day": 338,
+                "reward": 2890.0,
+                "total_risk": 2890.0
+            },
+            {
+                "day": 339,
+                "reward": 2910.0,
+                "total_risk": 2910.0
+            },
+            {
+                "day": 340,
+                "reward": 2910.0,
+                "total_risk": 2910.0
+            },
+            {
+                "day": 341,
+                "reward": 2940.0,
+                "total_risk": 2940.0
+            },
+            {
+                "day": 342,
+                "reward": 2940.0,
+                "total_risk": 2940.0
+            },
+            {
+                "day": 343,
+                "reward": 3010.0,
+                "total_risk": 3010.0
+            },
+            {
+                "day": 344,
+                "reward": 3030.0,
+                "total_risk": 3030.0
+            },
+            {
+                "day": 345,
+                "reward": 3020.0,
+                "total_risk": 3020.0
+            },
+            {
+                "day": 347,
+                "reward": 3020.0,
+                "total_risk": 3020.0
+            },
+            {
+                "day": 349,
+                "reward": 3020.0,
+                "total_risk": 3020.0
+            },
+            {
+                "day": 350,
+                "reward": 3050.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 352,
+                "reward": 3050.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 353,
+                "reward": 3050.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 354,
+                "reward": 3050.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 356,
+                "reward": 3120.0,
+                "total_risk": 3120.0
+            },
+            {
+                "day": 358,
+                "reward": 3130.0,
+                "total_risk": 3130.0
+            },
+            {
+                "day": 361,
+                "reward": 3130.0,
+                "total_risk": 3130.0
+            },
+            {
+                "day": 362,
+                "reward": 3130.0,
+                "total_risk": 3130.0
+            },
+            {
+                "day": 364,
+                "reward": 3180.0,
+                "total_risk": 3180.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 4,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 8,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 9,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 10,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 11,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 12,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 13,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 32,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 34,
+                "reward": 140.0,
+                "total_risk": 140.0
+            },
+            {
+                "day": 36,
+                "reward": 140.0,
+                "total_risk": 140.0
+            },
+            {
+                "day": 37,
+                "reward": 150.0,
+                "total_risk": 150.0
+            },
+            {
+                "day": 40,
+                "reward": 170.0,
+                "total_risk": 170.0
+            },
+            {
+                "day": 41,
+                "reward": 210.0,
+                "total_risk": 210.0
+            },
+            {
+                "day": 44,
+                "reward": 230.0,
+                "total_risk": 230.0
+            },
+            {
+                "day": 45,
+                "reward": 230.0,
+                "total_risk": 230.0
+            },
+            {
+                "day": 63,
+                "reward": 300.0,
+                "total_risk": 300.0
+            },
+            {
+                "day": 65,
+                "reward": 340.0,
+                "total_risk": 340.0
+            },
+            {
+                "day": 67,
+                "reward": 370.0,
+                "total_risk": 370.0
+            },
+            {
+                "day": 68,
+                "reward": 430.0,
+                "total_risk": 430.0
+            },
+            {
+                "day": 69,
+                "reward": 480.0,
+                "total_risk": 480.0
+            },
+            {
+                "day": 70,
+                "reward": 550.0,
+                "total_risk": 550.0
+            },
+            {
+                "day": 71,
+                "reward": 640.0,
+                "total_risk": 640.0
+            },
+            {
+                "day": 73,
+                "reward": 670.0,
+                "total_risk": 670.0
+            },
+            {
+                "day": 74,
+                "reward": 700.0,
+                "total_risk": 700.0
+            },
+            {
+                "day": 76,
+                "reward": 720.0,
+                "total_risk": 720.0
+            },
+            {
+                "day": 78,
+                "reward": 820.0,
+                "total_risk": 820.0
+            },
+            {
+                "day": 94,
+                "reward": 860.0,
+                "total_risk": 860.0
+            },
+            {
+                "day": 96,
+                "reward": 870.0,
+                "total_risk": 870.0
+            },
+            {
+                "day": 97,
+                "reward": 920.0,
+                "total_risk": 920.0
+            },
+            {
+                "day": 100,
+                "reward": 1000.0,
+                "total_risk": 1000.0
+            },
+            {
+                "day": 101,
+                "reward": 1000.0,
+                "total_risk": 1000.0
+            },
+            {
+                "day": 102,
+                "reward": 1030.0,
+                "total_risk": 1030.0
+            },
+            {
+                "day": 103,
+                "reward": 1040.0,
+                "total_risk": 1040.0
+            },
+            {
+                "day": 104,
+                "reward": 1180.0,
+                "total_risk": 1180.0
+            },
+            {
+                "day": 106,
+                "reward": 1180.0,
+                "total_risk": 1180.0
+            },
+            {
+                "day": 108,
+                "reward": 1250.0,
+                "total_risk": 1250.0
+            },
+            {
+                "day": 110,
+                "reward": 1250.0,
+                "total_risk": 1250.0
+            },
+            {
+                "day": 111,
+                "reward": 1310.0,
+                "total_risk": 1310.0
+            },
+            {
+                "day": 125,
+                "reward": 1410.0,
+                "total_risk": 1410.0
+            },
+            {
+                "day": 127,
+                "reward": 1490.0,
+                "total_risk": 1490.0
+            },
+            {
+                "day": 129,
+                "reward": 1500.0,
+                "total_risk": 1500.0
+            },
+            {
+                "day": 130,
+                "reward": 1570.0,
+                "total_risk": 1570.0
+            },
+            {
+                "day": 131,
+                "reward": 1600.0,
+                "total_risk": 1600.0
+            },
+            {
+                "day": 134,
+                "reward": 1630.0,
+                "total_risk": 1630.0
+            },
+            {
+                "day": 136,
+                "reward": 1630.0,
+                "total_risk": 1630.0
+            },
+            {
+                "day": 137,
+                "reward": 1660.0,
+                "total_risk": 1660.0
+            },
+            {
+                "day": 139,
+                "reward": 1680.0,
+                "total_risk": 1680.0
+            },
+            {
+                "day": 140,
+                "reward": 1800.0,
+                "total_risk": 1800.0
+            },
+            {
+                "day": 141,
+                "reward": 1850.0,
+                "total_risk": 1850.0
+            },
+            {
+                "day": 142,
+                "reward": 1850.0,
+                "total_risk": 1850.0
+            },
+            {
+                "day": 156,
+                "reward": 1880.0,
+                "total_risk": 1880.0
+            },
+            {
+                "day": 159,
+                "reward": 1880.0,
+                "total_risk": 1880.0
+            },
+            {
+                "day": 160,
+                "reward": 1930.0,
+                "total_risk": 1930.0
+            },
+            {
+                "day": 161,
+                "reward": 1960.0,
+                "total_risk": 1960.0
+            },
+            {
+                "day": 163,
+                "reward": 2040.0,
+                "total_risk": 2040.0
+            },
+            {
+                "day": 165,
+                "reward": 2050.0,
+                "total_risk": 2050.0
+            },
+            {
+                "day": 168,
+                "reward": 2100.0,
+                "total_risk": 2100.0
+            },
+            {
+                "day": 170,
+                "reward": 2120.0,
+                "total_risk": 2120.0
+            },
+            {
+                "day": 172,
+                "reward": 2140.0,
+                "total_risk": 2140.0
+            },
+            {
+                "day": 174,
+                "reward": 2130.0,
+                "total_risk": 2130.0
+            },
+            {
+                "day": 175,
+                "reward": 2140.0,
+                "total_risk": 2140.0
+            },
+            {
+                "day": 184,
+                "reward": 2140.0,
+                "total_risk": 2140.0
+            },
+            {
+                "day": 186,
+                "reward": 2210.0,
+                "total_risk": 2210.0
+            },
+            {
+                "day": 187,
+                "reward": 2250.0,
+                "total_risk": 2250.0
+            },
+            {
+                "day": 189,
+                "reward": 2270.0,
+                "total_risk": 2270.0
+            },
+            {
+                "day": 190,
+                "reward": 2300.0,
+                "total_risk": 2300.0
+            },
+            {
+                "day": 192,
+                "reward": 2320.0,
+                "total_risk": 2320.0
+            },
+            {
+                "day": 193,
+                "reward": 2350.0,
+                "total_risk": 2350.0
+            },
+            {
+                "day": 195,
+                "reward": 2400.0,
+                "total_risk": 2400.0
+            },
+            {
+                "day": 196,
+                "reward": 2450.0,
+                "total_risk": 2450.0
+            },
+            {
+                "day": 200,
+                "reward": 2490.0,
+                "total_risk": 2490.0
+            },
+            {
+                "day": 202,
+                "reward": 2530.0,
+                "total_risk": 2530.0
+            },
+            {
+                "day": 204,
+                "reward": 2550.0,
+                "total_risk": 2550.0
+            },
+            {
+                "day": 205,
+                "reward": 2570.0,
+                "total_risk": 2570.0
+            },
+            {
+                "day": 207,
+                "reward": 2580.0,
+                "total_risk": 2580.0
+            },
+            {
+                "day": 208,
+                "reward": 2590.0,
+                "total_risk": 2590.0
+            },
+            {
+                "day": 217,
+                "reward": 2590.0,
+                "total_risk": 2590.0
+            },
+            {
+                "day": 218,
+                "reward": 2620.0,
+                "total_risk": 2620.0
+            },
+            {
+                "day": 220,
+                "reward": 2660.0,
+                "total_risk": 2660.0
+            },
+            {
+                "day": 221,
+                "reward": 2660.0,
+                "total_risk": 2660.0
+            },
+            {
+                "day": 222,
+                "reward": 2770.0,
+                "total_risk": 2770.0
+            },
+            {
+                "day": 223,
+                "reward": 2770.0,
+                "total_risk": 2770.0
+            },
+            {
+                "day": 225,
+                "reward": 2770.0,
+                "total_risk": 2770.0
+            },
+            {
+                "day": 226,
+                "reward": 2800.0,
+                "total_risk": 2800.0
+            },
+            {
+                "day": 227,
+                "reward": 2800.0,
+                "total_risk": 2800.0
+            },
+            {
+                "day": 228,
+                "reward": 2810.0,
+                "total_risk": 2810.0
+            },
+            {
+                "day": 229,
+                "reward": 2820.0,
+                "total_risk": 2820.0
+            },
+            {
+                "day": 231,
+                "reward": 2920.0,
+                "total_risk": 2920.0
+            },
+            {
+                "day": 233,
+                "reward": 2930.0,
+                "total_risk": 2930.0
+            },
+            {
+                "day": 234,
+                "reward": 2930.0,
+                "total_risk": 2930.0
+            },
+            {
+                "day": 235,
+                "reward": 2950.0,
+                "total_risk": 2950.0
+            },
+            {
+                "day": 236,
+                "reward": 3010.0,
+                "total_risk": 3010.0
+            },
+            {
+                "day": 239,
+                "reward": 3020.0,
+                "total_risk": 3020.0
+            },
+            {
+                "day": 240,
+                "reward": 3080.0,
+                "total_risk": 3080.0
+            },
+            {
+                "day": 248,
+                "reward": 3080.0,
+                "total_risk": 3080.0
+            },
+            {
+                "day": 249,
+                "reward": 3100.0,
+                "total_risk": 3100.0
+            },
+            {
+                "day": 252,
+                "reward": 3110.0,
+                "total_risk": 3110.0
+            },
+            {
+                "day": 253,
+                "reward": 3150.0,
+                "total_risk": 3150.0
+            },
+            {
+                "day": 254,
+                "reward": 3150.0,
+                "total_risk": 3150.0
+            },
+            {
+                "day": 255,
+                "reward": 3180.0,
+                "total_risk": 3180.0
+            },
+            {
+                "day": 257,
+                "reward": 3300.0,
+                "total_risk": 3300.0
+            },
+            {
+                "day": 258,
+                "reward": 3330.0,
+                "total_risk": 3330.0
+            },
+            {
+                "day": 259,
+                "reward": 3330.0,
+                "total_risk": 3330.0
+            },
+            {
+                "day": 260,
+                "reward": 3330.0,
+                "total_risk": 3330.0
+            },
+            {
+                "day": 261,
+                "reward": 3360.0,
+                "total_risk": 3360.0
+            },
+            {
+                "day": 263,
+                "reward": 3350.0,
+                "total_risk": 3350.0
+            },
+            {
+                "day": 265,
+                "reward": 3400.0,
+                "total_risk": 3400.0
+            },
+            {
+                "day": 266,
+                "reward": 3390.0,
+                "total_risk": 3390.0
+            },
+            {
+                "day": 267,
+                "reward": 3400.0,
+                "total_risk": 3400.0
+            },
+            {
+                "day": 268,
+                "reward": 3400.0,
+                "total_risk": 3400.0
+            },
+            {
+                "day": 269,
+                "reward": 3400.0,
+                "total_risk": 3400.0
+            },
+            {
+                "day": 277,
+                "reward": 3450.0,
+                "total_risk": 3450.0
+            },
+            {
+                "day": 279,
+                "reward": 3480.0,
+                "total_risk": 3480.0
+            },
+            {
+                "day": 280,
+                "reward": 3470.0,
+                "total_risk": 3470.0
+            },
+            {
+                "day": 281,
+                "reward": 3470.0,
+                "total_risk": 3470.0
+            },
+            {
+                "day": 282,
+                "reward": 3470.0,
+                "total_risk": 3470.0
+            },
+            {
+                "day": 284,
+                "reward": 3500.0,
+                "total_risk": 3500.0
+            },
+            {
+                "day": 285,
+                "reward": 3480.0,
+                "total_risk": 3480.0
+            },
+            {
+                "day": 287,
+                "reward": 3480.0,
+                "total_risk": 3480.0
+            },
+            {
+                "day": 289,
+                "reward": 3500.0,
+                "total_risk": 3500.0
+            },
+            {
+                "day": 290,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 291,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 292,
+                "reward": 3540.0,
+                "total_risk": 3540.0
+            },
+            {
+                "day": 293,
+                "reward": 3540.0,
+                "total_risk": 3540.0
+            },
+            {
+                "day": 295,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 297,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 298,
+                "reward": 3500.0,
+                "total_risk": 3500.0
+            },
+            {
+                "day": 299,
+                "reward": 3500.0,
+                "total_risk": 3500.0
+            },
+            {
+                "day": 300,
+                "reward": 3500.0,
+                "total_risk": 3500.0
+            },
+            {
+                "day": 301,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 302,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 307,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 309,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 310,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 311,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 312,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 313,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 314,
+                "reward": 3540.0,
+                "total_risk": 3540.0
+            },
+            {
+                "day": 316,
+                "reward": 3570.0,
+                "total_risk": 3570.0
+            },
+            {
+                "day": 318,
+                "reward": 3570.0,
+                "total_risk": 3570.0
+            },
+            {
+                "day": 319,
+                "reward": 3580.0,
+                "total_risk": 3580.0
+            },
+            {
+                "day": 320,
+                "reward": 3580.0,
+                "total_risk": 3580.0
+            },
+            {
+                "day": 321,
+                "reward": 3600.0,
+                "total_risk": 3600.0
+            },
+            {
+                "day": 322,
+                "reward": 3600.0,
+                "total_risk": 3600.0
+            },
+            {
+                "day": 323,
+                "reward": 3630.0,
+                "total_risk": 3630.0
+            },
+            {
+                "day": 324,
+                "reward": 3630.0,
+                "total_risk": 3630.0
+            },
+            {
+                "day": 325,
+                "reward": 3630.0,
+                "total_risk": 3630.0
+            },
+            {
+                "day": 326,
+                "reward": 3630.0,
+                "total_risk": 3630.0
+            },
+            {
+                "day": 327,
+                "reward": 3640.0,
+                "total_risk": 3640.0
+            },
+            {
+                "day": 328,
+                "reward": 3640.0,
+                "total_risk": 3640.0
+            },
+            {
+                "day": 329,
+                "reward": 3640.0,
+                "total_risk": 3640.0
+            },
+            {
+                "day": 330,
+                "reward": 3650.0,
+                "total_risk": 3650.0
+            },
+            {
+                "day": 331,
+                "reward": 3650.0,
+                "total_risk": 3650.0
+            },
+            {
+                "day": 333,
+                "reward": 3680.0,
+                "total_risk": 3680.0
+            },
+            {
+                "day": 334,
+                "reward": 3680.0,
+                "total_risk": 3680.0
+            },
+            {
+                "day": 336,
+                "reward": 3710.0,
+                "total_risk": 3710.0
+            },
+            {
+                "day": 337,
+                "reward": 3710.0,
+                "total_risk": 3710.0
+            },
+            {
+                "day": 338,
+                "reward": 3720.0,
+                "total_risk": 3720.0
+            },
+            {
+                "day": 341,
+                "reward": 3720.0,
+                "total_risk": 3720.0
+            },
+            {
+                "day": 342,
+                "reward": 3720.0,
+                "total_risk": 3720.0
+            },
+            {
+                "day": 343,
+                "reward": 3750.0,
+                "total_risk": 3750.0
+            },
+            {
+                "day": 344,
+                "reward": 3780.0,
+                "total_risk": 3780.0
+            },
+            {
+                "day": 345,
+                "reward": 3800.0,
+                "total_risk": 3800.0
+            },
+            {
+                "day": 346,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 347,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 348,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 351,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 352,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 354,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 355,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 359,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 360,
+                "reward": 3810.0,
+                "total_risk": 3810.0
+            },
+            {
+                "day": 362,
+                "reward": 3820.0,
+                "total_risk": 3820.0
+            },
+            {
+                "day": 363,
+                "reward": 3790.0,
+                "total_risk": 3790.0
+            },
+            {
+                "day": 364,
+                "reward": 3820.0,
+                "total_risk": 3820.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 40% mayor",
+        "mode": 2,
+        "config": 1,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 8,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 9,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 10,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 34,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 66,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 99,
+                "reward": 60.0,
+                "total_risk": 60.0
+            },
+            {
+                "day": 102,
+                "reward": 60.0,
+                "total_risk": 60.0
+            },
+            {
+                "day": 157,
+                "reward": 60.0,
+                "total_risk": 60.0
+            },
+            {
+                "day": 163,
+                "reward": 60.0,
+                "total_risk": 60.0
+            },
+            {
+                "day": 188,
+                "reward": 60.0,
+                "total_risk": 60.0
+            },
+            {
+                "day": 226,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 256,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 285,
+                "reward": 160.0,
+                "total_risk": 160.0
+            },
+            {
+                "day": 287,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 318,
+                "reward": 300.0,
+                "total_risk": 300.0
+            },
+            {
+                "day": 342,
+                "reward": 320.0,
+                "total_risk": 320.0
+            },
+            {
+                "day": 348,
+                "reward": 350.0,
+                "total_risk": 350.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 40% mayor",
+        "mode": 2,
+        "config": 2,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 5,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 6,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 7,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 8,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 9,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 10,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 33,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 38,
+                "reward": 70.0,
+                "total_risk": 70.0
+            },
+            {
+                "day": 41,
+                "reward": 70.0,
+                "total_risk": 70.0
+            },
+            {
+                "day": 43,
+                "reward": 70.0,
+                "total_risk": 70.0
+            },
+            {
+                "day": 69,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 72,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 96,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 100,
+                "reward": 210.0,
+                "total_risk": 210.0
+            },
+            {
+                "day": 104,
+                "reward": 360.0,
+                "total_risk": 360.0
+            },
+            {
+                "day": 128,
+                "reward": 370.0,
+                "total_risk": 370.0
+            },
+            {
+                "day": 135,
+                "reward": 390.0,
+                "total_risk": 390.0
+            },
+            {
+                "day": 159,
+                "reward": 410.0,
+                "total_risk": 410.0
+            },
+            {
+                "day": 161,
+                "reward": 470.0,
+                "total_risk": 470.0
+            },
+            {
+                "day": 165,
+                "reward": 500.0,
+                "total_risk": 500.0
+            },
+            {
+                "day": 167,
+                "reward": 520.0,
+                "total_risk": 520.0
+            },
+            {
+                "day": 169,
+                "reward": 520.0,
+                "total_risk": 520.0
+            },
+            {
+                "day": 189,
+                "reward": 550.0,
+                "total_risk": 550.0
+            },
+            {
+                "day": 196,
+                "reward": 580.0,
+                "total_risk": 580.0
+            },
+            {
+                "day": 198,
+                "reward": 600.0,
+                "total_risk": 600.0
+            },
+            {
+                "day": 200,
+                "reward": 630.0,
+                "total_risk": 630.0
+            },
+            {
+                "day": 217,
+                "reward": 690.0,
+                "total_risk": 690.0
+            },
+            {
+                "day": 222,
+                "reward": 710.0,
+                "total_risk": 710.0
+            },
+            {
+                "day": 224,
+                "reward": 750.0,
+                "total_risk": 750.0
+            },
+            {
+                "day": 228,
+                "reward": 800.0,
+                "total_risk": 800.0
+            },
+            {
+                "day": 247,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 249,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 250,
+                "reward": 950.0,
+                "total_risk": 950.0
+            },
+            {
+                "day": 255,
+                "reward": 1000.0,
+                "total_risk": 1000.0
+            },
+            {
+                "day": 256,
+                "reward": 1080.0,
+                "total_risk": 1080.0
+            },
+            {
+                "day": 260,
+                "reward": 1130.0,
+                "total_risk": 1130.0
+            },
+            {
+                "day": 279,
+                "reward": 1140.0,
+                "total_risk": 1140.0
+            },
+            {
+                "day": 281,
+                "reward": 1140.0,
+                "total_risk": 1140.0
+            },
+            {
+                "day": 283,
+                "reward": 1140.0,
+                "total_risk": 1140.0
+            },
+            {
+                "day": 284,
+                "reward": 1160.0,
+                "total_risk": 1160.0
+            },
+            {
+                "day": 286,
+                "reward": 1170.0,
+                "total_risk": 1170.0
+            },
+            {
+                "day": 287,
+                "reward": 1210.0,
+                "total_risk": 1210.0
+            },
+            {
+                "day": 309,
+                "reward": 1270.0,
+                "total_risk": 1270.0
+            },
+            {
+                "day": 312,
+                "reward": 1320.0,
+                "total_risk": 1320.0
+            },
+            {
+                "day": 315,
+                "reward": 1360.0,
+                "total_risk": 1360.0
+            },
+            {
+                "day": 316,
+                "reward": 1390.0,
+                "total_risk": 1390.0
+            },
+            {
+                "day": 321,
+                "reward": 1400.0,
+                "total_risk": 1400.0
+            },
+            {
+                "day": 324,
+                "reward": 1430.0,
+                "total_risk": 1430.0
+            },
+            {
+                "day": 340,
+                "reward": 1430.0,
+                "total_risk": 1430.0
+            },
+            {
+                "day": 342,
+                "reward": 1470.0,
+                "total_risk": 1470.0
+            },
+            {
+                "day": 344,
+                "reward": 1550.0,
+                "total_risk": 1550.0
+            },
+            {
+                "day": 346,
+                "reward": 1560.0,
+                "total_risk": 1560.0
+            },
+            {
+                "day": 350,
+                "reward": 1560.0,
+                "total_risk": 1560.0
+            },
+            {
+                "day": 351,
+                "reward": 1610.0,
+                "total_risk": 1610.0
+            },
+            {
+                "day": 352,
+                "reward": 1670.0,
+                "total_risk": 1670.0
+            },
+            {
+                "day": 357,
+                "reward": 1700.0,
+                "total_risk": 1700.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 1,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 5,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 6,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 7,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 8,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 9,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 10,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 31,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 36,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 98,
+                "reward": 100.0,
+                "total_risk": 100.0
+            },
+            {
+                "day": 160,
+                "reward": 130.0,
+                "total_risk": 130.0
+            },
+            {
+                "day": 189,
+                "reward": 130.0,
+                "total_risk": 130.0
+            },
+            {
+                "day": 191,
+                "reward": 130.0,
+                "total_risk": 130.0
+            },
+            {
+                "day": 216,
+                "reward": 130.0,
+                "total_risk": 130.0
+            },
+            {
+                "day": 224,
+                "reward": 160.0,
+                "total_risk": 160.0
+            },
+            {
+                "day": 247,
+                "reward": 180.0,
+                "total_risk": 180.0
+            },
+            {
+                "day": 276,
+                "reward": 180.0,
+                "total_risk": 180.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 2,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 30.0,
+                "total_risk": 30.0
+            },
+            {
+                "day": 5,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 6,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 7,
+                "reward": 100.0,
+                "total_risk": 100.0
+            },
+            {
+                "day": 8,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 9,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 10,
+                "reward": 160.0,
+                "total_risk": 160.0
+            },
+            {
+                "day": 11,
+                "reward": 220.0,
+                "total_risk": 220.0
+            },
+            {
+                "day": 32,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 35,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 38,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 39,
+                "reward": 270.0,
+                "total_risk": 270.0
+            },
+            {
+                "day": 43,
+                "reward": 290.0,
+                "total_risk": 290.0
+            },
+            {
+                "day": 67,
+                "reward": 320.0,
+                "total_risk": 320.0
+            },
+            {
+                "day": 68,
+                "reward": 370.0,
+                "total_risk": 370.0
+            },
+            {
+                "day": 72,
+                "reward": 390.0,
+                "total_risk": 390.0
+            },
+            {
+                "day": 74,
+                "reward": 430.0,
+                "total_risk": 430.0
+            },
+            {
+                "day": 100,
+                "reward": 460.0,
+                "total_risk": 460.0
+            },
+            {
+                "day": 104,
+                "reward": 490.0,
+                "total_risk": 490.0
+            },
+            {
+                "day": 105,
+                "reward": 500.0,
+                "total_risk": 500.0
+            },
+            {
+                "day": 125,
+                "reward": 550.0,
+                "total_risk": 550.0
+            },
+            {
+                "day": 131,
+                "reward": 590.0,
+                "total_risk": 590.0
+            },
+            {
+                "day": 133,
+                "reward": 610.0,
+                "total_risk": 610.0
+            },
+            {
+                "day": 136,
+                "reward": 630.0,
+                "total_risk": 630.0
+            },
+            {
+                "day": 156,
+                "reward": 630.0,
+                "total_risk": 630.0
+            },
+            {
+                "day": 165,
+                "reward": 670.0,
+                "total_risk": 670.0
+            },
+            {
+                "day": 167,
+                "reward": 730.0,
+                "total_risk": 730.0
+            },
+            {
+                "day": 187,
+                "reward": 760.0,
+                "total_risk": 760.0
+            },
+            {
+                "day": 188,
+                "reward": 790.0,
+                "total_risk": 790.0
+            },
+            {
+                "day": 189,
+                "reward": 830.0,
+                "total_risk": 830.0
+            },
+            {
+                "day": 191,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 194,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 198,
+                "reward": 920.0,
+                "total_risk": 920.0
+            },
+            {
+                "day": 217,
+                "reward": 950.0,
+                "total_risk": 950.0
+            },
+            {
+                "day": 219,
+                "reward": 950.0,
+                "total_risk": 950.0
+            },
+            {
+                "day": 223,
+                "reward": 980.0,
+                "total_risk": 980.0
+            },
+            {
+                "day": 226,
+                "reward": 990.0,
+                "total_risk": 990.0
+            },
+            {
+                "day": 229,
+                "reward": 990.0,
+                "total_risk": 990.0
+            },
+            {
+                "day": 248,
+                "reward": 990.0,
+                "total_risk": 990.0
+            },
+            {
+                "day": 249,
+                "reward": 1030.0,
+                "total_risk": 1030.0
+            },
+            {
+                "day": 251,
+                "reward": 1040.0,
+                "total_risk": 1040.0
+            },
+            {
+                "day": 253,
+                "reward": 1030.0,
+                "total_risk": 1030.0
+            },
+            {
+                "day": 255,
+                "reward": 1030.0,
+                "total_risk": 1030.0
+            },
+            {
+                "day": 257,
+                "reward": 1110.0,
+                "total_risk": 1110.0
+            },
+            {
+                "day": 259,
+                "reward": 1140.0,
+                "total_risk": 1140.0
+            },
+            {
+                "day": 279,
+                "reward": 1170.0,
+                "total_risk": 1170.0
+            },
+            {
+                "day": 281,
+                "reward": 1170.0,
+                "total_risk": 1170.0
+            },
+            {
+                "day": 283,
+                "reward": 1190.0,
+                "total_risk": 1190.0
+            },
+            {
+                "day": 284,
+                "reward": 1260.0,
+                "total_risk": 1260.0
+            },
+            {
+                "day": 286,
+                "reward": 1280.0,
+                "total_risk": 1280.0
+            },
+            {
+                "day": 287,
+                "reward": 1300.0,
+                "total_risk": 1300.0
+            },
+            {
+                "day": 290,
+                "reward": 1350.0,
+                "total_risk": 1350.0
+            },
+            {
+                "day": 308,
+                "reward": 1360.0,
+                "total_risk": 1360.0
+            },
+            {
+                "day": 313,
+                "reward": 1410.0,
+                "total_risk": 1410.0
+            },
+            {
+                "day": 315,
+                "reward": 1410.0,
+                "total_risk": 1410.0
+            },
+            {
+                "day": 318,
+                "reward": 1470.0,
+                "total_risk": 1470.0
+            },
+            {
+                "day": 321,
+                "reward": 1520.0,
+                "total_risk": 1520.0
+            },
+            {
+                "day": 340,
+                "reward": 1540.0,
+                "total_risk": 1540.0
+            },
+            {
+                "day": 341,
+                "reward": 1610.0,
+                "total_risk": 1610.0
+            },
+            {
+                "day": 342,
+                "reward": 1610.0,
+                "total_risk": 1610.0
+            },
+            {
+                "day": 345,
+                "reward": 1650.0,
+                "total_risk": 1650.0
+            },
+            {
+                "day": 348,
+                "reward": 1650.0,
+                "total_risk": 1650.0
+            },
+            {
+                "day": 350,
+                "reward": 1720.0,
+                "total_risk": 1720.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 3,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 8,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 9,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 10,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 32,
+                "reward": 40.0,
+                "total_risk": 40.0
+            },
+            {
+                "day": 34,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 35,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 37,
+                "reward": 110.0,
+                "total_risk": 110.0
+            },
+            {
+                "day": 38,
+                "reward": 110.0,
+                "total_risk": 110.0
+            },
+            {
+                "day": 40,
+                "reward": 110.0,
+                "total_risk": 110.0
+            },
+            {
+                "day": 41,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 63,
+                "reward": 160.0,
+                "total_risk": 160.0
+            },
+            {
+                "day": 65,
+                "reward": 190.0,
+                "total_risk": 190.0
+            },
+            {
+                "day": 68,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 70,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 72,
+                "reward": 250.0,
+                "total_risk": 250.0
+            },
+            {
+                "day": 97,
+                "reward": 290.0,
+                "total_risk": 290.0
+            },
+            {
+                "day": 98,
+                "reward": 350.0,
+                "total_risk": 350.0
+            },
+            {
+                "day": 101,
+                "reward": 430.0,
+                "total_risk": 430.0
+            },
+            {
+                "day": 126,
+                "reward": 480.0,
+                "total_risk": 480.0
+            },
+            {
+                "day": 127,
+                "reward": 490.0,
+                "total_risk": 490.0
+            },
+            {
+                "day": 129,
+                "reward": 520.0,
+                "total_risk": 520.0
+            },
+            {
+                "day": 130,
+                "reward": 520.0,
+                "total_risk": 520.0
+            },
+            {
+                "day": 132,
+                "reward": 530.0,
+                "total_risk": 530.0
+            },
+            {
+                "day": 133,
+                "reward": 610.0,
+                "total_risk": 610.0
+            },
+            {
+                "day": 158,
+                "reward": 620.0,
+                "total_risk": 620.0
+            },
+            {
+                "day": 159,
+                "reward": 770.0,
+                "total_risk": 770.0
+            },
+            {
+                "day": 161,
+                "reward": 830.0,
+                "total_risk": 830.0
+            },
+            {
+                "day": 162,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 185,
+                "reward": 1010.0,
+                "total_risk": 1010.0
+            },
+            {
+                "day": 187,
+                "reward": 1020.0,
+                "total_risk": 1020.0
+            },
+            {
+                "day": 189,
+                "reward": 1020.0,
+                "total_risk": 1020.0
+            },
+            {
+                "day": 190,
+                "reward": 1040.0,
+                "total_risk": 1040.0
+            },
+            {
+                "day": 191,
+                "reward": 1080.0,
+                "total_risk": 1080.0
+            },
+            {
+                "day": 193,
+                "reward": 1110.0,
+                "total_risk": 1110.0
+            },
+            {
+                "day": 194,
+                "reward": 1120.0,
+                "total_risk": 1120.0
+            },
+            {
+                "day": 215,
+                "reward": 1120.0,
+                "total_risk": 1120.0
+            },
+            {
+                "day": 218,
+                "reward": 1160.0,
+                "total_risk": 1160.0
+            },
+            {
+                "day": 220,
+                "reward": 1180.0,
+                "total_risk": 1180.0
+            },
+            {
+                "day": 221,
+                "reward": 1180.0,
+                "total_risk": 1180.0
+            },
+            {
+                "day": 223,
+                "reward": 1230.0,
+                "total_risk": 1230.0
+            },
+            {
+                "day": 226,
+                "reward": 1290.0,
+                "total_risk": 1290.0
+            },
+            {
+                "day": 228,
+                "reward": 1450.0,
+                "total_risk": 1450.0
+            },
+            {
+                "day": 230,
+                "reward": 1500.0,
+                "total_risk": 1500.0
+            },
+            {
+                "day": 246,
+                "reward": 1580.0,
+                "total_risk": 1580.0
+            },
+            {
+                "day": 248,
+                "reward": 1580.0,
+                "total_risk": 1580.0
+            },
+            {
+                "day": 250,
+                "reward": 1610.0,
+                "total_risk": 1610.0
+            },
+            {
+                "day": 251,
+                "reward": 1690.0,
+                "total_risk": 1690.0
+            },
+            {
+                "day": 253,
+                "reward": 1710.0,
+                "total_risk": 1710.0
+            },
+            {
+                "day": 254,
+                "reward": 1740.0,
+                "total_risk": 1740.0
+            },
+            {
+                "day": 258,
+                "reward": 1760.0,
+                "total_risk": 1760.0
+            },
+            {
+                "day": 259,
+                "reward": 1800.0,
+                "total_risk": 1800.0
+            },
+            {
+                "day": 261,
+                "reward": 1830.0,
+                "total_risk": 1830.0
+            },
+            {
+                "day": 262,
+                "reward": 1870.0,
+                "total_risk": 1870.0
+            },
+            {
+                "day": 263,
+                "reward": 1940.0,
+                "total_risk": 1940.0
+            },
+            {
+                "day": 277,
+                "reward": 1980.0,
+                "total_risk": 1980.0
+            },
+            {
+                "day": 280,
+                "reward": 2010.0,
+                "total_risk": 2010.0
+            },
+            {
+                "day": 283,
+                "reward": 2070.0,
+                "total_risk": 2070.0
+            },
+            {
+                "day": 284,
+                "reward": 2070.0,
+                "total_risk": 2070.0
+            },
+            {
+                "day": 287,
+                "reward": 2110.0,
+                "total_risk": 2110.0
+            },
+            {
+                "day": 289,
+                "reward": 2110.0,
+                "total_risk": 2110.0
+            },
+            {
+                "day": 290,
+                "reward": 2120.0,
+                "total_risk": 2120.0
+            },
+            {
+                "day": 291,
+                "reward": 2120.0,
+                "total_risk": 2120.0
+            },
+            {
+                "day": 292,
+                "reward": 2160.0,
+                "total_risk": 2160.0
+            },
+            {
+                "day": 310,
+                "reward": 2180.0,
+                "total_risk": 2180.0
+            },
+            {
+                "day": 311,
+                "reward": 2230.0,
+                "total_risk": 2230.0
+            },
+            {
+                "day": 312,
+                "reward": 2230.0,
+                "total_risk": 2230.0
+            },
+            {
+                "day": 313,
+                "reward": 2240.0,
+                "total_risk": 2240.0
+            },
+            {
+                "day": 316,
+                "reward": 2280.0,
+                "total_risk": 2280.0
+            },
+            {
+                "day": 317,
+                "reward": 2310.0,
+                "total_risk": 2310.0
+            },
+            {
+                "day": 319,
+                "reward": 2360.0,
+                "total_risk": 2360.0
+            },
+            {
+                "day": 321,
+                "reward": 2370.0,
+                "total_risk": 2370.0
+            },
+            {
+                "day": 322,
+                "reward": 2380.0,
+                "total_risk": 2380.0
+            },
+            {
+                "day": 323,
+                "reward": 2440.0,
+                "total_risk": 2440.0
+            },
+            {
+                "day": 339,
+                "reward": 2470.0,
+                "total_risk": 2470.0
+            },
+            {
+                "day": 342,
+                "reward": 2470.0,
+                "total_risk": 2470.0
+            },
+            {
+                "day": 343,
+                "reward": 2510.0,
+                "total_risk": 2510.0
+            },
+            {
+                "day": 344,
+                "reward": 2510.0,
+                "total_risk": 2510.0
+            },
+            {
+                "day": 346,
+                "reward": 2550.0,
+                "total_risk": 2550.0
+            },
+            {
+                "day": 347,
+                "reward": 2560.0,
+                "total_risk": 2560.0
+            },
+            {
+                "day": 349,
+                "reward": 2560.0,
+                "total_risk": 2560.0
+            },
+            {
+                "day": 351,
+                "reward": 2580.0,
+                "total_risk": 2580.0
+            },
+            {
+                "day": 354,
+                "reward": 2610.0,
+                "total_risk": 2610.0
+            },
+            {
+                "day": 356,
+                "reward": 2610.0,
+                "total_risk": 2610.0
+            },
+            {
+                "day": 357,
+                "reward": 2630.0,
+                "total_risk": 2630.0
+            },
+            {
+                "day": 358,
+                "reward": 2650.0,
+                "total_risk": 2650.0
+            },
+            {
+                "day": 359,
+                "reward": 2660.0,
+                "total_risk": 2660.0
+            },
+            {
+                "day": 361,
+                "reward": 2730.0,
+                "total_risk": 2730.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 100%",
+        "mode": 1,
+        "config": 4,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 5,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 6,
+                "reward": 110.0,
+                "total_risk": 110.0
+            },
+            {
+                "day": 7,
+                "reward": 150.0,
+                "total_risk": 150.0
+            },
+            {
+                "day": 8,
+                "reward": 210.0,
+                "total_risk": 210.0
+            },
+            {
+                "day": 9,
+                "reward": 220.0,
+                "total_risk": 220.0
+            },
+            {
+                "day": 10,
+                "reward": 260.0,
+                "total_risk": 260.0
+            },
+            {
+                "day": 32,
+                "reward": 330.0,
+                "total_risk": 330.0
+            },
+            {
+                "day": 34,
+                "reward": 350.0,
+                "total_risk": 350.0
+            },
+            {
+                "day": 35,
+                "reward": 360.0,
+                "total_risk": 360.0
+            },
+            {
+                "day": 36,
+                "reward": 360.0,
+                "total_risk": 360.0
+            },
+            {
+                "day": 38,
+                "reward": 360.0,
+                "total_risk": 360.0
+            },
+            {
+                "day": 40,
+                "reward": 440.0,
+                "total_risk": 440.0
+            },
+            {
+                "day": 42,
+                "reward": 440.0,
+                "total_risk": 440.0
+            },
+            {
+                "day": 63,
+                "reward": 460.0,
+                "total_risk": 460.0
+            },
+            {
+                "day": 65,
+                "reward": 460.0,
+                "total_risk": 460.0
+            },
+            {
+                "day": 66,
+                "reward": 490.0,
+                "total_risk": 490.0
+            },
+            {
+                "day": 68,
+                "reward": 570.0,
+                "total_risk": 570.0
+            },
+            {
+                "day": 70,
+                "reward": 590.0,
+                "total_risk": 590.0
+            },
+            {
+                "day": 72,
+                "reward": 680.0,
+                "total_risk": 680.0
+            },
+            {
+                "day": 74,
+                "reward": 710.0,
+                "total_risk": 710.0
+            },
+            {
+                "day": 75,
+                "reward": 790.0,
+                "total_risk": 790.0
+            },
+            {
+                "day": 94,
+                "reward": 820.0,
+                "total_risk": 820.0
+            },
+            {
+                "day": 96,
+                "reward": 850.0,
+                "total_risk": 850.0
+            },
+            {
+                "day": 98,
+                "reward": 890.0,
+                "total_risk": 890.0
+            },
+            {
+                "day": 99,
+                "reward": 890.0,
+                "total_risk": 890.0
+            },
+            {
+                "day": 101,
+                "reward": 990.0,
+                "total_risk": 990.0
+            },
+            {
+                "day": 103,
+                "reward": 1040.0,
+                "total_risk": 1040.0
+            },
+            {
+                "day": 105,
+                "reward": 1040.0,
+                "total_risk": 1040.0
+            },
+            {
+                "day": 106,
+                "reward": 1100.0,
+                "total_risk": 1100.0
+            },
+            {
+                "day": 107,
+                "reward": 1170.0,
+                "total_risk": 1170.0
+            },
+            {
+                "day": 108,
+                "reward": 1200.0,
+                "total_risk": 1200.0
+            },
+            {
+                "day": 125,
+                "reward": 1200.0,
+                "total_risk": 1200.0
+            },
+            {
+                "day": 127,
+                "reward": 1250.0,
+                "total_risk": 1250.0
+            },
+            {
+                "day": 128,
+                "reward": 1270.0,
+                "total_risk": 1270.0
+            },
+            {
+                "day": 129,
+                "reward": 1310.0,
+                "total_risk": 1310.0
+            },
+            {
+                "day": 131,
+                "reward": 1330.0,
+                "total_risk": 1330.0
+            },
+            {
+                "day": 132,
+                "reward": 1370.0,
+                "total_risk": 1370.0
+            },
+            {
+                "day": 134,
+                "reward": 1370.0,
+                "total_risk": 1370.0
+            },
+            {
+                "day": 136,
+                "reward": 1380.0,
+                "total_risk": 1380.0
+            },
+            {
+                "day": 138,
+                "reward": 1450.0,
+                "total_risk": 1450.0
+            },
+            {
+                "day": 139,
+                "reward": 1460.0,
+                "total_risk": 1460.0
+            },
+            {
+                "day": 141,
+                "reward": 1510.0,
+                "total_risk": 1510.0
+            },
+            {
+                "day": 156,
+                "reward": 1520.0,
+                "total_risk": 1520.0
+            },
+            {
+                "day": 157,
+                "reward": 1520.0,
+                "total_risk": 1520.0
+            },
+            {
+                "day": 160,
+                "reward": 1560.0,
+                "total_risk": 1560.0
+            },
+            {
+                "day": 161,
+                "reward": 1610.0,
+                "total_risk": 1610.0
+            },
+            {
+                "day": 162,
+                "reward": 1620.0,
+                "total_risk": 1620.0
+            },
+            {
+                "day": 163,
+                "reward": 1710.0,
+                "total_risk": 1710.0
+            },
+            {
+                "day": 165,
+                "reward": 1740.0,
+                "total_risk": 1740.0
+            },
+            {
+                "day": 168,
+                "reward": 1870.0,
+                "total_risk": 1870.0
+            },
+            {
+                "day": 170,
+                "reward": 1890.0,
+                "total_risk": 1890.0
+            },
+            {
+                "day": 171,
+                "reward": 1930.0,
+                "total_risk": 1930.0
+            },
+            {
+                "day": 172,
+                "reward": 1980.0,
+                "total_risk": 1980.0
+            },
+            {
+                "day": 186,
+                "reward": 1990.0,
+                "total_risk": 1990.0
+            },
+            {
+                "day": 188,
+                "reward": 2000.0,
+                "total_risk": 2000.0
+            },
+            {
+                "day": 189,
+                "reward": 2010.0,
+                "total_risk": 2010.0
+            },
+            {
+                "day": 190,
+                "reward": 2020.0,
+                "total_risk": 2020.0
+            },
+            {
+                "day": 193,
+                "reward": 2060.0,
+                "total_risk": 2060.0
+            },
+            {
+                "day": 194,
+                "reward": 2110.0,
+                "total_risk": 2110.0
+            },
+            {
+                "day": 195,
+                "reward": 2170.0,
+                "total_risk": 2170.0
+            },
+            {
+                "day": 200,
+                "reward": 2190.0,
+                "total_risk": 2190.0
+            },
+            {
+                "day": 201,
+                "reward": 2200.0,
+                "total_risk": 2200.0
+            },
+            {
+                "day": 202,
+                "reward": 2250.0,
+                "total_risk": 2250.0
+            },
+            {
+                "day": 204,
+                "reward": 2280.0,
+                "total_risk": 2280.0
+            },
+            {
+                "day": 205,
+                "reward": 2380.0,
+                "total_risk": 2380.0
+            },
+            {
+                "day": 206,
+                "reward": 2390.0,
+                "total_risk": 2390.0
+            },
+            {
+                "day": 217,
+                "reward": 2470.0,
+                "total_risk": 2470.0
+            },
+            {
+                "day": 218,
+                "reward": 2530.0,
+                "total_risk": 2530.0
+            },
+            {
+                "day": 219,
+                "reward": 2530.0,
+                "total_risk": 2530.0
+            },
+            {
+                "day": 220,
+                "reward": 2550.0,
+                "total_risk": 2550.0
+            },
+            {
+                "day": 221,
+                "reward": 2550.0,
+                "total_risk": 2550.0
+            },
+            {
+                "day": 222,
+                "reward": 2560.0,
+                "total_risk": 2560.0
+            },
+            {
+                "day": 223,
+                "reward": 2560.0,
+                "total_risk": 2560.0
+            },
+            {
+                "day": 224,
+                "reward": 2590.0,
+                "total_risk": 2590.0
+            },
+            {
+                "day": 226,
+                "reward": 2590.0,
+                "total_risk": 2590.0
+            },
+            {
+                "day": 230,
+                "reward": 2610.0,
+                "total_risk": 2610.0
+            },
+            {
+                "day": 231,
+                "reward": 2640.0,
+                "total_risk": 2640.0
+            },
+            {
+                "day": 235,
+                "reward": 2660.0,
+                "total_risk": 2660.0
+            },
+            {
+                "day": 238,
+                "reward": 2720.0,
+                "total_risk": 2720.0
+            },
+            {
+                "day": 248,
+                "reward": 2720.0,
+                "total_risk": 2720.0
+            },
+            {
+                "day": 249,
+                "reward": 2750.0,
+                "total_risk": 2750.0
+            },
+            {
+                "day": 251,
+                "reward": 2750.0,
+                "total_risk": 2750.0
+            },
+            {
+                "day": 252,
+                "reward": 2760.0,
+                "total_risk": 2760.0
+            },
+            {
+                "day": 253,
+                "reward": 2770.0,
+                "total_risk": 2770.0
+            },
+            {
+                "day": 256,
+                "reward": 2810.0,
+                "total_risk": 2810.0
+            },
+            {
+                "day": 258,
+                "reward": 2810.0,
+                "total_risk": 2810.0
+            },
+            {
+                "day": 259,
+                "reward": 2810.0,
+                "total_risk": 2810.0
+            },
+            {
+                "day": 261,
+                "reward": 2820.0,
+                "total_risk": 2820.0
+            },
+            {
+                "day": 263,
+                "reward": 2820.0,
+                "total_risk": 2820.0
+            },
+            {
+                "day": 264,
+                "reward": 2860.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 265,
+                "reward": 2860.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 266,
+                "reward": 2870.0,
+                "total_risk": 2870.0
+            },
+            {
+                "day": 267,
+                "reward": 2870.0,
+                "total_risk": 2870.0
+            },
+            {
+                "day": 268,
+                "reward": 2890.0,
+                "total_risk": 2890.0
+            },
+            {
+                "day": 270,
+                "reward": 2900.0,
+                "total_risk": 2900.0
+            },
+            {
+                "day": 271,
+                "reward": 2910.0,
+                "total_risk": 2910.0
+            },
+            {
+                "day": 272,
+                "reward": 2960.0,
+                "total_risk": 2960.0
+            },
+            {
+                "day": 274,
+                "reward": 2980.0,
+                "total_risk": 2980.0
+            },
+            {
+                "day": 276,
+                "reward": 3020.0,
+                "total_risk": 3020.0
+            },
+            {
+                "day": 278,
+                "reward": 3040.0,
+                "total_risk": 3040.0
+            },
+            {
+                "day": 280,
+                "reward": 3040.0,
+                "total_risk": 3040.0
+            },
+            {
+                "day": 281,
+                "reward": 3050.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 282,
+                "reward": 3050.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 284,
+                "reward": 3080.0,
+                "total_risk": 3080.0
+            },
+            {
+                "day": 285,
+                "reward": 3080.0,
+                "total_risk": 3080.0
+            },
+            {
+                "day": 286,
+                "reward": 3070.0,
+                "total_risk": 3070.0
+            },
+            {
+                "day": 287,
+                "reward": 3080.0,
+                "total_risk": 3080.0
+            },
+            {
+                "day": 288,
+                "reward": 3080.0,
+                "total_risk": 3080.0
+            },
+            {
+                "day": 289,
+                "reward": 3090.0,
+                "total_risk": 3090.0
+            },
+            {
+                "day": 291,
+                "reward": 3180.0,
+                "total_risk": 3180.0
+            },
+            {
+                "day": 293,
+                "reward": 3220.0,
+                "total_risk": 3220.0
+            },
+            {
+                "day": 294,
+                "reward": 3250.0,
+                "total_risk": 3250.0
+            },
+            {
+                "day": 295,
+                "reward": 3270.0,
+                "total_risk": 3270.0
+            },
+            {
+                "day": 296,
+                "reward": 3270.0,
+                "total_risk": 3270.0
+            },
+            {
+                "day": 297,
+                "reward": 3270.0,
+                "total_risk": 3270.0
+            },
+            {
+                "day": 298,
+                "reward": 3320.0,
+                "total_risk": 3320.0
+            },
+            {
+                "day": 300,
+                "reward": 3340.0,
+                "total_risk": 3340.0
+            },
+            {
+                "day": 301,
+                "reward": 3360.0,
+                "total_risk": 3360.0
+            },
+            {
+                "day": 303,
+                "reward": 3400.0,
+                "total_risk": 3400.0
+            },
+            {
+                "day": 304,
+                "reward": 3410.0,
+                "total_risk": 3410.0
+            },
+            {
+                "day": 307,
+                "reward": 3440.0,
+                "total_risk": 3440.0
+            },
+            {
+                "day": 309,
+                "reward": 3440.0,
+                "total_risk": 3440.0
+            },
+            {
+                "day": 310,
+                "reward": 3440.0,
+                "total_risk": 3440.0
+            },
+            {
+                "day": 311,
+                "reward": 3440.0,
+                "total_risk": 3440.0
+            },
+            {
+                "day": 312,
+                "reward": 3430.0,
+                "total_risk": 3430.0
+            },
+            {
+                "day": 313,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 315,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 317,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 319,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 320,
+                "reward": 3510.0,
+                "total_risk": 3510.0
+            },
+            {
+                "day": 321,
+                "reward": 3520.0,
+                "total_risk": 3520.0
+            },
+            {
+                "day": 322,
+                "reward": 3540.0,
+                "total_risk": 3540.0
+            },
+            {
+                "day": 323,
+                "reward": 3530.0,
+                "total_risk": 3530.0
+            },
+            {
+                "day": 324,
+                "reward": 3530.0,
+                "total_risk": 3530.0
+            },
+            {
+                "day": 325,
+                "reward": 3530.0,
+                "total_risk": 3530.0
+            },
+            {
+                "day": 326,
+                "reward": 3540.0,
+                "total_risk": 3540.0
+            },
+            {
+                "day": 327,
+                "reward": 3530.0,
+                "total_risk": 3530.0
+            },
+            {
+                "day": 330,
+                "reward": 3560.0,
+                "total_risk": 3560.0
+            },
+            {
+                "day": 332,
+                "reward": 3560.0,
+                "total_risk": 3560.0
+            },
+            {
+                "day": 333,
+                "reward": 3580.0,
+                "total_risk": 3580.0
+            },
+            {
+                "day": 334,
+                "reward": 3580.0,
+                "total_risk": 3580.0
+            },
+            {
+                "day": 335,
+                "reward": 3580.0,
+                "total_risk": 3580.0
+            },
+            {
+                "day": 336,
+                "reward": 3590.0,
+                "total_risk": 3590.0
+            },
+            {
+                "day": 337,
+                "reward": 3620.0,
+                "total_risk": 3620.0
+            },
+            {
+                "day": 338,
+                "reward": 3630.0,
+                "total_risk": 3630.0
+            },
+            {
+                "day": 340,
+                "reward": 3630.0,
+                "total_risk": 3630.0
+            },
+            {
+                "day": 341,
+                "reward": 3630.0,
+                "total_risk": 3630.0
+            },
+            {
+                "day": 343,
+                "reward": 3640.0,
+                "total_risk": 3640.0
+            },
+            {
+                "day": 344,
+                "reward": 3660.0,
+                "total_risk": 3660.0
+            },
+            {
+                "day": 345,
+                "reward": 3660.0,
+                "total_risk": 3660.0
+            },
+            {
+                "day": 346,
+                "reward": 3690.0,
+                "total_risk": 3690.0
+            },
+            {
+                "day": 348,
+                "reward": 3690.0,
+                "total_risk": 3690.0
+            },
+            {
+                "day": 349,
+                "reward": 3690.0,
+                "total_risk": 3690.0
+            },
+            {
+                "day": 350,
+                "reward": 3690.0,
+                "total_risk": 3690.0
+            },
+            {
+                "day": 351,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            },
+            {
+                "day": 352,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            },
+            {
+                "day": 353,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            },
+            {
+                "day": 354,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            },
+            {
+                "day": 355,
+                "reward": 3690.0,
+                "total_risk": 3690.0
+            },
+            {
+                "day": 357,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            },
+            {
+                "day": 359,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            },
+            {
+                "day": 361,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            },
+            {
+                "day": 363,
+                "reward": 3670.0,
+                "total_risk": 3670.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 40% mayor",
+        "mode": 2,
+        "config": 1,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 8,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 9,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 10,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 31,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 34,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 66,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 124,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 155,
+                "reward": 90.0,
+                "total_risk": 90.0
+            },
+            {
+                "day": 161,
+                "reward": 100.0,
+                "total_risk": 100.0
+            },
+            {
+                "day": 189,
+                "reward": 130.0,
+                "total_risk": 130.0
+            },
+            {
+                "day": 194,
+                "reward": 140.0,
+                "total_risk": 140.0
+            },
+            {
+                "day": 217,
+                "reward": 170.0,
+                "total_risk": 170.0
+            },
+            {
+                "day": 219,
+                "reward": 190.0,
+                "total_risk": 190.0
+            },
+            {
+                "day": 226,
+                "reward": 220.0,
+                "total_risk": 220.0
+            },
+            {
+                "day": 249,
+                "reward": 280.0,
+                "total_risk": 280.0
+            },
+            {
+                "day": 278,
+                "reward": 310.0,
+                "total_risk": 310.0
+            },
+            {
+                "day": 289,
+                "reward": 330.0,
+                "total_risk": 330.0
+            },
+            {
+                "day": 342,
+                "reward": 360.0,
+                "total_risk": 360.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 40% mayor",
+        "mode": 2,
+        "config": 2,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 8,
+                "reward": 30.0,
+                "total_risk": 30.0
+            },
+            {
+                "day": 9,
+                "reward": 30.0,
+                "total_risk": 30.0
+            },
+            {
+                "day": 10,
+                "reward": 50.0,
+                "total_risk": 50.0
+            },
+            {
+                "day": 33,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 35,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 37,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 40,
+                "reward": 80.0,
+                "total_risk": 80.0
+            },
+            {
+                "day": 42,
+                "reward": 100.0,
+                "total_risk": 100.0
+            },
+            {
+                "day": 66,
+                "reward": 100.0,
+                "total_risk": 100.0
+            },
+            {
+                "day": 69,
+                "reward": 120.0,
+                "total_risk": 120.0
+            },
+            {
+                "day": 72,
+                "reward": 130.0,
+                "total_risk": 130.0
+            },
+            {
+                "day": 97,
+                "reward": 160.0,
+                "total_risk": 160.0
+            },
+            {
+                "day": 103,
+                "reward": 180.0,
+                "total_risk": 180.0
+            },
+            {
+                "day": 129,
+                "reward": 180.0,
+                "total_risk": 180.0
+            },
+            {
+                "day": 131,
+                "reward": 200.0,
+                "total_risk": 200.0
+            },
+            {
+                "day": 133,
+                "reward": 240.0,
+                "total_risk": 240.0
+            },
+            {
+                "day": 135,
+                "reward": 270.0,
+                "total_risk": 270.0
+            },
+            {
+                "day": 157,
+                "reward": 320.0,
+                "total_risk": 320.0
+            },
+            {
+                "day": 160,
+                "reward": 380.0,
+                "total_risk": 380.0
+            },
+            {
+                "day": 164,
+                "reward": 410.0,
+                "total_risk": 410.0
+            },
+            {
+                "day": 165,
+                "reward": 420.0,
+                "total_risk": 420.0
+            },
+            {
+                "day": 184,
+                "reward": 490.0,
+                "total_risk": 490.0
+            },
+            {
+                "day": 186,
+                "reward": 500.0,
+                "total_risk": 500.0
+            },
+            {
+                "day": 189,
+                "reward": 560.0,
+                "total_risk": 560.0
+            },
+            {
+                "day": 191,
+                "reward": 580.0,
+                "total_risk": 580.0
+            },
+            {
+                "day": 194,
+                "reward": 600.0,
+                "total_risk": 600.0
+            },
+            {
+                "day": 197,
+                "reward": 600.0,
+                "total_risk": 600.0
+            },
+            {
+                "day": 200,
+                "reward": 620.0,
+                "total_risk": 620.0
+            },
+            {
+                "day": 217,
+                "reward": 660.0,
+                "total_risk": 660.0
+            },
+            {
+                "day": 220,
+                "reward": 710.0,
+                "total_risk": 710.0
+            },
+            {
+                "day": 221,
+                "reward": 720.0,
+                "total_risk": 720.0
+            },
+            {
+                "day": 225,
+                "reward": 760.0,
+                "total_risk": 760.0
+            },
+            {
+                "day": 227,
+                "reward": 770.0,
+                "total_risk": 770.0
+            },
+            {
+                "day": 228,
+                "reward": 790.0,
+                "total_risk": 790.0
+            },
+            {
+                "day": 231,
+                "reward": 870.0,
+                "total_risk": 870.0
+            },
+            {
+                "day": 248,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 253,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 256,
+                "reward": 880.0,
+                "total_risk": 880.0
+            },
+            {
+                "day": 259,
+                "reward": 930.0,
+                "total_risk": 930.0
+            },
+            {
+                "day": 261,
+                "reward": 950.0,
+                "total_risk": 950.0
+            },
+            {
+                "day": 263,
+                "reward": 960.0,
+                "total_risk": 960.0
+            },
+            {
+                "day": 278,
+                "reward": 970.0,
+                "total_risk": 970.0
+            },
+            {
+                "day": 280,
+                "reward": 990.0,
+                "total_risk": 990.0
+            },
+            {
+                "day": 282,
+                "reward": 1020.0,
+                "total_risk": 1020.0
+            },
+            {
+                "day": 284,
+                "reward": 1070.0,
+                "total_risk": 1070.0
+            },
+            {
+                "day": 292,
+                "reward": 1150.0,
+                "total_risk": 1150.0
+            },
+            {
+                "day": 310,
+                "reward": 1170.0,
+                "total_risk": 1170.0
+            },
+            {
+                "day": 311,
+                "reward": 1170.0,
+                "total_risk": 1170.0
+            },
+            {
+                "day": 313,
+                "reward": 1220.0,
+                "total_risk": 1220.0
+            },
+            {
+                "day": 316,
+                "reward": 1270.0,
+                "total_risk": 1270.0
+            },
+            {
+                "day": 317,
+                "reward": 1300.0,
+                "total_risk": 1300.0
+            },
+            {
+                "day": 322,
+                "reward": 1360.0,
+                "total_risk": 1360.0
+            },
+            {
+                "day": 339,
+                "reward": 1430.0,
+                "total_risk": 1430.0
+            },
+            {
+                "day": 341,
+                "reward": 1510.0,
+                "total_risk": 1510.0
+            },
+            {
+                "day": 342,
+                "reward": 1510.0,
+                "total_risk": 1510.0
+            },
+            {
+                "day": 343,
+                "reward": 1540.0,
+                "total_risk": 1540.0
+            },
+            {
+                "day": 347,
+                "reward": 1590.0,
+                "total_risk": 1590.0
+            },
+            {
+                "day": 348,
+                "reward": 1640.0,
+                "total_risk": 1640.0
+            },
+            {
+                "day": 349,
+                "reward": 1670.0,
+                "total_risk": 1670.0
+            },
+            {
+                "day": 350,
+                "reward": 1690.0,
+                "total_risk": 1690.0
+            },
+            {
+                "day": 352,
+                "reward": 1690.0,
+                "total_risk": 1690.0
+            },
+            {
+                "day": 354,
+                "reward": 1720.0,
+                "total_risk": 1720.0
+            },
+            {
+                "day": 358,
+                "reward": 1740.0,
+                "total_risk": 1740.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 40% mayor",
+        "mode": 2,
+        "config": 3,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 20.0,
+                "total_risk": 20.0
+            },
+            {
+                "day": 6,
+                "reward": 50.0,
+                "total_risk": 50.0
+            },
+            {
+                "day": 7,
+                "reward": 50.0,
+                "total_risk": 50.0
+            },
+            {
+                "day": 8,
+                "reward": 50.0,
+                "total_risk": 50.0
+            },
+            {
+                "day": 9,
+                "reward": 110.0,
+                "total_risk": 110.0
+            },
+            {
+                "day": 10,
+                "reward": 140.0,
+                "total_risk": 140.0
+            },
+            {
+                "day": 33,
+                "reward": 170.0,
+                "total_risk": 170.0
+            },
+            {
+                "day": 37,
+                "reward": 170.0,
+                "total_risk": 170.0
+            },
+            {
+                "day": 41,
+                "reward": 170.0,
+                "total_risk": 170.0
+            },
+            {
+                "day": 64,
+                "reward": 190.0,
+                "total_risk": 190.0
+            },
+            {
+                "day": 68,
+                "reward": 190.0,
+                "total_risk": 190.0
+            },
+            {
+                "day": 70,
+                "reward": 190.0,
+                "total_risk": 190.0
+            },
+            {
+                "day": 72,
+                "reward": 190.0,
+                "total_risk": 190.0
+            },
+            {
+                "day": 73,
+                "reward": 210.0,
+                "total_risk": 210.0
+            },
+            {
+                "day": 95,
+                "reward": 250.0,
+                "total_risk": 250.0
+            },
+            {
+                "day": 97,
+                "reward": 260.0,
+                "total_risk": 260.0
+            },
+            {
+                "day": 99,
+                "reward": 390.0,
+                "total_risk": 390.0
+            },
+            {
+                "day": 103,
+                "reward": 470.0,
+                "total_risk": 470.0
+            },
+            {
+                "day": 104,
+                "reward": 470.0,
+                "total_risk": 470.0
+            },
+            {
+                "day": 105,
+                "reward": 500.0,
+                "total_risk": 500.0
+            },
+            {
+                "day": 129,
+                "reward": 510.0,
+                "total_risk": 510.0
+            },
+            {
+                "day": 130,
+                "reward": 530.0,
+                "total_risk": 530.0
+            },
+            {
+                "day": 133,
+                "reward": 580.0,
+                "total_risk": 580.0
+            },
+            {
+                "day": 134,
+                "reward": 610.0,
+                "total_risk": 610.0
+            },
+            {
+                "day": 136,
+                "reward": 670.0,
+                "total_risk": 670.0
+            },
+            {
+                "day": 137,
+                "reward": 680.0,
+                "total_risk": 680.0
+            },
+            {
+                "day": 157,
+                "reward": 720.0,
+                "total_risk": 720.0
+            },
+            {
+                "day": 161,
+                "reward": 720.0,
+                "total_risk": 720.0
+            },
+            {
+                "day": 163,
+                "reward": 790.0,
+                "total_risk": 790.0
+            },
+            {
+                "day": 166,
+                "reward": 800.0,
+                "total_risk": 800.0
+            },
+            {
+                "day": 167,
+                "reward": 910.0,
+                "total_risk": 910.0
+            },
+            {
+                "day": 168,
+                "reward": 980.0,
+                "total_risk": 980.0
+            },
+            {
+                "day": 184,
+                "reward": 980.0,
+                "total_risk": 980.0
+            },
+            {
+                "day": 186,
+                "reward": 1050.0,
+                "total_risk": 1050.0
+            },
+            {
+                "day": 188,
+                "reward": 1060.0,
+                "total_risk": 1060.0
+            },
+            {
+                "day": 189,
+                "reward": 1060.0,
+                "total_risk": 1060.0
+            },
+            {
+                "day": 192,
+                "reward": 1140.0,
+                "total_risk": 1140.0
+            },
+            {
+                "day": 195,
+                "reward": 1190.0,
+                "total_risk": 1190.0
+            },
+            {
+                "day": 197,
+                "reward": 1330.0,
+                "total_risk": 1330.0
+            },
+            {
+                "day": 198,
+                "reward": 1370.0,
+                "total_risk": 1370.0
+            },
+            {
+                "day": 199,
+                "reward": 1390.0,
+                "total_risk": 1390.0
+            },
+            {
+                "day": 200,
+                "reward": 1470.0,
+                "total_risk": 1470.0
+            },
+            {
+                "day": 218,
+                "reward": 1560.0,
+                "total_risk": 1560.0
+            },
+            {
+                "day": 220,
+                "reward": 1580.0,
+                "total_risk": 1580.0
+            },
+            {
+                "day": 221,
+                "reward": 1580.0,
+                "total_risk": 1580.0
+            },
+            {
+                "day": 222,
+                "reward": 1590.0,
+                "total_risk": 1590.0
+            },
+            {
+                "day": 223,
+                "reward": 1600.0,
+                "total_risk": 1600.0
+            },
+            {
+                "day": 225,
+                "reward": 1670.0,
+                "total_risk": 1670.0
+            },
+            {
+                "day": 226,
+                "reward": 1680.0,
+                "total_risk": 1680.0
+            },
+            {
+                "day": 228,
+                "reward": 1760.0,
+                "total_risk": 1760.0
+            },
+            {
+                "day": 229,
+                "reward": 1780.0,
+                "total_risk": 1780.0
+            },
+            {
+                "day": 231,
+                "reward": 1800.0,
+                "total_risk": 1800.0
+            },
+            {
+                "day": 249,
+                "reward": 1820.0,
+                "total_risk": 1820.0
+            },
+            {
+                "day": 251,
+                "reward": 1840.0,
+                "total_risk": 1880.0
+            },
+            {
+                "day": 255,
+                "reward": 1840.0,
+                "total_risk": 1900.0
+            },
+            {
+                "day": 257,
+                "reward": 1850.0,
+                "total_risk": 1920.0
+            },
+            {
+                "day": 258,
+                "reward": 1850.0,
+                "total_risk": 1940.0
+            },
+            {
+                "day": 261,
+                "reward": 1880.0,
+                "total_risk": 1990.0
+            },
+            {
+                "day": 278,
+                "reward": 1890.0,
+                "total_risk": 2020.0
+            },
+            {
+                "day": 280,
+                "reward": 1910.0,
+                "total_risk": 2070.0
+            },
+            {
+                "day": 282,
+                "reward": 1910.0,
+                "total_risk": 2070.0
+            },
+            {
+                "day": 286,
+                "reward": 1920.0,
+                "total_risk": 2110.0
+            },
+            {
+                "day": 287,
+                "reward": 1900.0,
+                "total_risk": 2100.0
+            },
+            {
+                "day": 288,
+                "reward": 1910.0,
+                "total_risk": 2130.0
+            },
+            {
+                "day": 289,
+                "reward": 1910.0,
+                "total_risk": 2130.0
+            },
+            {
+                "day": 290,
+                "reward": 1920.0,
+                "total_risk": 2150.0
+            },
+            {
+                "day": 291,
+                "reward": 1920.0,
+                "total_risk": 2160.0
+            },
+            {
+                "day": 293,
+                "reward": 1930.0,
+                "total_risk": 2190.0
+            },
+            {
+                "day": 295,
+                "reward": 1960.0,
+                "total_risk": 2260.0
+            },
+            {
+                "day": 297,
+                "reward": 1990.0,
+                "total_risk": 2320.0
+            },
+            {
+                "day": 298,
+                "reward": 1990.0,
+                "total_risk": 2320.0
+            },
+            {
+                "day": 299,
+                "reward": 1980.0,
+                "total_risk": 2320.0
+            },
+            {
+                "day": 309,
+                "reward": 1990.0,
+                "total_risk": 2350.0
+            },
+            {
+                "day": 311,
+                "reward": 1990.0,
+                "total_risk": 2350.0
+            },
+            {
+                "day": 314,
+                "reward": 2030.0,
+                "total_risk": 2440.0
+            },
+            {
+                "day": 316,
+                "reward": 2040.0,
+                "total_risk": 2470.0
+            },
+            {
+                "day": 318,
+                "reward": 2050.0,
+                "total_risk": 2490.0
+            },
+            {
+                "day": 319,
+                "reward": 2050.0,
+                "total_risk": 2490.0
+            },
+            {
+                "day": 322,
+                "reward": 2060.0,
+                "total_risk": 2510.0
+            },
+            {
+                "day": 323,
+                "reward": 2050.0,
+                "total_risk": 2500.0
+            },
+            {
+                "day": 328,
+                "reward": 2060.0,
+                "total_risk": 2520.0
+            },
+            {
+                "day": 340,
+                "reward": 2080.0,
+                "total_risk": 2550.0
+            },
+            {
+                "day": 342,
+                "reward": 2080.0,
+                "total_risk": 2560.0
+            },
+            {
+                "day": 345,
+                "reward": 2080.0,
+                "total_risk": 2570.0
+            },
+            {
+                "day": 347,
+                "reward": 2080.0,
+                "total_risk": 2570.0
+            },
+            {
+                "day": 348,
+                "reward": 2080.0,
+                "total_risk": 2570.0
+            },
+            {
+                "day": 349,
+                "reward": 2100.0,
+                "total_risk": 2610.0
+            },
+            {
+                "day": 350,
+                "reward": 2100.0,
+                "total_risk": 2610.0
+            },
+            {
+                "day": 352,
+                "reward": 2100.0,
+                "total_risk": 2610.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo del 40% mayor",
+        "mode": 2,
+        "config": 4,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": 50.0,
+                "total_risk": 50.0
+            },
+            {
+                "day": 8,
+                "reward": 50.0,
+                "total_risk": 50.0
+            },
+            {
+                "day": 9,
+                "reward": 70.0,
+                "total_risk": 70.0
+            },
+            {
+                "day": 10,
+                "reward": 110.0,
+                "total_risk": 110.0
+            },
+            {
+                "day": 32,
+                "reward": 130.0,
+                "total_risk": 130.0
+            },
+            {
+                "day": 34,
+                "reward": 140.0,
+                "total_risk": 140.0
+            },
+            {
+                "day": 36,
+                "reward": 140.0,
+                "total_risk": 140.0
+            },
+            {
+                "day": 37,
+                "reward": 170.0,
+                "total_risk": 170.0
+            },
+            {
+                "day": 39,
+                "reward": 250.0,
+                "total_risk": 250.0
+            },
+            {
+                "day": 41,
+                "reward": 290.0,
+                "total_risk": 290.0
+            },
+            {
+                "day": 42,
+                "reward": 320.0,
+                "total_risk": 320.0
+            },
+            {
+                "day": 63,
+                "reward": 320.0,
+                "total_risk": 320.0
+            },
+            {
+                "day": 65,
+                "reward": 370.0,
+                "total_risk": 370.0
+            },
+            {
+                "day": 67,
+                "reward": 430.0,
+                "total_risk": 430.0
+            },
+            {
+                "day": 69,
+                "reward": 460.0,
+                "total_risk": 460.0
+            },
+            {
+                "day": 70,
+                "reward": 560.0,
+                "total_risk": 560.0
+            },
+            {
+                "day": 71,
+                "reward": 630.0,
+                "total_risk": 630.0
+            },
+            {
+                "day": 72,
+                "reward": 770.0,
+                "total_risk": 770.0
+            },
+            {
+                "day": 75,
+                "reward": 820.0,
+                "total_risk": 820.0
+            },
+            {
+                "day": 94,
+                "reward": 840.0,
+                "total_risk": 840.0
+            },
+            {
+                "day": 97,
+                "reward": 890.0,
+                "total_risk": 890.0
+            },
+            {
+                "day": 100,
+                "reward": 920.0,
+                "total_risk": 920.0
+            },
+            {
+                "day": 101,
+                "reward": 950.0,
+                "total_risk": 950.0
+            },
+            {
+                "day": 102,
+                "reward": 980.0,
+                "total_risk": 980.0
+            },
+            {
+                "day": 104,
+                "reward": 980.0,
+                "total_risk": 980.0
+            },
+            {
+                "day": 105,
+                "reward": 980.0,
+                "total_risk": 980.0
+            },
+            {
+                "day": 125,
+                "reward": 1060.0,
+                "total_risk": 1060.0
+            },
+            {
+                "day": 127,
+                "reward": 1090.0,
+                "total_risk": 1090.0
+            },
+            {
+                "day": 128,
+                "reward": 1130.0,
+                "total_risk": 1130.0
+            },
+            {
+                "day": 129,
+                "reward": 1140.0,
+                "total_risk": 1140.0
+            },
+            {
+                "day": 130,
+                "reward": 1210.0,
+                "total_risk": 1210.0
+            },
+            {
+                "day": 131,
+                "reward": 1270.0,
+                "total_risk": 1270.0
+            },
+            {
+                "day": 132,
+                "reward": 1300.0,
+                "total_risk": 1300.0
+            },
+            {
+                "day": 133,
+                "reward": 1300.0,
+                "total_risk": 1300.0
+            },
+            {
+                "day": 135,
+                "reward": 1300.0,
+                "total_risk": 1300.0
+            },
+            {
+                "day": 136,
+                "reward": 1350.0,
+                "total_risk": 1350.0
+            },
+            {
+                "day": 137,
+                "reward": 1350.0,
+                "total_risk": 1350.0
+            },
+            {
+                "day": 156,
+                "reward": 1420.0,
+                "total_risk": 1420.0
+            },
+            {
+                "day": 157,
+                "reward": 1500.0,
+                "total_risk": 1500.0
+            },
+            {
+                "day": 158,
+                "reward": 1620.0,
+                "total_risk": 1620.0
+            },
+            {
+                "day": 159,
+                "reward": 1650.0,
+                "total_risk": 1650.0
+            },
+            {
+                "day": 160,
+                "reward": 1680.0,
+                "total_risk": 1680.0
+            },
+            {
+                "day": 161,
+                "reward": 1690.0,
+                "total_risk": 1690.0
+            },
+            {
+                "day": 162,
+                "reward": 1740.0,
+                "total_risk": 1740.0
+            },
+            {
+                "day": 164,
+                "reward": 1780.0,
+                "total_risk": 1780.0
+            },
+            {
+                "day": 165,
+                "reward": 1840.0,
+                "total_risk": 1840.0
+            },
+            {
+                "day": 168,
+                "reward": 1850.0,
+                "total_risk": 1850.0
+            },
+            {
+                "day": 185,
+                "reward": 1880.0,
+                "total_risk": 1880.0
+            },
+            {
+                "day": 187,
+                "reward": 1880.0,
+                "total_risk": 1880.0
+            },
+            {
+                "day": 188,
+                "reward": 1910.0,
+                "total_risk": 1910.0
+            },
+            {
+                "day": 189,
+                "reward": 1950.0,
+                "total_risk": 1950.0
+            },
+            {
+                "day": 190,
+                "reward": 2010.0,
+                "total_risk": 2020.0
+            },
+            {
+                "day": 191,
+                "reward": 2020.0,
+                "total_risk": 2050.0
+            },
+            {
+                "day": 192,
+                "reward": 2020.0,
+                "total_risk": 2060.0
+            },
+            {
+                "day": 194,
+                "reward": 2050.0,
+                "total_risk": 2140.0
+            },
+            {
+                "day": 195,
+                "reward": 2050.0,
+                "total_risk": 2140.0
+            },
+            {
+                "day": 196,
+                "reward": 2050.0,
+                "total_risk": 2140.0
+            },
+            {
+                "day": 215,
+                "reward": 2050.0,
+                "total_risk": 2140.0
+            },
+            {
+                "day": 217,
+                "reward": 2090.0,
+                "total_risk": 2220.0
+            },
+            {
+                "day": 218,
+                "reward": 2110.0,
+                "total_risk": 2260.0
+            },
+            {
+                "day": 220,
+                "reward": 2110.0,
+                "total_risk": 2260.0
+            },
+            {
+                "day": 222,
+                "reward": 2130.0,
+                "total_risk": 2310.0
+            },
+            {
+                "day": 223,
+                "reward": 2130.0,
+                "total_risk": 2350.0
+            },
+            {
+                "day": 224,
+                "reward": 2160.0,
+                "total_risk": 2400.0
+            },
+            {
+                "day": 226,
+                "reward": 2180.0,
+                "total_risk": 2430.0
+            },
+            {
+                "day": 227,
+                "reward": 2190.0,
+                "total_risk": 2450.0
+            },
+            {
+                "day": 228,
+                "reward": 2200.0,
+                "total_risk": 2470.0
+            },
+            {
+                "day": 248,
+                "reward": 2220.0,
+                "total_risk": 2510.0
+            },
+            {
+                "day": 249,
+                "reward": 2220.0,
+                "total_risk": 2510.0
+            },
+            {
+                "day": 250,
+                "reward": 2220.0,
+                "total_risk": 2540.0
+            },
+            {
+                "day": 251,
+                "reward": 2260.0,
+                "total_risk": 2600.0
+            },
+            {
+                "day": 252,
+                "reward": 2280.0,
+                "total_risk": 2630.0
+            },
+            {
+                "day": 253,
+                "reward": 2300.0,
+                "total_risk": 2660.0
+            },
+            {
+                "day": 254,
+                "reward": 2300.0,
+                "total_risk": 2670.0
+            },
+            {
+                "day": 255,
+                "reward": 2310.0,
+                "total_risk": 2690.0
+            },
+            {
+                "day": 256,
+                "reward": 2300.0,
+                "total_risk": 2690.0
+            },
+            {
+                "day": 258,
+                "reward": 2300.0,
+                "total_risk": 2690.0
+            },
+            {
+                "day": 259,
+                "reward": 2300.0,
+                "total_risk": 2690.0
+            },
+            {
+                "day": 277,
+                "reward": 2300.0,
+                "total_risk": 2710.0
+            },
+            {
+                "day": 278,
+                "reward": 2320.0,
+                "total_risk": 2740.0
+            },
+            {
+                "day": 279,
+                "reward": 2340.0,
+                "total_risk": 2780.0
+            },
+            {
+                "day": 281,
+                "reward": 2340.0,
+                "total_risk": 2780.0
+            },
+            {
+                "day": 282,
+                "reward": 2340.0,
+                "total_risk": 2790.0
+            },
+            {
+                "day": 283,
+                "reward": 2340.0,
+                "total_risk": 2810.0
+            },
+            {
+                "day": 285,
+                "reward": 2360.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 286,
+                "reward": 2360.0,
+                "total_risk": 2860.0
+            },
+            {
+                "day": 287,
+                "reward": 2370.0,
+                "total_risk": 2890.0
+            },
+            {
+                "day": 288,
+                "reward": 2380.0,
+                "total_risk": 2910.0
+            },
+            {
+                "day": 289,
+                "reward": 2380.0,
+                "total_risk": 2910.0
+            },
+            {
+                "day": 291,
+                "reward": 2390.0,
+                "total_risk": 2930.0
+            },
+            {
+                "day": 308,
+                "reward": 2410.0,
+                "total_risk": 2970.0
+            },
+            {
+                "day": 311,
+                "reward": 2440.0,
+                "total_risk": 3020.0
+            },
+            {
+                "day": 312,
+                "reward": 2440.0,
+                "total_risk": 3020.0
+            },
+            {
+                "day": 314,
+                "reward": 2450.0,
+                "total_risk": 3040.0
+            },
+            {
+                "day": 316,
+                "reward": 2450.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 317,
+                "reward": 2450.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 318,
+                "reward": 2450.0,
+                "total_risk": 3050.0
+            },
+            {
+                "day": 319,
+                "reward": 2440.0,
+                "total_risk": 3040.0
+            },
+            {
+                "day": 320,
+                "reward": 2470.0,
+                "total_risk": 3110.0
+            },
+            {
+                "day": 322,
+                "reward": 2470.0,
+                "total_risk": 3120.0
+            },
+            {
+                "day": 324,
+                "reward": 2470.0,
+                "total_risk": 3130.0
+            },
+            {
+                "day": 339,
+                "reward": 2460.0,
+                "total_risk": 3130.0
+            },
+            {
+                "day": 341,
+                "reward": 2470.0,
+                "total_risk": 3160.0
+            },
+            {
+                "day": 342,
+                "reward": 2490.0,
+                "total_risk": 3230.0
+            },
+            {
+                "day": 344,
+                "reward": 2490.0,
+                "total_risk": 3240.0
+            },
+            {
+                "day": 345,
+                "reward": 2490.0,
+                "total_risk": 3240.0
+            },
+            {
+                "day": 346,
+                "reward": 2510.0,
+                "total_risk": 3300.0
+            },
+            {
+                "day": 347,
+                "reward": 2510.0,
+                "total_risk": 3320.0
+            },
+            {
+                "day": 348,
+                "reward": 2510.0,
+                "total_risk": 3350.0
+            },
+            {
+                "day": 349,
+                "reward": 2510.0,
+                "total_risk": 3350.0
+            },
+            {
+                "day": 350,
+                "reward": 2500.0,
+                "total_risk": 3360.0
+            },
+            {
+                "day": 351,
+                "reward": 2510.0,
+                "total_risk": 3390.0
+            },
+            {
+                "day": 353,
+                "reward": 2510.0,
+                "total_risk": 3410.0
+            },
+            {
+                "day": 355,
+                "reward": 2510.0,
+                "total_risk": 3410.0
+            },
+            {
+                "day": 357,
+                "reward": 2510.0,
+                "total_risk": 3440.0
+            },
+            {
+                "day": 359,
+                "reward": 2510.0,
+                "total_risk": 3460.0
+            },
+            {
+                "day": 360,
+                "reward": 2510.0,
+                "total_risk": 3470.0
+            },
+            {
+                "day": 361,
+                "reward": 2520.0,
+                "total_risk": 3490.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo pacientes en medio o bajo",
+        "mode": 3,
+        "config": 1,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": 250,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": 250,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": 250,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": 250,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": 250,
+                "total_risk": 20.0
+            },
+            {
+                "day": 7,
+                "reward": 250,
+                "total_risk": 20.0
+            },
+            {
+                "day": 8,
+                "reward": 250,
+                "total_risk": 20.0
+            },
+            {
+                "day": 9,
+                "reward": 250,
+                "total_risk": 20.0
+            },
+            {
+                "day": 10,
+                "reward": 250,
+                "total_risk": 20.0
+            },
+            {
+                "day": 34,
+                "reward": 250,
+                "total_risk": 20.0
+            },
+            {
+                "day": 37,
+                "reward": 250,
+                "total_risk": 20.0
+            },
+            {
+                "day": 185,
+                "reward": 250,
+                "total_risk": 40.0
+            },
+            {
+                "day": 217,
+                "reward": 250,
+                "total_risk": 60.0
+            },
+            {
+                "day": 249,
+                "reward": 250,
+                "total_risk": 60.0
+            },
+            {
+                "day": 312,
+                "reward": 249,
+                "total_risk": 90.0
+            }
+        ]
+    },
+    {
+        "name": "Riesgo logaritmo",
+        "mode": 4,
+        "config": 1,
+        "rewards": [
+            {
+                "day": 2,
+                "reward": -0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 3,
+                "reward": -0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 4,
+                "reward": -0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 5,
+                "reward": -0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 6,
+                "reward": -0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 7,
+                "reward": -0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 8,
+                "reward": -0.0,
+                "total_risk": 0.0
+            },
+            {
+                "day": 9,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 10,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 33,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 38,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 69,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 218,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 252,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 281,
+                "reward": -3.713572066704308,
+                "total_risk": 40.0
+            },
+            {
+                "day": 311,
+                "reward": -4.110873864173311,
+                "total_risk": 60.0
+            },
+            {
+                "day": 314,
+                "reward": -4.110873864173311,
+                "total_risk": 60.0
+            },
+            {
+                "day": 347,
+                "reward": -4.2626798770413155,
+                "total_risk": 70.0
+            },
+            {
+                "day": 349,
+                "reward": -4.61512051684126,
+                "total_risk": 100.0
+            }
+        ]
+    }
+]

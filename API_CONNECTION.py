@@ -9,6 +9,7 @@ class API_CONNECTION:
         self.manager_patient_get = "http://localhost:3000/api/sim/managerPatients"
         self.config_get = "http://localhost:3000/api/sim/config"
         self.rewards_post = "http://localhost:3000/api/rl/rewards"
+        self.desocupado = "http://localhost:3000/api/sim/desocupado"
 
     def get_config(self):
         responseConfig = requests.get(self.config_get)
@@ -52,3 +53,6 @@ class API_CONNECTION:
 
     def post_rewards(self, rewards):
         return requests.post(self.rewards_post, json=rewards)
+
+    def get_desocupado(self):
+        return requests.get(self.desocupado)

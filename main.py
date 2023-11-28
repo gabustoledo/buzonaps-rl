@@ -9,7 +9,7 @@ NUM_PACIENTES = 0
 NUM_MANAGER = 0
 CLOCK_MAX = 0
 
-def main(modo_recompensa):
+def main(modo_recompensa, config):
 
     # Objeto para realizar las consultas a la APIj
     api_connection = API_CONNECTION()
@@ -222,15 +222,29 @@ def main(modo_recompensa):
         name = "Riesgo logaritmo"
         filename = 'rewards_logaritmo.json'
 
-    with open(filename, 'w') as file:
-        json.dump(rewards, file, indent=4)
+    filename = './out/rewards.json'
 
     rewards_post = {
         "name": name,
+        "mode": modo_recompensa,
+        "config": config,
         "rewards": rewards
     }
 
-    rewards_response = api_connection.post_rewards(rewards_post)
+    # Se lee el archivo para agregar la nueva data
+    with open(filename, 'r') as archivo:
+        datos = json.load(archivo)
+
+    # Se agrega la nueva data
+    datos.append(rewards_post)
+
+    # Se almacena el archivo con la data agregada
+    with open(filename, 'w') as file:
+        json.dump(datos, file, indent=4)
+
+    # rewards_response = api_connection.post_rewards(rewards_post)
+
+    desocupado = api_connection.get_desocupado()
 
 
 if __name__ == '__main__':
@@ -241,10 +255,14 @@ if __name__ == '__main__':
     # Argumento para modo de ejecucion
     parser.add_argument('modo', type=int, choices=[1, 2, 3, 4], help='Modo de ejecución del script. Puede ser 1, 2, 3 o 4.')
 
+    # Argumento para modo de ejecucion
+    parser.add_argument('config', type=int, choices=[1, 2, 3, 4], help='Modo de configuracion del script. Puede ser 1, 2, 3 o 4.')
+
     # Se obtienen los parametros
     args = parser.parse_args()
 
     # Es seleccionado el parametro para el modo
     modo = args.modo
+    config = args.config
 
-    main(modo)
+    main(modo, config)

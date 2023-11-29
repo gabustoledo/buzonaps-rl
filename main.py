@@ -24,7 +24,8 @@ def main(modo_recompensa, config):
     state_matrix = STATE(NUM_MANAGER, NUM_PACIENTES)
 
     # Se inicializa la matriz de estado
-    matriz_estado = np.zeros((NUM_MANAGER, 2 + 3*NUM_PACIENTES))
+    # matriz_estado = np.zeros((NUM_MANAGER, 2 + 3*NUM_PACIENTES))
+    matriz_estado = np.zeros((NUM_MANAGER, 1 + NUM_PACIENTES))
     matriz_estado, managerPatient = state_matrix.init_state(matriz_estado)
 
     # Son definidas los tipo de procesos disponibles
@@ -58,7 +59,7 @@ def main(modo_recompensa, config):
     state_size = len(state_matrix.flatten_state(matriz_estado))
     action_size = NUM_PACIENTES * 9 # Es por 9 ya que son 9 las posibles acciones a realizar.
     # dqn_agent = DQNAgent(state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5)
-    dqn_agent = DQNAgent(state_size, action_size, hidden_size=32, learning_rate=0.005, gamma=0.95, epsilon=0.85, epsilon_min=0.05, epsilon_decay=0.997, memory_size=100, batch_size=10)
+    dqn_agent = DQNAgent(state_size, action_size, hidden_size=32, learning_rate=0.005, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=200, batch_size=10)
 
     # Time para conocer la hora del simulador
     current_clock = 0
@@ -160,14 +161,12 @@ def main(modo_recompensa, config):
         # Tareas diarias que debe realizar el simulador
         tasks = []
 
-        # Por cada manager se obtendra su prox horario libre, este horario libre debe ser si o si en el horario current_clock + 8 , current_clock + 20, de lo contrario se pasa al siguiente
-        # Crearle tareas random para sus pacientes (aqui necesitare esa lista que borre), un processo aleatorio y obtener el time de cada proceso.
-
         # Para cada manager se revisan las tareas a realizar
         for i in range(0, NUM_MANAGER):
 
             # Se obtiene el proximo horario libre del manager
-            horario_libre = matriz_estado[i, 1]
+            # horario_libre = matriz_estado[i, 1]
+            horario_libre = matriz_estado[i, 0]
 
             # Se seleccionan los pacientes de ese manager
             mis_pacientes = [elemento for elemento in managerPatient if elemento["manager"] == i+1]

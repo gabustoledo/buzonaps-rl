@@ -4,15 +4,9 @@ import time
 # URL a la cual quieres hacer la solicitud GET
 base_url = 'http://localhost:3000/api/sim/execute/'
 
-# respuesta = requests.get('http://localhost:3000/api/sim/ocupado')
-# datos = respuesta.json()
-# if datos:
-#     print(datos)
-
-# exit()
 for iteracion in range(0,10):
     # modo de recompensa
-    for modo in range(3, 5):
+    for modo in range(3, 4):
         for config in range(3,4):
             url = base_url + str(modo) + "/" + str(config)
 

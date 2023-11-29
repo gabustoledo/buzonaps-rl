@@ -1,5 +1,5 @@
 import numpy as np
-from API_CONNECTION import API_CONNECTION
+from clases.API_CONNECTION import API_CONNECTION
 
 class STATE:
     def __init__(self, num_managers, num_patients):
@@ -26,8 +26,8 @@ class STATE:
 
         return matriz_estado, managerPatient
 
-    def update_sate(self, matriz_estado, new_state, tipo_hora):
-
+    def update_sate(self, matriz_estado, new_state, tipo_hora, tipo_hora_duracion, history_patients):
+        history_task = []
         for ns in new_state:
             if ns['agent_type'] == 'PATIENT':
                 riesgo = ns['clinical_risk']
@@ -37,18 +37,30 @@ class STATE:
                 matriz_estado[manager_id-1, patient_id + self.num_patients + 1] = riesgo
 
             if ns['agent_type'] == 'MANAGER':
-                process = ns['process']
-                manager_id = ns['manager_id']
-                patient_id = ns['patient_id']
-                sim_clock = ns['sim_clock']
+                if not (ns['process'] == "ASK_CONSENT"):
+                    process = ns['process']
+                    manager_id = ns['manager_id']
+                    patient_id = ns['patient_id']
+                    sim_clock = ns['sim_clock']
 
-                process_id = tipo_hora[process]
+                    process_id = tipo_hora[process]
 
-                matriz_estado[manager_id-1, patient_id + 2*self.num_patients + 1] = process_id
+                    matriz_estado[manager_id-1, patient_id + 2*self.num_patients + 1] = process_id
+                    
+                    nueva_hora_libre = sim_clock #+ tipo_hora_duracion[process]
+                    if matriz_estado[manager_id-1, 1] < nueva_hora_libre:
+                        matriz_estado[manager_id-1, 1] = nueva_hora_libre
 
-                matriz_estado[manager_id-1, 1] = sim_clock
+                    json_aux = {
+                            "id_patient": str(ns["patient_id"]) + "_" + str(ns["manager_id"]),
+                            "process": ns["process"] + "_" + str(sim_clock) + "_" + str(nueva_hora_libre) + "_" + str(matriz_estado[manager_id-1, 1])
+                        }
+                    
+                    history_task.append(json_aux)
 
-        return matriz_estado
+                    history_patients[patient_id - 1, process_id - 1] = int(nueva_hora_libre/24)
+
+        return matriz_estado, history_task, history_patients
 
     def get_recompensa(self, matriz, modo=1, porcentaje=0.4):
         if modo == 1: # Riesgo de todos
@@ -79,8 +91,8 @@ class STATE:
                     recompensa_umbral -= 1
             
             return recompensa_umbral, riesgo_total
-        elif modo == 4: # Riesgo del total con logaritmo
+        elif modo == 4: # Riesgo promedio
             riesgo_total = matriz[:,self.num_patients+2:-self.num_patients].sum()
-            recompensa = -np.log(1 + riesgo_total)
+            recompensa = (riesgo_total * -1) / self.num_patients
             return recompensa, riesgo_total
 

@@ -1,7 +1,7 @@
 import numpy as np
 import random
 from collections import deque
-from DQN import DQNModel
+from clases.DQN import DQNModel
 
 class DQNAgent:
     def __init__(self, state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5):
@@ -43,6 +43,6 @@ class DQNAgent:
             self.epsilon *= self.epsilon_decay
 
     def decompose_action(self, action):
-        patient_id = (action // 10) + 1
-        number = (action % 10) + 1
+        patient_id = (action // 9) + 1
+        number = (action % 9) + 1
         return patient_id, number

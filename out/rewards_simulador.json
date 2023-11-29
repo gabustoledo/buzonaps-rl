@@ -1,0 +1,5627 @@
+[
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 560
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 420
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 510
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 570
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 34,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 58,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 65,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 88,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 89,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 96,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 119,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 120,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 127,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 150,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 151,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 158,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 181,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 182,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 189,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 212,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 220,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 243,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 251,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 274,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 275,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 282,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 305,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 306,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 313,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 336,
+                "reward": 0,
+                "total_risk": 60
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 410
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 450
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 450
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 490
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 34,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 60,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 65,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 91,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 96,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 119,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 122,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 127,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 150,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 153,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 158,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 181,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 189,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 212,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 215,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 220,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 243,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 246,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 251,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 274,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 277,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 282,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 313,
+                "reward": 0,
+                "total_risk": 10
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 410
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 130
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 130
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 34,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 55,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 57,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 86,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 96,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 117,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 119,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 127,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 148,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 150,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 158,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 179,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 181,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 210,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 212,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 220,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 241,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 243,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 251,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 272,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 282,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 303,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 313,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 334,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 336,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 344,
+                "reward": 0,
+                "total_risk": 40
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 560
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 430
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 550
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 57,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 59,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 95,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 119,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 126,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 150,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 152,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 157,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 181,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 188,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 212,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 214,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 219,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 243,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 250,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 274,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 281,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 305,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 307,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 312,
+                "reward": 0,
+                "total_risk": 30
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 610
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 520
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 580
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 110
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 110
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 61,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 88,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 94,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 154,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 212,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 216,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 247,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 249,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 278,
+                "reward": 0,
+                "total_risk": 60
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 420
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 530
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 340
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 670
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 430
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 340
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 130
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 340
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 54,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 58,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 85,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 89,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 94,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 116,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 125,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 147,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 151,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 156,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 178,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 182,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 187,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 209,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 213,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 240,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 249,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 271,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 275,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 280,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 306,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 311,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 333,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 337,
+                "reward": 0,
+                "total_risk": 20
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 500
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 460
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 650
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 430
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 60,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 90,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 91,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 94,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 122,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 125,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 152,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 153,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 184,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 187,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 214,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 215,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 245,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 246,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 249,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 307,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 308,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 338,
+                "reward": 0,
+                "total_risk": 120
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 520
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 410
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 510
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 57,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 88,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 90,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 123,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 150,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 152,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 181,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 185,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 212,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 214,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 243,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 247,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 274,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 278,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 305,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 307,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 309,
+                "reward": 0,
+                "total_risk": 10
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 500
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 500
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 460
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 510
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 56,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 61,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 92,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 94,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 118,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 123,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 125,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 149,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 154,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 156,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 180,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 211,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 216,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 249,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 273,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 278,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 280,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 304,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 309,
+                "reward": 0,
+                "total_risk": 20
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 490
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 470
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 130
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 58,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 87,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 89,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 125,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 149,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 151,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 156,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 180,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 182,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 187,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 211,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 213,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 242,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 244,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 273,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 275,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 280,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 304,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 306,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 311,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 337,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 342,
+                "reward": 0,
+                "total_risk": 30
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 420
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 110
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 520
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 490
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 420
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 34,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 35,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 56,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 66,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 87,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 93,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 97,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 128,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 149,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 159,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 180,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 186,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 190,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 211,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 217,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 221,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 242,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 252,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 273,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 283,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 304,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 310,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 314,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 335,
+                "reward": 0,
+                "total_risk": 60
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 540
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 530
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 450
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 530
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 340
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 530
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 58,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 59,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 89,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 90,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 94,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 120,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 125,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 151,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 152,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 156,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 182,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 187,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 213,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 244,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 245,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 249,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 275,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 280,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 306,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 307,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 311,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 337,
+                "reward": 0,
+                "total_risk": 60
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 490
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 580
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 530
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 340
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 340
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 85,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 93,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 124,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 125,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 147,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 155,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 156,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 178,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 187,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 209,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 217,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 240,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 248,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 271,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 279,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 280,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 302,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 310,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 311,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 333,
+                "reward": 0,
+                "total_risk": 30
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 430
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 610
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 490
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 110
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 59,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 64,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 90,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 95,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 126,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 150,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 157,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 181,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 214,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 219,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 245,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 274,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 281,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 305,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 312,
+                "reward": 0,
+                "total_risk": 100
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 190
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 490
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 110
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 34,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 35,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 58,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 59,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 89,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 90,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 97,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 159,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 182,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 190,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 213,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 214,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 221,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 244,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 245,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 275,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 283,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 306,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 307,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 314,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 337,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 338,
+                "reward": 0,
+                "total_risk": 30
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 550
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 500
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 410
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 480
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 110
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 34,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 35,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 36,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 55,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 59,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 67,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 68,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 86,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 90,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 130,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 152,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 161,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 179,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 192,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 210,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 214,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 223,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 241,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 245,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 254,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 272,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 285,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 303,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 316,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 334,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 338,
+                "reward": 0,
+                "total_risk": 60
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 430
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 430
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 330
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 53,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 59,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 60,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 84,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 91,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 115,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 122,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 146,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 153,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 177,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 184,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 208,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 215,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 239,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 246,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 270,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 277,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 301,
+                "reward": 0,
+                "total_risk": 120
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 540
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 250
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 420
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 500
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 360
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 440
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 57,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 63,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 87,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 88,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 94,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 118,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 119,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 149,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 156,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 180,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 181,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 211,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 212,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 242,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 243,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 249,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 273,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 274,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 280,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 304,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 305,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 311,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 335,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 336,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 342,
+                "reward": 0,
+                "total_risk": 10
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 320
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 290
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 130
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 140
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 380
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 300
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 410
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 400
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 180
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 270
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 230
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 55,
+                "reward": 0,
+                "total_risk": 10
+            },
+            {
+                "day": 94,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 117,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 124,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 125,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 155,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 156,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 179,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 186,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 187,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 210,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 217,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 218,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 241,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 248,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 249,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 272,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 279,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 280,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 303,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 310,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 311,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 334,
+                "reward": 0,
+                "total_risk": 50
+            },
+            {
+                "day": 341,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 342,
+                "reward": 0,
+                "total_risk": 30
+            }
+        ]
+    },
+    {
+        "name": "Simulador base",
+        "mode": 5,
+        "rewards": [
+            {
+                "day": 1,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 2,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 3,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 4,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 5,
+                "reward": 0,
+                "total_risk": 0
+            },
+            {
+                "day": 6,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 7,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 8,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 9,
+                "reward": 0,
+                "total_risk": 110
+            },
+            {
+                "day": 10,
+                "reward": 0,
+                "total_risk": 280
+            },
+            {
+                "day": 11,
+                "reward": 0,
+                "total_risk": 370
+            },
+            {
+                "day": 12,
+                "reward": 0,
+                "total_risk": 310
+            },
+            {
+                "day": 13,
+                "reward": 0,
+                "total_risk": 550
+            },
+            {
+                "day": 14,
+                "reward": 0,
+                "total_risk": 240
+            },
+            {
+                "day": 15,
+                "reward": 0,
+                "total_risk": 540
+            },
+            {
+                "day": 16,
+                "reward": 0,
+                "total_risk": 170
+            },
+            {
+                "day": 17,
+                "reward": 0,
+                "total_risk": 460
+            },
+            {
+                "day": 18,
+                "reward": 0,
+                "total_risk": 220
+            },
+            {
+                "day": 19,
+                "reward": 0,
+                "total_risk": 210
+            },
+            {
+                "day": 20,
+                "reward": 0,
+                "total_risk": 350
+            },
+            {
+                "day": 21,
+                "reward": 0,
+                "total_risk": 490
+            },
+            {
+                "day": 22,
+                "reward": 0,
+                "total_risk": 260
+            },
+            {
+                "day": 23,
+                "reward": 0,
+                "total_risk": 390
+            },
+            {
+                "day": 24,
+                "reward": 0,
+                "total_risk": 450
+            },
+            {
+                "day": 25,
+                "reward": 0,
+                "total_risk": 340
+            },
+            {
+                "day": 26,
+                "reward": 0,
+                "total_risk": 550
+            },
+            {
+                "day": 27,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 28,
+                "reward": 0,
+                "total_risk": 590
+            },
+            {
+                "day": 29,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 30,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 31,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 32,
+                "reward": 0,
+                "total_risk": 70
+            },
+            {
+                "day": 33,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 34,
+                "reward": 0,
+                "total_risk": 200
+            },
+            {
+                "day": 35,
+                "reward": 0,
+                "total_risk": 40
+            },
+            {
+                "day": 59,
+                "reward": 0,
+                "total_risk": 150
+            },
+            {
+                "day": 60,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 66,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 91,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 97,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 121,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 122,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 128,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 152,
+                "reward": 0,
+                "total_risk": 160
+            },
+            {
+                "day": 153,
+                "reward": 0,
+                "total_risk": 80
+            },
+            {
+                "day": 159,
+                "reward": 0,
+                "total_risk": 100
+            },
+            {
+                "day": 183,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 184,
+                "reward": 0,
+                "total_risk": 20
+            },
+            {
+                "day": 190,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 221,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 245,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 246,
+                "reward": 0,
+                "total_risk": 120
+            },
+            {
+                "day": 252,
+                "reward": 0,
+                "total_risk": 30
+            },
+            {
+                "day": 276,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 283,
+                "reward": 0,
+                "total_risk": 90
+            },
+            {
+                "day": 307,
+                "reward": 0,
+                "total_risk": 60
+            },
+            {
+                "day": 308,
+                "reward": 0,
+                "total_risk": 120
+            }
+        ]
+    }
+]

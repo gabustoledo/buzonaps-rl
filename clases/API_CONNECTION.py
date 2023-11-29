@@ -10,6 +10,7 @@ class API_CONNECTION:
         self.config_get = "http://localhost:3000/api/sim/config"
         self.rewards_post = "http://localhost:3000/api/rl/rewards"
         self.desocupado = "http://localhost:3000/api/sim/desocupado"
+        self.no_autoriza = "http://localhost:3000/api/sim/noautoriza"
 
     def get_config(self):
         responseConfig = requests.get(self.config_get)
@@ -56,3 +57,8 @@ class API_CONNECTION:
 
     def get_desocupado(self):
         return requests.get(self.desocupado)
+
+    def get_no_autoriza(self):
+        response = requests.get(self.no_autoriza)
+        response = response.text.replace('[','').replace(']','').replace('"','').split(',')
+        return response

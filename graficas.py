@@ -79,8 +79,8 @@ def fill_missing_days(rewards_lists, global_max_day):
                 continue
 
             last_day = 0
-            last_reward = None
-            last_risk = None
+            last_reward = 0
+            last_risk = 0
             filled_rewards = []
 
             for reward in rewards:
@@ -164,6 +164,7 @@ rewards_mode_1 = []
 rewards_mode_2 = []
 rewards_mode_3 = []
 rewards_mode_4 = []
+rewards_mode_5 = []
 
 # Iterar a través de cada objeto en el JSON
 for item in data:
@@ -171,7 +172,9 @@ for item in data:
     rewards = item['rewards']
     config = item['config']
 
-    if config == 1:
+    rewards = sorted(rewards, key=lambda x: x['day'])
+
+    if config == 3:
         # Dependiendo del modo, añadir los rewards a la lista correspondiente
         if mode == 1:
             rewards_mode_1.append(rewards)
@@ -182,11 +185,22 @@ for item in data:
         elif mode == 4:
             rewards_mode_4.append(rewards)
 
-max_days_for_each_mode = find_max_day([rewards_mode_1, rewards_mode_2, rewards_mode_3, rewards_mode_4])
+with open('out/rewards_simulador.json', 'r') as file:
+    data_sim = json.load(file)
 
-global_max_day = max([day for rewards_list in [rewards_mode_1, rewards_mode_2, rewards_mode_3, rewards_mode_4] for rewards in rewards_list for day in [reward['day'] for reward in rewards]])
+for item in data_sim:
+    rewards = item['rewards']
+    rewards = sorted(rewards, key=lambda x: x['day'])
 
-filled_rewards_lists = fill_missing_days([rewards_mode_1, rewards_mode_2, rewards_mode_3, rewards_mode_4], global_max_day)
+    rewards_mode_5.append(rewards)
+
+list_total_rewards = [rewards_mode_1, rewards_mode_2, rewards_mode_3, rewards_mode_4, rewards_mode_5]
+
+max_days_for_each_mode = find_max_day(list_total_rewards)
+
+global_max_day = max([day for rewards_list in list_total_rewards for rewards in rewards_list for day in [reward['day'] for reward in rewards]])
+
+filled_rewards_lists = fill_missing_days(list_total_rewards, global_max_day)
 
 plot_total_risk(filled_rewards_lists)
 

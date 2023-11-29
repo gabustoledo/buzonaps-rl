@@ -1,17 +1,16 @@
 import numpy as np
 import argparse
 import json
-from DQNAgent import DQNAgent
-from API_CONNECTION import API_CONNECTION
-from STATE import STATE
+from clases.DQNAgent import DQNAgent
+from clases.API_CONNECTION import API_CONNECTION
+from clases.STATE import STATE
 
 NUM_PACIENTES = 0
 NUM_MANAGER = 0
-CLOCK_MAX = 0
 
 def main(modo_recompensa, config):
 
-    # Objeto para realizar las consultas a la APIj
+    # Objeto para realizar las consultas a la API
     api_connection = API_CONNECTION()
 
     # Se obtiene la configuracion utilizada por el simulador
@@ -20,7 +19,6 @@ def main(modo_recompensa, config):
     # Se setean los valores globales
     NUM_PACIENTES = config_sim['patients_amount']
     NUM_MANAGER = config_sim['managers_amount'] * config_sim['cesfam_amount']
-    CLOCK_MAX = config_sim['end_sim']
     
     # Objeto para poder calcular los nuevos estados de la matriz de estado
     state_matrix = STATE(NUM_MANAGER, NUM_PACIENTES)
@@ -31,16 +29,15 @@ def main(modo_recompensa, config):
 
     # Son definidas los tipo de procesos disponibles
     tipo_hora = {
-        "ASK_CONSENT" : 1,
-        "PRE_CLASSIFY_CLINICAL_RISK" : 2,
-        "PRE_CLASSIFY_SOCIAL_RISK" : 3,
-        "MANAGE_PATIENT" : 4,
-        "MANAGE_MEDICAL_HOUR" : 5,
-        "MANAGE_TEST_HOUR" : 6,
-        "MANAGE_SOCIAL_HOUR" : 7,
-        "MANAGE_PSYCHO_HOUR" : 8,
-        "RE_EVALUATE_LOW_RISK" : 9,
-        "RE_EVALUATE_MANAGED" : 10
+        "PRE_CLASSIFY_CLINICAL_RISK" : 1,
+        "PRE_CLASSIFY_SOCIAL_RISK" : 2,
+        "MANAGE_PATIENT" : 3,
+        "MANAGE_MEDICAL_HOUR" : 4,
+        "MANAGE_TEST_HOUR" : 5,
+        "MANAGE_SOCIAL_HOUR" : 6,
+        "MANAGE_PSYCHO_HOUR" : 7,
+        "RE_EVALUATE_LOW_RISK" : 8,
+        "RE_EVALUATE_MANAGED" : 9
     }
 
     # A partir de la configuracion obtenida son seteados los tiempos de cada proceso
@@ -59,8 +56,9 @@ def main(modo_recompensa, config):
 
     # Inicializacion del modelo DQN
     state_size = len(state_matrix.flatten_state(matriz_estado))
-    action_size = NUM_PACIENTES * 10 # Es por 10 ya que son 10 las posibles acciones a realizar.
-    dqn_agent = DQNAgent(state_size, action_size, epsilon=1.0)
+    action_size = NUM_PACIENTES * 9 # Es por 9 ya que son 9 las posibles acciones a realizar.
+    # dqn_agent = DQNAgent(state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5)
+    dqn_agent = DQNAgent(state_size, action_size, hidden_size=32, learning_rate=0.005, gamma=0.95, epsilon=0.85, epsilon_min=0.05, epsilon_decay=0.997, memory_size=100, batch_size=10)
 
     # Time para conocer la hora del simulador
     current_clock = 0
@@ -77,19 +75,36 @@ def main(modo_recompensa, config):
     # Historial de tareas asignada en formato numerico
     acciones_acumuladas = []
 
+    # Matriz para historial de acciones realizadas a pacientes, y cuando fue el ultimo dia que fue realizada
+    history_patients = np.zeros((NUM_PACIENTES, 9))
+
     # Historial de recompensa en formato json
     rewards = []
 
+    # Lista con paciente que no autorizan, todos comienzan aqui
+    no_autoriza = list(range(1, NUM_PACIENTES + 1))
+
+    # Lista de quienes autorizan
+    autoriza = []
+
     # Listado de procesos disponibles
-    process_list = ['ASK_CONSENT','PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']
+    process_list = ['PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']
     
     # Ciclo que en cada iteracion representa un dia indicado por el simulador.
     while flag:
         # Se obtiene el estado del simulador
         json_state, responseState_json = api_connection.get_data_sim()
 
-        # El time interno se actualiza
-        current_clock += 24
+        # Se obtienen los pacientes que si autorizan
+        autoriza_aux = api_connection.get_no_autoriza()
+        autoriza_aux = [int(numero) for numero in autoriza_aux]
+
+        # Se almacena los pacientes que si autorizan
+        union_autoriza = set(autoriza) | set(autoriza_aux)
+        autoriza = list(union_autoriza)
+
+        # Estos pacientes son eliminados de la lista que no autorizan
+        no_autoriza = [elemento for elemento in no_autoriza if elemento not in autoriza_aux]
 
         # Se consulta si el simulador ha tenido cambios o no
         if len(json_state) == 2: # Estado vacio
@@ -110,12 +125,16 @@ def main(modo_recompensa, config):
 
         # El time interno se actualiza segun lo enviado por el simulador
         current_clock = int(json_state[-1]['clock'].split(".")[0])
+        # print(json_state)
 
         # En caso de haber un nuevo estado
         if new_state:
 
             # La matriz de estado se actualiza con lo enviado por el simulador
-            nueva_matriz_estado = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora)
+            nueva_matriz_estado, history_tasks_aux, history_patients = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora, tipo_hora_duracion, history_patients)
+
+            # Se agregan las tareas que indica el simulador como finalizadas
+            history_tasks.extend(history_tasks_aux)
 
             # Se "aplanan" la matriz nueva y antigua, se obtiene recompensa
             flatten_state = state_matrix.flatten_state(matriz_estado)
@@ -128,7 +147,7 @@ def main(modo_recompensa, config):
                 "reward": reward * -1,
                 "total_risk": total_risk
             }
-            if modo_recompensa == 3 or modo_recompensa == 4:
+            if modo_recompensa == 3:
                 json_reward["reward"] = reward
             rewards.append(json_reward)
 
@@ -152,13 +171,20 @@ def main(modo_recompensa, config):
 
             # Se seleccionan los pacientes de ese manager
             mis_pacientes = [elemento for elemento in managerPatient if elemento["manager"] == i+1]
+            mis_pacientes = [item['patient'] for item in mis_pacientes]
+
+            # Se obtiene si hay pacientes activos para los cuales darles horas
+            mis_pacientes_activos = list(set(mis_pacientes) & set(autoriza))
             
             # Si el horario libre del manager es "del dia anterior", se actualiza al inicio de la jornada
             if horario_libre < current_clock + 8:
                 horario_libre = current_clock + 8
             
             # Mientras al manager le quede tiempo libre en el dia
-            while horario_libre < current_clock + 20:
+            while (horario_libre < current_clock + 20) and (len(mis_pacientes_activos) > 0):
+
+                # Cantidad de pacientes activos para ese manager
+                cantidad_pacientes = len(mis_pacientes_activos)
 
                 # Se obtiene el estado "aplanado"
                 state = state_matrix.flatten_state(matriz_estado)
@@ -169,40 +195,66 @@ def main(modo_recompensa, config):
                 # Se decodifica la tareas para obtener el paciente y el proceso.
                 paciente_actual, process_number = dqn_agent.decompose_action(composite_action)
 
-                # Se obtiene el nombre del proceso, ya que se obtiene un numero
-                process_actual = process_list[process_number - 1]
-
-                # Historial de acciones codificadas para entrenar modelo
-                acciones_acumuladas.append(composite_action)
+                # Se obtiene el paciente al que pertenece
+                pos = paciente_actual%cantidad_pacientes
+                paciente_actual = mis_pacientes_activos[pos]
                 
-                # Tiempo que tarda el proceso
-                process_time = tipo_hora_duracion[process_actual]
+                # Si el paciente pertenece al manager
+                if paciente_actual in mis_pacientes_activos:
 
-                # Json de la tareas para enviar a simulador
-                task = {
-                    "id_manager": i+1,
-                    "id_patient": 0,
-                    "process": process_actual,
-                    "clock_init": horario_libre,
-                    "execute_time": 0
-                }
-                task["id_patient"] = int(paciente_actual)
-                task["execute_time"] = int(process_time)
+                    # Si el paciente ha autorizado
+                    if not (paciente_actual in no_autoriza):
 
-                # Actualizacion de horario libre
-                horario_libre += process_time
+                         # Se obtiene el nombre del proceso, ya que se obtiene un numero
+                        process_actual = process_list[process_number - 1]
 
-                # Historial de tareas
-                history_tasks.append(task)
-                
-                # Tareas para el siguiente dia
-                tasks.append(task)
+                        ultima_atencion = history_patients[int(paciente_actual) - 1, tipo_hora[process_actual] -1]
+
+                        # Hay que valida que esa tarea no haya sido ya realizada hoy ni 2 dias anteriores
+                        if (ultima_atencion < int(current_clock/24) - 2) or (ultima_atencion == 0) :
+
+                            # Historial de acciones codificadas para entrenar modelo
+                            acciones_acumuladas.append(composite_action)
+                            
+                            # Tiempo que tarda el proceso
+                            process_time = tipo_hora_duracion[process_actual]
+
+                            # Json de la tareas para enviar a simulador
+                            task = {
+                                "id_manager": i+1,
+                                "id_patient": 0,
+                                "process": process_actual,
+                                "clock_init": horario_libre,
+                                "execute_time": 0
+                            }
+                            task["id_patient"] = int(paciente_actual)
+                            task["execute_time"] = int(process_time)
+
+                            # Actualizacion de horario libre
+                            horario_libre += process_time
+                            
+                            # Tareas para el siguiente dia
+                            tasks.append(task)
+
+                            # Se actualiza lista de tareas realizadas por paciente
+                            history_patients[int(paciente_actual) - 1, tipo_hora[process_actual] -1] = int(current_clock/24)
 
         # Post de las tareas
+        if tasks == []:
+            task = {
+                "id_manager": -1,
+                "id_patient": -1,
+                "process": "no",
+                "clock_init": -1,
+                "execute_time": -1
+            }
+            tasks.append(task)
         responseTask = api_connection.post_task(tasks)
         
         # Entrenamiento del modelo
         dqn_agent.replay()
+
+        current_clock += 24
 
     # Estado final
     json_state, responseState_json = api_connection.get_data_sim(flag = 1)
@@ -211,24 +263,37 @@ def main(modo_recompensa, config):
 
     if modo_recompensa == 1:
         name = "Riesgo del 100%"
-        filename = 'rewards_total.json'
     elif modo_recompensa == 2:
         name = "Riesgo del 40% mayor"
-        filename = 'rewards_porcentaje.json'
     elif modo_recompensa == 3:
         name = "Riesgo pacientes en medio o bajo"
-        filename = 'rewards_medio_bajo.json'
     elif modo_recompensa == 4:
-        name = "Riesgo logaritmo"
-        filename = 'rewards_logaritmo.json'
+        name = "Riesgo promedio"
 
     filename = './out/rewards.json'
+
+    # Se agrupa los history task por id_patient
+    patient_processes = {}
+
+    # Agrupar los procesos por id_patient
+    for item in history_tasks:
+        id_patient = item["id_patient"]
+        process = item["process"]
+        
+        if id_patient not in patient_processes:
+            patient_processes[id_patient] = []
+
+        patient_processes[id_patient].append(process)
+
+    # Convertir el diccionario en la lista deseada de objetos JSON
+    history_tasks = [{"id_patient": id_patient, "process": processes} for id_patient, processes in patient_processes.items()]
 
     rewards_post = {
         "name": name,
         "mode": modo_recompensa,
         "config": config,
-        "rewards": rewards
+        "rewards": rewards,
+        "history_task": history_tasks
     }
 
     # Se lee el archivo para agregar la nueva data
@@ -253,7 +318,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Script para procesar estados del simulador y entregarle tareas diarias.')
 
     # Argumento para modo de ejecucion
-    parser.add_argument('modo', type=int, choices=[1, 2, 3, 4], help='Modo de ejecución del script. Puede ser 1, 2, 3 o 4.')
+    parser.add_argument('modo', type=int, choices=[1, 2, 3, 4], help='Modo de ejecución del script. Puede ser 1, 2, 3, 4.')
 
     # Argumento para modo de ejecucion
     parser.add_argument('config', type=int, choices=[1, 2, 3, 4], help='Modo de configuracion del script. Puede ser 1, 2, 3 o 4.')

@@ -19,9 +19,13 @@ def main(modo_recompensa, config):
     # Se setean los valores globales
     NUM_PACIENTES = config_sim['patients_amount']
     NUM_MANAGER = config_sim['managers_amount'] * config_sim['cesfam_amount']
+    DAY_MAX = int(config_sim['end_sim']/24)
+
+    # Matriz para llevar registro de los riesgos por paciente
+    matrix_risk = np.zeros((NUM_PACIENTES,DAY_MAX))
     
     # Objeto para poder calcular los nuevos estados de la matriz de estado
-    state_matrix = STATE(NUM_MANAGER, NUM_PACIENTES)
+    state_matrix = STATE(NUM_MANAGER, NUM_PACIENTES, DAY_MAX)
 
     # Se inicializa la matriz de estado
     # matriz_estado = np.zeros((NUM_MANAGER, 2 + 3*NUM_PACIENTES))
@@ -59,7 +63,7 @@ def main(modo_recompensa, config):
     state_size = len(state_matrix.flatten_state(matriz_estado))
     action_size = NUM_PACIENTES * 9 # Es por 9 ya que son 9 las posibles acciones a realizar.
     # dqn_agent = DQNAgent(state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5)
-    dqn_agent = DQNAgent(state_size, action_size, hidden_size=32, learning_rate=0.005, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=200, batch_size=10)
+    dqn_agent = DQNAgent(state_size, action_size, hidden_size=32, learning_rate=0.005, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=100, batch_size=10)
 
     # Time para conocer la hora del simulador
     current_clock = 0
@@ -132,7 +136,7 @@ def main(modo_recompensa, config):
         if new_state:
 
             # La matriz de estado se actualiza con lo enviado por el simulador
-            nueva_matriz_estado, history_tasks_aux, history_patients = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora, tipo_hora_duracion, history_patients)
+            nueva_matriz_estado, history_tasks_aux, history_patients, matrix_risk = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora, tipo_hora_duracion, history_patients, matrix_risk)
 
             # Se agregan las tareas que indica el simulador como finalizadas
             history_tasks.extend(history_tasks_aux)
@@ -286,6 +290,17 @@ def main(modo_recompensa, config):
 
     # Convertir el diccionario en la lista deseada de objetos JSON
     history_tasks = [{"id_patient": id_patient, "process": processes} for id_patient, processes in patient_processes.items()]
+
+    rewards = []
+    # Se arma el arreglo de json con el rewards
+    for i in range(0, DAY_MAX):
+        json_aux = {
+            "day": i + 1,
+            "reward": 0,
+            "total_risk": matrix_risk[:, i].sum()
+        }
+        rewards.append(json_aux)
+
 
     rewards_post = {
         "name": name,

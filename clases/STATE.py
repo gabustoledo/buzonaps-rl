@@ -2,10 +2,11 @@ import numpy as np
 from clases.API_CONNECTION import API_CONNECTION
 
 class STATE:
-    def __init__(self, num_managers, num_patients):
+    def __init__(self, num_managers, num_patients, day_max):
         self.api_connection = API_CONNECTION()
         self.num_managers = num_managers
         self.num_patients = num_patients
+        self.day_max = day_max
 
     def flatten_state(self, matrix):
         return matrix.flatten()
@@ -31,7 +32,7 @@ class STATE:
 
         return matriz_estado, managerPatient
 
-    def update_sate(self, matriz_estado, new_state, tipo_hora, tipo_hora_duracion, history_patients):
+    def update_sate(self, matriz_estado, new_state, tipo_hora, tipo_hora_duracion, history_patients, matrix_risk):
         history_task = []
         for ns in new_state:
 
@@ -40,9 +41,20 @@ class STATE:
                 riesgo = ns['clinical_risk']
                 manager_id = ns['manager_id']
                 patient_id = ns['patient_id']
+                day = int(ns['sim_clock']/24) + 1
 
                 # matriz_estado[manager_id-1, patient_id + self.num_patients + 1] = riesgo
                 matriz_estado[manager_id-1, patient_id] = riesgo
+
+                # Se actualiza el riesgo en la matriz de control del riesgo
+                matrix_risk[manager_id-1, day] = riesgo
+
+                # Luego se extiende el riesgo
+                for d in range(day+1, self.day_max):
+                    # Si ya existe un valor de riesgo diferente en el día siguiente, detener la propagación
+                    if matrix_risk[patient_id-1, d] != 0:
+                        break
+                    matrix_risk[patient_id-1, d] = riesgo
 
             # Se registra las horas atendidas
             if ns['agent_type'] == 'MANAGER':
@@ -72,7 +84,7 @@ class STATE:
 
                     history_patients[patient_id - 1, process_id - 1] = int(nueva_hora_libre/24)
 
-        return matriz_estado, history_task, history_patients
+        return matriz_estado, history_task, history_patients, matrix_risk
 
     def get_recompensa(self, matriz, modo=1, porcentaje=0.4):
         if modo == 1: # Riesgo de todos

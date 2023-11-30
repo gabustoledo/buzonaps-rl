@@ -6,7 +6,7 @@ base_url = 'http://localhost:3000/api/sim/execute/'
 
 for iteracion in range(0,10):
     # modo de recompensa
-    for modo in range(3, 4):
+    for modo in range(1, 5):
         for config in range(3,4):
             url = base_url + str(modo) + "/" + str(config)
 

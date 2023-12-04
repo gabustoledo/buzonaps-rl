@@ -65,6 +65,13 @@ def main(modo_recompensa, config):
     # dqn_agent = DQNAgent(state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5)
     dqn_agent = DQNAgent(state_size, action_size, hidden_size=32, learning_rate=0.005, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=100, batch_size=10)
 
+    # Se comprueba si hay un modelo almacenado
+    nombre_archivo_modelo = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-modelo_dqn.h5'
+    nombre_archivo_estado = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-estado_agente.pkl'
+
+    # Se carga el modelo y su estado si corresponde
+    dqn_agent.load(nombre_archivo_modelo, nombre_archivo_estado, 100)
+
     # Time para conocer la hora del simulador
     current_clock = 0
 
@@ -321,6 +328,9 @@ def main(modo_recompensa, config):
     with open(filename, 'w') as file:
         json.dump(datos, file, indent=4)
 
+    # Se almacena el modelo con su estado
+    dqn_agent.save(nombre_archivo_modelo, nombre_archivo_estado)
+
     # rewards_response = api_connection.post_rewards(rewards_post)
 
     desocupado = api_connection.get_desocupado()
@@ -335,7 +345,7 @@ if __name__ == '__main__':
     parser.add_argument('modo', type=int, choices=[1, 2, 3, 4], help='Modo de ejecución del script. Puede ser 1, 2, 3, 4.')
 
     # Argumento para modo de ejecucion
-    parser.add_argument('config', type=int, choices=[1, 2, 3, 4], help='Modo de configuracion del script. Puede ser 1, 2, 3 o 4.')
+    parser.add_argument('config', type=int, choices=[0, 1, 2, 3, 4], help='Modo de configuracion del script. Puede ser 1, 2, 3 o 4.')
 
     # Se obtienen los parametros
     args = parser.parse_args()

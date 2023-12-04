@@ -1,4 +1,3 @@
-import numpy as np
 from clases.API_CONNECTION import API_CONNECTION
 
 class STATE:
@@ -41,7 +40,7 @@ class STATE:
                 riesgo = ns['clinical_risk']
                 manager_id = ns['manager_id']
                 patient_id = ns['patient_id']
-                day = int(ns['sim_clock']/24) + 1
+                day = int(ns['sim_clock']/24)
 
                 # matriz_estado[manager_id-1, patient_id + self.num_patients + 1] = riesgo
                 matriz_estado[manager_id-1, patient_id] = riesgo

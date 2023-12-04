@@ -2,6 +2,9 @@ import numpy as np
 import random
 from collections import deque
 from clases.DQN import DQNModel
+import os
+import pickle
+from tensorflow.keras.models import load_model
 
 class DQNAgent:
     def __init__(self, state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5):
@@ -46,3 +49,38 @@ class DQNAgent:
         patient_id = (action // 9) + 1
         number = (action % 9) + 1
         return patient_id, number
+    
+    def load(self, nombre_archivo_modelo, nombre_archivo_estado, memory_size):
+        # Cargar el modelo
+        if os.path.exists(nombre_archivo_modelo):
+            self.model.model = load_model(nombre_archivo_modelo)
+            print("Modelo cargado con éxito.")
+        else:
+            print("Archivo del modelo no encontrado.")
+
+        # Cargar el estado del agente
+        if os.path.exists(nombre_archivo_estado):
+            with open(nombre_archivo_estado, 'rb') as file:
+                estado_agente = pickle.load(file)
+            self.epsilon = estado_agente['epsilon']
+            self.memory = deque(estado_agente['memory'], maxlen=memory_size)
+            # Cargar cualquier otro estado necesario
+            print("Estado del agente cargado con éxito.")
+        else:
+            print("Archivo de estado del agente no encontrado.")
+
+    def save(self, nombre_archivo_modelo, nombre_archivo_estado):
+        # Guardar el modelo
+        self.model.model.save(nombre_archivo_modelo)
+        print("Modelo guardado con éxito.")
+
+        # Guardar el estado del agente
+        estado_agente = {
+            "epsilon": self.epsilon,
+            "memory": list(self.memory)  # Convertir deque a lista para serializar
+            # Añadir aquí cualquier otro estado que necesites guardar
+        }
+
+        with open(nombre_archivo_estado, 'wb') as file:
+            pickle.dump(estado_agente, file)
+        print("Estado del agente guardado con éxito.")

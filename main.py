@@ -29,21 +29,24 @@ def main(modo_recompensa, config):
 
     # Se inicializa la matriz de estado
     # matriz_estado = np.zeros((NUM_MANAGER, 2 + 3*NUM_PACIENTES))
-    matriz_estado = np.zeros((NUM_MANAGER, 1 + NUM_PACIENTES))
+    # matriz_estado = np.zeros((NUM_MANAGER, 1 + NUM_PACIENTES))
+    matriz_estado = np.zeros((NUM_PACIENTES, 4))
     matriz_estado, managerPatient = state_matrix.init_state(matriz_estado)
 
     # Son definidas los tipo de procesos disponibles
     tipo_hora = {
-        "PRE_CLASSIFY_CLINICAL_RISK" : 1,
-        "PRE_CLASSIFY_SOCIAL_RISK" : 2,
-        "MANAGE_PATIENT" : 3,
-        "MANAGE_MEDICAL_HOUR" : 4,
-        "MANAGE_TEST_HOUR" : 5,
-        "MANAGE_SOCIAL_HOUR" : 6,
-        "MANAGE_PSYCHO_HOUR" : 7,
-        "RE_EVALUATE_LOW_RISK" : 8,
-        "RE_EVALUATE_MANAGED" : 9
+        "PRE_CLASSIFY_CLINICAL_RISK" : 1, # Primero evento, evalua el riesgo clinico
+        "PRE_CLASSIFY_SOCIAL_RISK" : 2, # Segundo evento, evalua el riesgo social
+        "MANAGE_PATIENT" : 3, # Tercer evento, este engloba a los 4 manage siguientes (en sim no hace nada, solo elije cual de las 4 seleccionar)
+        "MANAGE_MEDICAL_HOUR" : 4, # 3.1
+        "MANAGE_TEST_HOUR" : 5, # 3.2
+        "MANAGE_SOCIAL_HOUR" : 6, # 3.3
+        "MANAGE_PSYCHO_HOUR" : 7, # 3.4
+        "RE_EVALUATE_LOW_RISK" : 8, # Cuarto evento, no hace nada, solo es para ocupar el tiempo
+        "RE_EVALUATE_MANAGED" : 9 # Quinto evento, no hace nada, solo es para ocupar el tiempo
     }
+
+    tratamiento = ["PRE_CLASSIFY_CLINICAL_RISK", "PRE_CLASSIFY_SOCIAL_RISK", "MANAGE_MEDICAL_HOUR", "MANAGE_TEST_HOUR", "MANAGE_SOCIAL_HOUR", "MANAGE_PSYCHO_HOUR"]
 
     # A partir de la configuracion obtenida son seteados los tiempos de cada proceso
     tipo_hora_duracion = {
@@ -61,16 +64,17 @@ def main(modo_recompensa, config):
 
     # Inicializacion del modelo DQN
     state_size = len(state_matrix.flatten_state(matriz_estado))
-    action_size = NUM_PACIENTES * 9 # Es por 9 ya que son 9 las posibles acciones a realizar.
+    # action_size = NUM_PACIENTES * 9 # Es por 9 ya que son 9 las posibles acciones a realizar.
+    action_size = NUM_PACIENTES # La accion me indica a que paciente debo continuar su atencion
     # dqn_agent = DQNAgent(state_size, action_size, hidden_size=64, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.01, epsilon_decay=0.995, memory_size=10000, batch_size=5)
-    dqn_agent = DQNAgent(state_size, action_size, hidden_size=32, learning_rate=0.005, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=100, batch_size=10)
+    dqn_agent = DQNAgent(state_size, action_size, hidden_size=16, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=100, batch_size=10)
 
     # Se comprueba si hay un modelo almacenado
     nombre_archivo_modelo = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-modelo_dqn.h5'
     nombre_archivo_estado = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-estado_agente.pkl'
 
     # Se carga el modelo y su estado si corresponde
-    dqn_agent.load(nombre_archivo_modelo, nombre_archivo_estado, 100)
+    # dqn_agent.load(nombre_archivo_modelo, nombre_archivo_estado, 100)
 
     # Time para conocer la hora del simulador
     current_clock = 0
@@ -101,7 +105,13 @@ def main(modo_recompensa, config):
 
     # Listado de procesos disponibles
     process_list = ['PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']
-    
+    tratamiento = process_list
+    # Se tiene una recompensa global. Se le ira sumando el riesgo del paciente elegido, de elegit un paciente incativo o uno que ya elijio de le descuenta 20
+    reward = 0
+
+    # Horario libre de los manager
+    matrix_horario = np.zeros((NUM_MANAGER, 1))
+
     # Ciclo que en cada iteracion representa un dia indicado por el simulador.
     while flag:
         # Se obtiene el estado del simulador
@@ -143,7 +153,7 @@ def main(modo_recompensa, config):
         if new_state:
 
             # La matriz de estado se actualiza con lo enviado por el simulador
-            nueva_matriz_estado, history_tasks_aux, history_patients, matrix_risk = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora, tipo_hora_duracion, history_patients, matrix_risk)
+            nueva_matriz_estado, history_tasks_aux, history_patients, matrix_risk, matrix_horario = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora, tipo_hora_duracion, history_patients, matrix_risk, matrix_horario)
 
             # Se agregan las tareas que indica el simulador como finalizadas
             history_tasks.extend(history_tasks_aux)
@@ -151,20 +161,21 @@ def main(modo_recompensa, config):
             # Se "aplanan" la matriz nueva y antigua, se obtiene recompensa
             flatten_state = state_matrix.flatten_state(matriz_estado)
             flatten_state_nuevo = state_matrix.flatten_state(nueva_matriz_estado)
-            reward, total_risk = state_matrix.get_recompensa(nueva_matriz_estado, modo=modo_recompensa)
+            # reward, total_risk = state_matrix.get_recompensa(nueva_matriz_estado, modo=modo_recompensa)
 
             # La recompensa se almacena
-            json_reward = {
-                "day": int(current_clock/24),
-                "reward": reward * -1,
-                "total_risk": total_risk
-            }
-            if modo_recompensa == 3:
-                json_reward["reward"] = reward
-            rewards.append(json_reward)
+            # json_reward = {
+            #     "day": int(current_clock/24),
+            #     "reward": reward * -1,
+            #     # "total_risk": total_risk
+            #     "total_risk": 0
+            # }
+            # if modo_recompensa == 3:
+            #     json_reward["reward"] = reward
+            # rewards.append(json_reward)
 
             # Se almacena el estado en el modelo
-            dqn_agent.remember(flatten_state, acciones_acumuladas, reward, flatten_state_nuevo, False)
+            # dqn_agent.remember(flatten_state, acciones_acumuladas, reward, flatten_state_nuevo, False)
 
             # Cambia la matriz de estado
             matriz_estado = nueva_matriz_estado
@@ -176,8 +187,8 @@ def main(modo_recompensa, config):
         for i in range(0, NUM_MANAGER):
 
             # Se obtiene el proximo horario libre del manager
-            # horario_libre = matriz_estado[i, 1]
-            horario_libre = matriz_estado[i, 0]
+            # horario_libre = matriz_estado[i, 0]
+            horario_libre = matrix_horario[i, 0]
 
             # Se seleccionan los pacientes de ese manager
             mis_pacientes = [elemento for elemento in managerPatient if elemento["manager"] == i+1]
@@ -203,11 +214,14 @@ def main(modo_recompensa, config):
                 composite_action = dqn_agent.act(state)
 
                 # Se decodifica la tareas para obtener el paciente y el proceso.
-                paciente_actual, process_number = dqn_agent.decompose_action(composite_action)
+                # paciente_actual, process_number = dqn_agent.decompose_action(composite_action)
+                paciente_actual = composite_action - 1
 
                 # Se obtiene el paciente al que pertenece
                 pos = paciente_actual%cantidad_pacientes
                 paciente_actual = mis_pacientes_activos[pos]
+
+                process_number = int((matriz_estado[int(paciente_actual) - 1, 2] + 1) % len(tratamiento))
                 
                 # Si el paciente pertenece al manager
                 if paciente_actual in mis_pacientes_activos:
@@ -216,7 +230,8 @@ def main(modo_recompensa, config):
                     if not (paciente_actual in no_autoriza):
 
                          # Se obtiene el nombre del proceso, ya que se obtiene un numero
-                        process_actual = process_list[process_number - 1]
+                        # process_actual = process_list[process_number - 1]
+                        process_actual = tratamiento[process_number]
 
                         ultima_atencion = history_patients[int(paciente_actual) - 1, tipo_hora[process_actual] -1]
 
@@ -249,6 +264,31 @@ def main(modo_recompensa, config):
                             # Se actualiza lista de tareas realizadas por paciente
                             history_patients[int(paciente_actual) - 1, tipo_hora[process_actual] -1] = int(current_clock/24)
 
+                            # reward += matriz_estado[int(paciente_actual) - 1, 1]
+                            reward_temp = state_matrix.get_recompensa(matriz_estado, modo_recompensa, int(paciente_actual) - 1)
+                            reward += reward_temp
+                            nuevo_matriz_estado = matriz_estado
+                            nuevo_matriz_estado[int(paciente_actual) - 1, 2] = process_number
+                            nuevo_matriz_estado[int(paciente_actual) - 1, 3] += 1
+
+                            flatten_state = state_matrix.flatten_state(matriz_estado)
+                            flatten_state_nuevo = state_matrix.flatten_state(nuevo_matriz_estado)
+
+                            dqn_agent.remember(flatten_state, acciones_acumuladas, reward, flatten_state_nuevo, False)
+
+                            matriz_estado = nuevo_matriz_estado
+                        else: # En caso de haber elegido a alguien que ya habia elejido recientemente
+                            reward -= 10
+
+                            flatten_state = state_matrix.flatten_state(matriz_estado)
+                            dqn_agent.remember(flatten_state, acciones_acumuladas, reward, flatten_state, False)
+
+                    else: # En caso de haber elegido a alguien que no autoriza
+                        reward -= 30
+
+                        flatten_state = state_matrix.flatten_state(matriz_estado)
+                        dqn_agent.remember(flatten_state, acciones_acumuladas, reward, flatten_state, False)
+
         # Post de las tareas
         if tasks == []:
             task = {
@@ -259,6 +299,7 @@ def main(modo_recompensa, config):
                 "execute_time": -1
             }
             tasks.append(task)
+        print(tasks)
         responseTask = api_connection.post_task(tasks)
         
         # Entrenamiento del modelo
@@ -329,11 +370,13 @@ def main(modo_recompensa, config):
         json.dump(datos, file, indent=4)
 
     # Se almacena el modelo con su estado
-    dqn_agent.save(nombre_archivo_modelo, nombre_archivo_estado)
+    # dqn_agent.save(nombre_archivo_modelo, nombre_archivo_estado)
 
     # rewards_response = api_connection.post_rewards(rewards_post)
 
     desocupado = api_connection.get_desocupado()
+
+    np.save('matrix_risk.npy', matrix_risk)
 
 
 if __name__ == '__main__':

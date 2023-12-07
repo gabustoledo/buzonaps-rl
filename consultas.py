@@ -7,11 +7,13 @@ import os
 base_url = 'http://localhost:3000/api/sim/execute/'
 big_font = pyfiglet.Figlet(font='big')
 
-for iteracion in range(0,10):
+indice = 1
+
+for iteracion in range(0,4):
     # modo de recompensa
-    for modo in range(3, 4):
+    for modo in range(1, 5):
         for config in range(3,4):
-            url = base_url + str(modo) + "/" + str(config)
+            url = base_url + str(modo) + "/" + str(modo)
 
             respuesta = requests.get(url)
 
@@ -21,7 +23,9 @@ for iteracion in range(0,10):
                 datos = respuesta.json()
                 print(url)
                 os.system('cls' if os.name == 'nt' else 'clear')
-                big_text = big_font.renderText(str(iteracion))
+                big_text = big_font.renderText(str(indice))
+                indice+=1
+                print(url)
 
                 print(big_text)
             else:

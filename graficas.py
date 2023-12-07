@@ -174,7 +174,7 @@ for item in data:
 
     rewards = sorted(rewards, key=lambda x: x['day'])
 
-    if config == 3:
+    if config == 3 or True:
         # Dependiendo del modo, añadir los rewards a la lista correspondiente
         if mode == 1:
             rewards_mode_1.append(rewards)

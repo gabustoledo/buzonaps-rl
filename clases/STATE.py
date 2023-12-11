@@ -11,16 +11,6 @@ class STATE:
     def flatten_state(self, matrix):
         return matrix.flatten()
 
-    # def init_state(self, matriz_estado):
-
-    #     # Horario libre
-    #     matriz_estado[:, 0] = 32
-
-    #     # Se obtiene la relacion manager-patient
-    #     managerPatient = self.api_connection.get_manager_patient_sim()
-
-    #     return matriz_estado, managerPatient
-
     def init_state(self, matriz_estado):
 
         # ID del paciente
@@ -35,12 +25,15 @@ class STATE:
         # Cantidad de atenciones
         matriz_estado[:, 3] = 0
 
+        # Dia de la ultima atencion
+        matriz_estado[:, 4] = 0
+
         # Se obtiene la relacion manager-patient
         managerPatient = self.api_connection.get_manager_patient_sim()
 
         return matriz_estado, managerPatient
 
-    def update_sate(self, matriz_estado, new_state, tipo_hora, tipo_hora_duracion, history_patients, matrix_risk, matrix_horario):
+    def update_sate(self, matriz_estado, new_state, tipo_hora, history_patients, matrix_risk, matrix_horario):
         history_task = []
         for ns in new_state:
 
@@ -51,8 +44,6 @@ class STATE:
                 patient_id = ns['patient_id']
                 day = int(ns['sim_clock']/24)
 
-                # matriz_estado[manager_id-1, patient_id + self.num_patients + 1] = riesgo
-                # matriz_estado[manager_id-1, patient_id] = riesgo
                 matriz_estado[patient_id-1, 1] = riesgo
 
                 # Se actualiza el riesgo en la matriz de control del riesgo
@@ -74,62 +65,23 @@ class STATE:
                     sim_clock = ns['sim_clock']
 
                     process_id = tipo_hora[process]
-
-                    # matriz_estado[manager_id-1, patient_id + 2*self.num_patients + 1] = process_id
                     
                     nueva_hora_libre = sim_clock #+ tipo_hora_duracion[process]
-                    # if matriz_estado[manager_id-1, 1] < nueva_hora_libre:
-                    #     matriz_estado[manager_id-1, 1] = nueva_hora_libre
                     if matrix_horario[manager_id-1, 0] < nueva_hora_libre:
                         matrix_horario[manager_id-1, 0] = nueva_hora_libre
 
                     json_aux = {
                             "id_patient": str(ns["patient_id"]) + "_" + str(ns["manager_id"]),
-                            # "process": ns["process"] + "_" + str(sim_clock) + "_" + str(nueva_hora_libre) + "_" + str(matriz_estado[manager_id-1, 1])
                             "process": ns["process"] + "_" + str(sim_clock) + "_" + str(nueva_hora_libre) + "_" + str(matriz_estado[manager_id-1, 0])
                         }
                     
                     history_task.append(json_aux)
 
-                    history_patients[patient_id - 1, process_id - 1] = int(nueva_hora_libre/24)
+                    history_patients[patient_id - 1, 0] = int(nueva_hora_libre/24)
 
         return matriz_estado, history_task, history_patients, matrix_risk, matrix_horario
 
-    # def get_recompensa(self, matriz, modo=1, porcentaje=0.4):
-    #     if modo == 1: # Riesgo de todos
-    #         riesgo_total = matriz[:,1:].sum()
-    #         recompensa = riesgo_total * -1
-    #         return recompensa, riesgo_total
-    #     elif modo == 2: # Riesgo de cierto porcentaje mayor
-    #         riesgo = matriz[:,1:].flatten().tolist()
-    #         riesgo.sort(reverse=True)
-    #         riesgo = riesgo[:self.num_patients]
-    #         riesgo_total = sum(riesgo)
-
-    #         cantidad = int(self.num_patients * porcentaje)
-    #         riesgo = riesgo[:cantidad]
-
-    #         recompensa_total = sum(riesgo)
-    #         recompensa_total = recompensa_total * -1
-    #         return recompensa_total, riesgo_total
-    #     elif modo == 3: # Cantidad de pacientes con riesgo medio o bajo
-    #         riesgo = matriz[:,1:].flatten().tolist()
-    #         riesgo.sort(reverse=True)
-    #         riesgo = riesgo[:self.num_patients]
-    #         riesgo_total = sum(riesgo)
-
-    #         recompensa_umbral = self.num_patients
-    #         for rm in riesgo:
-    #             if rm == 30:
-    #                 recompensa_umbral -= 1
-            
-    #         return recompensa_umbral, riesgo_total
-    #     elif modo == 4: # Riesgo promedio
-    #         riesgo_total = matriz[:,1:].sum()
-    #         recompensa = (riesgo_total * -1) / self.num_patients
-    #         return recompensa, riesgo_total
-
-    def get_recompensa(self, matriz, modo, paciente=0):
+    def get_recompensa(self, matriz, modo, paciente, dia):
         risk_patient = matriz[int(paciente) - 1, 1]
         if modo == 1: # Si el paciente tiene riesgo alto o medio, la recompensa aumenta
             if risk_patient >= 20:
@@ -152,3 +104,6 @@ class STATE:
                 return 1
             else:
                 return 0
+        elif modo == 5: # La recompensa es el riesgo del paciente y su tiempo de espera
+            espera = matriz[int(paciente) - 1, 4] - dia
+            return risk_patient + espera

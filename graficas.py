@@ -7,40 +7,59 @@ def plot_rewards(rewards_lists):
 
     :param rewards_lists: Lista de listas de recompensas, cada una conteniendo listas de diccionarios con claves 'day', 'reward', y 'total_risk'.
     """
+    # Define un mapa de colores
+    colormap = plt.colormaps.get_cmap('tab20')  # 'tab20' es un buen mapa de colores para hasta 20 elementos distintos
+
     for i, rewards_sublist in enumerate(rewards_lists):
-        plt.figure(i+1)  # Crear una nueva figura para cada conjunto de recompensas
-
-        for rewards in rewards_sublist:
+        plt.figure(figsize=(10, 6))
+        
+        num_curves = len(rewards_sublist)
+        for j, rewards in enumerate(rewards_sublist):
             days = [reward['day'] for reward in rewards]
-            reward_values = [reward['reward'] for reward in rewards]
+            risk_values = [reward['reward'] for reward in rewards]
 
-            plt.plot(days, reward_values, label=f"Elemento {rewards_sublist.index(rewards) + 1}")
+            # Asigna un color del mapa de colores a cada línea
+            color = colormap(j / num_curves)
+
+            plt.plot(days, risk_values, label=f"Simulación {j + 1}", color=color)
 
         plt.xlabel('Día')
-        plt.ylabel('Recompensa')
-        plt.title(f'Gráfico de Recompensas - Modo {i+1}')
+        plt.ylabel('Total del rewards')
+        if i == 10:
+            plt.title(f'Reward total - Simulador base')
+        elif i > 4:
+            plt.title(f'Reward total - Modo de recompensa {i%5+1} con tiempo variable')
+        else:
+            plt.title(f'Reward total - Modo de recompensa {i%5+1}')
         plt.legend()
 
     plt.show()
 
 def plot_total_risk(rewards_lists):
-    """
-    Grafica el total_risk de cada lista de recompensas en rewards_lists.
+    # Define un mapa de colores
+    colormap = plt.colormaps.get_cmap('tab20')  # 'tab20' es un buen mapa de colores para hasta 20 elementos distintos
 
-    :param rewards_lists: Lista de listas de recompensas, cada una conteniendo listas de diccionarios con claves 'day', 'reward', y 'total_risk'.
-    """
     for i, rewards_sublist in enumerate(rewards_lists):
-        plt.figure(i+1)  # Crear una nueva figura para cada conjunto de recompensas
-
-        for rewards in rewards_sublist:
+        plt.figure(figsize=(10, 6))
+        
+        num_curves = len(rewards_sublist)
+        for j, rewards in enumerate(rewards_sublist):
             days = [reward['day'] for reward in rewards]
             risk_values = [reward['total_risk'] for reward in rewards]
 
-            plt.plot(days, risk_values, label=f"Elemento {rewards_sublist.index(rewards) + 1}")
+            # Asigna un color del mapa de colores a cada línea
+            color = colormap(j / num_curves)
+
+            plt.plot(days, risk_values, label=f"Simulación {j + 1}", color=color)
 
         plt.xlabel('Día')
-        plt.ylabel('Total de Riesgo')
-        plt.title(f'Gráfico del Total de Riesgo - Modo {i+1}')
+        plt.ylabel('Total del riesgo')
+        if i == 10:
+            plt.title(f'Riesgo total del CESFAM - Simulador base')
+        elif i > 4:
+            plt.title(f'Riesgo total del CESFAM - Modo de recompensa {i%5+1} con tiempo variable')
+        else:
+            plt.title(f'Riesgo total del CESFAM - Modo de recompensa {i%5+1}')
         plt.legend()
 
     plt.show()
@@ -142,16 +161,24 @@ def calculate_average_risk_per_day(rewards_list):
 def plot_average_risk_per_mode(average_all_mode):
     plt.figure(figsize=(10, 6))
 
-    # Iterar a través de cada modo y graficar sus datos
+    # Define una paleta de colores para las primeras 10 curvas
+    colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'orange', 'purple', 'brown']
+
     for i, mode_data in enumerate(average_all_mode):
         days = [item['day'] for item in mode_data]
         risks = [item['total_risk'] for item in mode_data]
 
-        plt.plot(days, risks, label=f'Modo {i + 1}')
+        if i == 10:
+            # Usa un color llamativo para la curva número 11
+            plt.plot(days, risks, label='Simulador base', color='lime', linewidth=2.5)
+        elif i > 4:
+            plt.plot(days, risks, label=f'Modo {i%5 + 1} (variable)', color=colors[i % 10])
+        else:
+            plt.plot(days, risks, label=f'Modo {i%5 + 1}', color=colors[i])
 
     plt.xlabel('Día')
-    plt.ylabel('Promedio de Riesgo Total')
-    plt.title('Promedio de Riesgo Total por Día y Modo')
+    plt.ylabel('Promedio de riesgo total')
+    plt.title('Promedio de riesgo total por día y modo de recompensa')
     plt.legend()
     plt.show()
 
@@ -165,6 +192,7 @@ rewards_mode_2 = []
 rewards_mode_3 = []
 rewards_mode_4 = []
 rewards_mode_5 = []
+rewards_mode_6 = []
 
 # Iterar a través de cada objeto en el JSON
 for item in data:
@@ -184,6 +212,40 @@ for item in data:
             rewards_mode_3.append(rewards)
         elif mode == 4:
             rewards_mode_4.append(rewards)
+        elif mode == 5:
+            rewards_mode_5.append(rewards)
+
+# Leer el archivo JSON
+with open('out/rewards_time.json', 'r') as file:
+    data = json.load(file)
+
+# Crear listas para almacenar los rewards de cada modo
+rewards_mode_1_time = []
+rewards_mode_2_time = []
+rewards_mode_3_time = []
+rewards_mode_4_time = []
+rewards_mode_5_time = []
+
+# Iterar a través de cada objeto en el JSON
+for item in data:
+    mode = item['mode']
+    rewards = item['rewards']
+    config = item['config']
+
+    rewards = sorted(rewards, key=lambda x: x['day'])
+
+    if config == 3 or True:
+        # Dependiendo del modo, añadir los rewards a la lista correspondiente
+        if mode == 1:
+            rewards_mode_1_time.append(rewards)
+        elif mode == 2:
+            rewards_mode_2_time.append(rewards)
+        elif mode == 3:
+            rewards_mode_3_time.append(rewards)
+        elif mode == 4:
+            rewards_mode_4_time.append(rewards)
+        elif mode == 5:
+            rewards_mode_5_time.append(rewards)
 
 with open('out/rewards_simulador.json', 'r') as file:
     data_sim = json.load(file)
@@ -192,9 +254,9 @@ for item in data_sim:
     rewards = item['rewards']
     rewards = sorted(rewards, key=lambda x: x['day'])
 
-    rewards_mode_5.append(rewards)
+    rewards_mode_6.append(rewards)
 
-list_total_rewards = [rewards_mode_1, rewards_mode_2, rewards_mode_3, rewards_mode_4, rewards_mode_5]
+list_total_rewards = [rewards_mode_1, rewards_mode_2, rewards_mode_3, rewards_mode_4, rewards_mode_5, rewards_mode_1_time, rewards_mode_2_time, rewards_mode_3_time, rewards_mode_4_time, rewards_mode_5_time, rewards_mode_6]
 
 max_days_for_each_mode = find_max_day(list_total_rewards)
 
@@ -203,6 +265,8 @@ global_max_day = max([day for rewards_list in list_total_rewards for rewards in 
 filled_rewards_lists = fill_missing_days(list_total_rewards, global_max_day)
 
 plot_total_risk(filled_rewards_lists)
+
+plot_rewards(filled_rewards_lists)
 
 average_all_mode = []
 for item in filled_rewards_lists:

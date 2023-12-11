@@ -15,7 +15,7 @@ class DQNModel:
         return model
 
     def predict(self, state):
-        return self.model.predict(state)
+        return self.model.predict(state, verbose=0)
 
     def update(self, state, q_values):
         self.model.fit(state, q_values, epochs=1, verbose=0)

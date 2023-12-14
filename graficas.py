@@ -31,7 +31,7 @@ def plot_rewards(rewards_lists):
             plt.title(f'Reward total - Modo de recompensa {i%5+1} con tiempo variable')
         else:
             plt.title(f'Reward total - Modo de recompensa {i%5+1}')
-        plt.legend()
+        plt.legend(loc='lower right')
 
     plt.show()
 
@@ -59,8 +59,8 @@ def plot_total_risk(rewards_lists):
         elif i > 4:
             plt.title(f'Riesgo total del CESFAM - Modo de recompensa {i%5+1} con tiempo variable')
         else:
-            plt.title(f'Riesgo total del CESFAM - Modo de recompensa {i%5+1}')
-        plt.legend()
+            plt.title(f'Riesgo total del CESFAM - Modo de recompensa {i%5+1} con tiempo fijo')
+        plt.legend(loc='lower right')
 
     plt.show()
 
@@ -178,8 +178,8 @@ def plot_average_risk_per_mode(average_all_mode):
 
     plt.xlabel('Día')
     plt.ylabel('Promedio de riesgo total')
-    plt.title('Promedio de riesgo total por día y modo de recompensa')
-    plt.legend()
+    plt.title('Promedio de riesgo total por día')
+    plt.legend(loc='lower right')
     plt.show()
 
 # Leer el archivo JSON
@@ -234,18 +234,28 @@ for item in data:
 
     rewards = sorted(rewards, key=lambda x: x['day'])
 
-    if config == 3 or True:
-        # Dependiendo del modo, añadir los rewards a la lista correspondiente
-        if mode == 1:
-            rewards_mode_1_time.append(rewards)
-        elif mode == 2:
-            rewards_mode_2_time.append(rewards)
-        elif mode == 3:
-            rewards_mode_3_time.append(rewards)
-        elif mode == 4:
-            rewards_mode_4_time.append(rewards)
-        elif mode == 5:
-            rewards_mode_5_time.append(rewards)
+    # Dependiendo del modo, añadir los rewards a la lista correspondiente
+    # if mode == 1:
+    #     rewards_mode_1_time.append(rewards)
+    # elif mode == 2:
+    #     rewards_mode_2_time.append(rewards)
+    # elif mode == 3:
+    #     rewards_mode_3_time.append(rewards)
+    # elif mode == 4:
+    #     rewards_mode_4_time.append(rewards)
+    # elif mode == 5:
+    #     rewards_mode_5_time.append(rewards)
+
+    if config == 1:
+        rewards_mode_1_time.append(rewards)
+    elif config == 2:
+        rewards_mode_2_time.append(rewards)
+    elif config == 3:
+        rewards_mode_3_time.append(rewards)
+    elif config == 4:
+        rewards_mode_4_time.append(rewards)
+    elif config == 5:
+        rewards_mode_5_time.append(rewards)
 
 with open('out/rewards_simulador.json', 'r') as file:
     data_sim = json.load(file)

@@ -63,6 +63,7 @@ class STATE:
                     manager_id = ns['manager_id']
                     patient_id = ns['patient_id']
                     sim_clock = ns['sim_clock']
+                    day = int(ns['sim_clock']/24)
 
                     process_id = tipo_hora[process]
                     
@@ -79,6 +80,9 @@ class STATE:
 
                     history_patients[patient_id - 1, 0] = int(nueva_hora_libre/24)
 
+                    # Se actualiza el dia de su ultima atencion
+                    matriz_estado[patient_id-1, 4] = day
+
         return matriz_estado, history_task, history_patients, matrix_risk, matrix_horario
 
     def get_recompensa(self, matriz, modo, paciente, dia):
@@ -87,23 +91,25 @@ class STATE:
             if risk_patient >= 20:
                 return risk_patient
             else:
-                return 0
+                return 5
         elif modo == 2: # Si el paciente tiene riesgo algo, la recompensa aumenta
             if risk_patient == 30:
                 return risk_patient
             else:
-                return 0
+                return 5
         elif modo == 3: # La recompensa aumenta los mismo del riesgo del paciente
+            if risk_patient == 0:
+                return 5
             return risk_patient
         elif modo == 4: # Si es riesgo bajo aumenta 1, si riesgo medio 5, si riesgo alto 15
             if risk_patient == 30:
-                return 15
+                return 20
             if risk_patient == 20:
-                return 5
+                return 15
             if risk_patient == 10:
-                return 1
+                return 10
             else:
-                return 0
+                return 5
         elif modo == 5: # La recompensa es el riesgo del paciente y su tiempo de espera
-            espera = matriz[int(paciente) - 1, 4] - dia
+            espera = dia - matriz[int(paciente) - 1, 4]
             return risk_patient + espera

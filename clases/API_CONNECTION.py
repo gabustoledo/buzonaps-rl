@@ -11,6 +11,7 @@ class API_CONNECTION:
         self.rewards_post = "http://localhost:3000/api/rl/rewards"
         self.desocupado = "http://localhost:3000/api/sim/desocupado"
         self.no_autoriza = "http://localhost:3000/api/sim/noautoriza"
+        self.pendiente = "http://localhost:3000/api/sim/pendiente"
 
     def get_config(self):
         responseConfig = requests.get(self.config_get)
@@ -62,3 +63,7 @@ class API_CONNECTION:
         response = requests.get(self.no_autoriza)
         response = response.text.replace('[','').replace(']','').replace('"','').split(',')
         return response
+
+    def get_pendiente(self):
+        response = requests.get(self.pendiente)
+        return response.json()

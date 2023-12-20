@@ -33,7 +33,7 @@ class STATE:
 
         return matriz_estado, managerPatient
 
-    def update_sate(self, matriz_estado, new_state, tipo_hora, history_patients, matrix_risk, matrix_horario):
+    def update_sate(self, matriz_estado, new_state, tipo_hora, history_patients, matrix_risk, matrix_horario, tasks_pendientes):
         history_task = []
         for ns in new_state:
 
@@ -83,7 +83,17 @@ class STATE:
                     # Se actualiza el dia de su ultima atencion
                     matriz_estado[patient_id-1, 4] = day
 
-        return matriz_estado, history_task, history_patients, matrix_risk, matrix_horario
+                    # Se actualiza las tareas pendientes, eliminando los elementos que el simulador ya ha realizado
+                    task_aux = {
+                        "id_patient": str(patient_id),
+                        "id_manager": str(manager_id),
+                        "process": str(process_id-1)
+                    }
+
+                    tasks_pendientes = [objeto for objeto in tasks_pendientes if objeto != task_aux]
+
+
+        return matriz_estado, history_task, history_patients, matrix_risk, matrix_horario, tasks_pendientes
 
     def get_recompensa(self, matriz, modo, paciente, dia):
         risk_patient = matriz[int(paciente) - 1, 1]

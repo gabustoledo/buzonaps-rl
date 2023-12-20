@@ -235,27 +235,27 @@ for item in data:
     rewards = sorted(rewards, key=lambda x: x['day'])
 
     # Dependiendo del modo, añadir los rewards a la lista correspondiente
-    # if mode == 1:
-    #     rewards_mode_1_time.append(rewards)
-    # elif mode == 2:
-    #     rewards_mode_2_time.append(rewards)
-    # elif mode == 3:
-    #     rewards_mode_3_time.append(rewards)
-    # elif mode == 4:
-    #     rewards_mode_4_time.append(rewards)
-    # elif mode == 5:
-    #     rewards_mode_5_time.append(rewards)
-
-    if config == 1:
+    if mode == 1:
         rewards_mode_1_time.append(rewards)
-    elif config == 2:
+    elif mode == 2:
         rewards_mode_2_time.append(rewards)
-    elif config == 3:
+    elif mode == 3:
         rewards_mode_3_time.append(rewards)
-    elif config == 4:
+    elif mode == 4:
         rewards_mode_4_time.append(rewards)
-    elif config == 5:
+    elif mode == 5:
         rewards_mode_5_time.append(rewards)
+
+    # if config == 1:
+    #     rewards_mode_1_time.append(rewards)
+    # elif config == 2:
+    #     rewards_mode_2_time.append(rewards)
+    # elif config == 3:
+    #     rewards_mode_3_time.append(rewards)
+    # elif config == 4:
+    #     rewards_mode_4_time.append(rewards)
+    # elif config == 5:
+    #     rewards_mode_5_time.append(rewards)
 
 with open('out/rewards_simulador.json', 'r') as file:
     data_sim = json.load(file)

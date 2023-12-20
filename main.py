@@ -120,33 +120,33 @@ def main(modo_recompensa, config, time_mode):
     rewards = []
 
     # Lista con paciente que no autorizan, todos comienzan aqui
-    no_autoriza = list(range(1, NUM_PACIENTES + 1))
+    # no_autoriza = list(range(1, NUM_PACIENTES + 1))
 
-    # Lista de quienes autorizan
-    autoriza = []
+    # # Lista de quienes autorizan
+    # autoriza = []
     # Se obtienen los pacientes que participan en el proceso
-    autoriza = api_connection.get_no_autoriza()
-    autoriza = [int(numero) for numero in autoriza]
-    autoriza.sort()
+    # autoriza = api_connection.get_no_autoriza()
+    # autoriza = [int(numero) for numero in autoriza]
+    # autoriza.sort()
 
-    autoriza = list(range(1, NUM_PACIENTES + 1))
+    # autoriza = list(range(1, NUM_PACIENTES + 1))
 
-    # Se eliminan de la lista de no autoriza
-    no_autoriza = [elemento for elemento in no_autoriza if elemento not in autoriza]
+    # # Se eliminan de la lista de no autoriza
+    # no_autoriza = [elemento for elemento in no_autoriza if elemento not in autoriza]
 
     # Listado de procesos disponibles
     process_list = ['PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']
-    process_list = ['PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_MANAGED']
     tratamiento = process_list
-    process_list_low = ['PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','RE_EVALUATE_LOW_RISK']
-    process_list_medium_high = ['PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_MANAGED']
-    
+
     # Se tiene una recompensa global. Se le ira sumando el riesgo del paciente elegido, de elegit un paciente incativo o uno que ya elijio de le descuenta 20
     reward = 0
 
+    # Lista de tareas pendientes enviadas por simulador, estas son las que se deben enviar reordenadas para el dia siguiente
+    tasks_pendientes = []
+
     # Inicializacion del modelo DQN
     state_size = len(state_matrix.flatten_state(matriz_estado))
-    action_size = len(autoriza) # La accion me indica a que paciente debo continuar su atencion
+    action_size = NUM_PACIENTES # La accion me indica a que paciente debo continuar su atencion
     dqn_agent = DQNAgent(state_size, action_size, hidden_size=16, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=100, batch_size=10)
 
     # Horario libre de los manager
@@ -156,6 +156,7 @@ def main(modo_recompensa, config, time_mode):
     while flag:
         # Se obtiene el estado del simulador
         json_state, responseState_json = api_connection.get_data_sim()
+        tasks_pendientes.extend(api_connection.get_pendiente())
 
         # Se consulta si el simulador ha tenido cambios o no
         if len(json_state) == 2: # Estado vacio
@@ -182,7 +183,7 @@ def main(modo_recompensa, config, time_mode):
         if new_state:
 
             # La matriz de estado se actualiza con lo enviado por el simulador
-            nueva_matriz_estado, history_tasks_aux, history_patients, matrix_risk, matrix_horario = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora, history_patients, matrix_risk, matrix_horario)
+            nueva_matriz_estado, history_tasks_aux, history_patients, matrix_risk, matrix_horario, tasks_pendientes = state_matrix.update_sate(matriz_estado, json_state[:-1], tipo_hora, history_patients, matrix_risk, matrix_horario, tasks_pendientes)
 
             # Se agregan las tareas que indica el simulador como finalizadas
             history_tasks.extend(history_tasks_aux)
@@ -203,11 +204,14 @@ def main(modo_recompensa, config, time_mode):
             if horario_libre < current_clock + 8:
                 horario_libre = current_clock + 8
 
-            # Lista que me indicara aquellos pacientes que no deben ser atendidos este dia
-            pacientes_no_disponibles = []
+            # Hora del siguiente dia
+            next_day = current_clock + 19
+
+            # Se obtienen las tareas pendientes del manager
+            mis_tareas = [d for d in tasks_pendientes if d['id_manager'] == str(i+1)]
             
-            # Mientras al manager le quede tiempo libre en el dia, tenga pacientes activos y tenga pacientes disponibles para este dia
-            while (horario_libre < current_clock + 20) and (len(pacientes_no_disponibles) != len(autoriza)):
+            # Mientras al manager le quede tiempo libre en el dia y tenga tareas pendientes
+            while (horario_libre < next_day) and (len(mis_tareas) > 0):
 
                 # Se obtiene el estado "aplanado"
                 state = state_matrix.flatten_state(matriz_estado)
@@ -216,33 +220,22 @@ def main(modo_recompensa, config, time_mode):
                 composite_action = dqn_agent.act(state)
                 
                 # Id del paciente actual
-                id_current_patient = autoriza[int(composite_action) - 1]
+                id_current_patient = composite_action
 
-                # Riesgo del paciente actual
-                risk_current_patient = matriz_estado[id_current_patient-1, 1]
+                mis_tareas_paciente = [d for d in mis_tareas if d['id_patient'] == str(id_current_patient)]
 
-                # Eleccion del tratamiento segun riesgo del paciente
-                if risk_current_patient <= 10:
-                    tratamiento = process_list_low
-                else:
-                    tratamiento = process_list_medium_high
+                if len(mis_tareas_paciente) > 0:
 
-                tratamiento = process_list
+                    # El id del proceso que debe realizar
+                    process_number = int(mis_tareas_paciente[0]["process"])
 
-                # El id del proceso siguiente en el tratamiento que se debe realizar
-                process_number = int((matriz_estado[id_current_patient - 1, 2] + 1) % len(tratamiento))
-
-                # Se obtiene el nombre del proceso, ya que se tiene solo el id
-                process_actual = tratamiento[process_number]
-
-                # El dia en que tuvo la ultima atencion el paciente
-                ultima_atencion = history_patients[id_current_patient - 1, 0]
-
-                # Hay que validar que esa tarea no haya sido ya realizada hoy ni 1 dias anteriores
-                if (ultima_atencion < int(current_clock/24) - 1) or (ultima_atencion == 0):
+                    # Se obtiene el nombre del proceso, ya que se tiene solo el id
+                    process_actual = tratamiento[process_number]
 
                     # Historial de acciones codificadas para entrenar modelo
                     acciones_acumuladas.append(composite_action)
+
+                    # Modo en que se realiza el calculo del tiempo, fijo o variable
                     if time_mode == 0:
                         # Tiempo que tarda el proceso
                         process_time = tipo_hora_duracion[process_actual]
@@ -300,17 +293,19 @@ def main(modo_recompensa, config, time_mode):
 
                     matriz_estado = nuevo_matriz_estado
 
-                    # Se indica que el paciente ya ha sido atendido hoy
-                    if not id_current_patient in pacientes_no_disponibles:
-                        pacientes_no_disponibles.append(id_current_patient)
+                    # Se debe limpiar las tareas pendientes esta tarea ya realizada del propio manager
+                    task_aux = {
+                        "id_patient": str(id_current_patient),
+                        "id_manager": str(i+1),
+                        "process": str(process_number)
+                    }
+
+                    mis_tareas = [objeto for objeto in mis_tareas if objeto != task_aux]
                 else: # En caso de haber elegido a alguien que ya habia elejido recientemente
                     reward -= 5
 
                     # Se actualiza el reward historico
                     matrix_rewards[0, int(current_clock/24)] -= 5
-                            
-                    if not id_current_patient in pacientes_no_disponibles:
-                        pacientes_no_disponibles.append(id_current_patient)
 
                     flatten_state = state_matrix.flatten_state(matriz_estado)
                     dqn_agent.remember(flatten_state, acciones_acumuladas, reward, flatten_state, False)

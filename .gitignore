@@ -167,3 +167,7 @@ rewards_total.json
 rewards_porcentaje.json
 rewards_medio_bajo.json
 rewards_logaritmo.json
+
+out_mio/
+modelo/
+out/

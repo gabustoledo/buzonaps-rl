@@ -92,8 +92,8 @@ def main(modo_recompensa, config, time_mode):
     }
 
     # Se comprueba si hay un modelo almacenado
-    nombre_archivo_modelo = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-modelo_dqn.h5'
-    nombre_archivo_estado = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-estado_agente.pkl'
+    # nombre_archivo_modelo = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-modelo_dqn.h5'
+    # nombre_archivo_estado = 'modelo/config_' + str(config) + '-modo_' + str(modo_recompensa) + '-estado_agente.pkl'
 
     # Se carga el modelo y su estado si corresponde
     # dqn_agent.load(nombre_archivo_modelo, nombre_archivo_estado, 100)
@@ -118,21 +118,6 @@ def main(modo_recompensa, config, time_mode):
 
     # Historial de recompensa en formato json
     rewards = []
-
-    # Lista con paciente que no autorizan, todos comienzan aqui
-    # no_autoriza = list(range(1, NUM_PACIENTES + 1))
-
-    # # Lista de quienes autorizan
-    # autoriza = []
-    # Se obtienen los pacientes que participan en el proceso
-    # autoriza = api_connection.get_no_autoriza()
-    # autoriza = [int(numero) for numero in autoriza]
-    # autoriza.sort()
-
-    # autoriza = list(range(1, NUM_PACIENTES + 1))
-
-    # # Se eliminan de la lista de no autoriza
-    # no_autoriza = [elemento for elemento in no_autoriza if elemento not in autoriza]
 
     # Listado de procesos disponibles
     process_list = ['PRE_CLASSIFY_CLINICAL_RISK','PRE_CLASSIFY_SOCIAL_RISK','MANAGE_PATIENT','MANAGE_MEDICAL_HOUR','MANAGE_TEST_HOUR','MANAGE_SOCIAL_HOUR','MANAGE_PSYCHO_HOUR','RE_EVALUATE_LOW_RISK','RE_EVALUATE_MANAGED']

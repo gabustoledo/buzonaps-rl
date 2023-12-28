@@ -31,6 +31,6 @@ Para ejecutar el modelo, usa el siguiente comando:
 python main.py [modo] [config] [time_mode]
 ```
 
-- `modo`: Modo de ejecución del script. Puede ser 1, 2, 3, 4 o 5.
+- `modo`: Modo de recompensa del script. Puede ser 1, 2, 3, 4 o 5.
 - `config`: Modo de configuración del script. Puede ser 0, 1, 2, 3 o 4.
 - `time_mode`: Modo de tiempo variable. Puede ser 0 (desactivado) o 1 (activo).

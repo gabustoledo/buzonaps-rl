@@ -147,7 +147,7 @@ def main(modo_recompensa, config, time_mode):
     # Inicializacion del modelo DQN
     state_size = len(state_matrix.flatten_state(matriz_estado))
     action_size = NUM_PACIENTES # La accion me indica a que paciente debo continuar su atencion
-    dqn_agent = DQNAgent(state_size, action_size, hidden_size=16, learning_rate=0.001, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.996, memory_size=100, batch_size=10)
+    dqn_agent = DQNAgent(state_size, action_size, hidden_size=16, learning_rate=0.005, gamma=0.95, epsilon=1.0, epsilon_min=0.02, epsilon_decay=0.995, memory_size=100, batch_size=10)
 
     # Horario libre de los manager
     matrix_horario = np.zeros((NUM_MANAGER, 1))

@@ -24,6 +24,12 @@ Para utilizar este proyecto, necesitas instalar las siguientes librerías de Pyt
 pip install tensorflow numpy argparse json os random requests time collections tensorflow.keras
 ```
 
+Antes de ejecutar el script, es necesario crear una carpeta llamada `out` en el directorio principal del proyecto. Dentro de esta carpeta, crea dos archivos JSON:
+- `rewards.json`
+- `rewards_time.json`
+
+Cada uno de estos archivos debe contener un arreglo vacío `[]` al inicio.
+
 ## Cómo Usarlo
 Para ejecutar el modelo, usa el siguiente comando:
 
